@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "drawDate": "2026-06-16",
   "drawDateThai": "16 มิถุนายน 2569",
-  "generatedAt": "2026-06-12T05:36:38.315Z",
+  "generatedAt": "2026-06-12T15:23:07.775Z",
   "sourceCount": 8,
   "sources": [
     {
@@ -13,6 +13,7 @@
         "9"
       ],
       "two": [
+        "28",
         "91",
         "95",
         "98",
