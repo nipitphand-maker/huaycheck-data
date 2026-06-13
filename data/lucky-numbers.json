@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-06-16",
   "drawDateThai": "16 มิถุนายน 2569",
-  "generatedAt": "2026-06-13T09:21:41.142Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-06-13T19:42:58.439Z",
+  "sourceCount": 8,
   "sources": [
     {
       "site": "kapook",
@@ -88,20 +88,6 @@
       "three": [
         "825",
         "826"
-      ]
-    },
-    {
-      "site": "kapook",
-      "name": "หวยหลวงพ่อใหญ่วัดห้วยสูบ",
-      "url": "https://lottery.kapook.com/view301665.html",
-      "lead": [
-        "34"
-      ],
-      "two": [
-        "29"
-      ],
-      "three": [
-        "773"
       ]
     },
     {
@@ -271,7 +257,7 @@
       "mentions": 2
     },
     {
-      "digits": "29",
+      "digits": "30",
       "mentions": 2
     }
   ],
