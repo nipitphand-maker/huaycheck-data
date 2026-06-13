@@ -2,9 +2,19 @@
   "schemaVersion": 1,
   "drawDate": "2026-06-16",
   "drawDateThai": "16 มิถุนายน 2569",
-  "generatedAt": "2026-06-12T20:15:54.998Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-06-13T04:07:44.147Z",
+  "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยพุ่มพวง",
+      "url": "https://lottery.kapook.com/view301750.html",
+      "lead": [],
+      "two": [
+        "34"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยเจ๊ฟองเบียร์",
@@ -13,7 +23,7 @@
         "9"
       ],
       "two": [
-        "49",
+        "93",
         "91",
         "95",
         "98",
@@ -165,6 +175,29 @@
       ]
     },
     {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view301594.html",
+      "lead": [
+        "4",
+        "6",
+        "16",
+        "05",
+        "29"
+      ],
+      "two": [
+        "43",
+        "49",
+        "63",
+        "69",
+        "13",
+        "19",
+        "53",
+        "59"
+      ],
+      "three": []
+    },
+    {
       "site": "sanook",
       "name": "หวยแปลปกสลาก",
       "url": "https://news.sanook.com/9892878/",
@@ -204,6 +237,14 @@
   "topTwo": [
     {
       "digits": "93",
+      "mentions": 4
+    },
+    {
+      "digits": "59",
+      "mentions": 3
+    },
+    {
+      "digits": "69",
       "mentions": 3
     },
     {
@@ -215,6 +256,10 @@
       "mentions": 2
     },
     {
+      "digits": "13",
+      "mentions": 2
+    },
+    {
       "digits": "14",
       "mentions": 2
     },
@@ -223,23 +268,11 @@
       "mentions": 2
     },
     {
+      "digits": "19",
+      "mentions": 2
+    },
+    {
       "digits": "29",
-      "mentions": 2
-    },
-    {
-      "digits": "30",
-      "mentions": 2
-    },
-    {
-      "digits": "38",
-      "mentions": 2
-    },
-    {
-      "digits": "39",
-      "mentions": 2
-    },
-    {
-      "digits": "58",
       "mentions": 2
     }
   ],
