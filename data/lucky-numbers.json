@@ -2,27 +2,43 @@
   "schemaVersion": 1,
   "drawDate": "2026-06-16",
   "drawDateThai": "16 มิถุนายน 2569",
-  "generatedAt": "2026-06-14T04:26:04.556Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-06-14T09:42:19.089Z",
+  "sourceCount": 7,
   "sources": [
     {
       "site": "kapook",
-      "name": "หวยเจ๊ฟองเบียร์",
-      "url": "https://lottery.kapook.com/view301720.html",
+      "name": "โค้งสุดท้าย หวยดุ่ย ภรัญฯ ปล่อยเลขเด็ดงวดนี้ 16 มิ",
+      "url": "https://lottery.kapook.com/view301760.html",
       "lead": [
-        "9"
+        "2",
+        "3",
+        "91",
+        "19",
+        "71",
+        "81"
       ],
       "two": [
+        "11",
+        "85",
+        "71",
         "91",
-        "95",
-        "98",
-        "09",
-        "41",
-        "58"
+        "81"
       ],
       "three": [
-        "915"
+        "711",
+        "791",
+        "581"
       ]
+    },
+    {
+      "site": "kapook",
+      "name": "หวยพุ่มพวง",
+      "url": "https://lottery.kapook.com/view301750.html",
+      "lead": [],
+      "two": [
+        "34"
+      ],
+      "three": []
     },
     {
       "site": "kapook",
@@ -78,55 +94,6 @@
       "three": [
         "825",
         "826"
-      ]
-    },
-    {
-      "site": "kapook",
-      "name": "หวยหลวงพ่อใหญ่วัดห้วยสูบ",
-      "url": "https://lottery.kapook.com/view301665.html",
-      "lead": [
-        "34"
-      ],
-      "two": [
-        "29"
-      ],
-      "three": [
-        "773"
-      ]
-    },
-    {
-      "site": "kapook",
-      "name": "หวยเสือตกถัง",
-      "url": "https://lottery.kapook.com/view301630.html",
-      "lead": [
-        "9",
-        "8",
-        "34",
-        "10"
-      ],
-      "two": [
-        "90",
-        "96",
-        "95",
-        "93",
-        "80",
-        "86",
-        "85",
-        "83",
-        "91",
-        "97",
-        "81",
-        "87"
-      ],
-      "three": [
-        "890",
-        "896",
-        "895",
-        "893",
-        "198",
-        "798",
-        "498",
-        "298"
       ]
     },
     {
@@ -233,18 +200,6 @@
       "mentions": 3
     },
     {
-      "digits": "93",
-      "mentions": 3
-    },
-    {
-      "digits": "98",
-      "mentions": 3
-    },
-    {
-      "digits": "09",
-      "mentions": 2
-    },
-    {
       "digits": "13",
       "mentions": 2
     },
@@ -261,7 +216,19 @@
       "mentions": 2
     },
     {
-      "digits": "29",
+      "digits": "30",
+      "mentions": 2
+    },
+    {
+      "digits": "38",
+      "mentions": 2
+    },
+    {
+      "digits": "39",
+      "mentions": 2
+    },
+    {
+      "digits": "43",
       "mentions": 2
     }
   ],
@@ -283,15 +250,7 @@
       "mentions": 1
     },
     {
-      "digits": "198",
-      "mentions": 1
-    },
-    {
       "digits": "259",
-      "mentions": 1
-    },
-    {
-      "digits": "298",
       "mentions": 1
     },
     {
@@ -304,6 +263,14 @@
     },
     {
       "digits": "391",
+      "mentions": 1
+    },
+    {
+      "digits": "403",
+      "mentions": 1
+    },
+    {
+      "digits": "443",
       "mentions": 1
     }
   ]
