@@ -2,74 +2,53 @@
   "schemaVersion": 1,
   "drawDate": "2026-06-16",
   "drawDateThai": "16 มิถุนายน 2569",
-  "generatedAt": "2026-06-14T09:42:19.089Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-06-14T14:11:03.616Z",
+  "sourceCount": 3,
   "sources": [
     {
-      "site": "kapook",
-      "name": "โค้งสุดท้าย หวยดุ่ย ภรัญฯ ปล่อยเลขเด็ดงวดนี้ 16 มิ",
-      "url": "https://lottery.kapook.com/view301760.html",
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9892890/",
       "lead": [
-        "2",
         "3",
-        "91",
-        "19",
-        "71",
-        "81"
+        "2",
+        "8",
+        "6",
+        "7",
+        "0",
+        "9"
       ],
       "two": [
-        "11",
-        "85",
-        "71",
-        "91",
-        "81"
+        "67",
+        "70",
+        "08",
+        "80",
+        "76",
+        "60",
+        "78"
       ],
       "three": [
-        "711",
-        "791",
-        "581"
+        "670",
+        "708",
+        "678",
+        "086",
+        "706"
       ]
     },
     {
-      "site": "kapook",
-      "name": "หวยพุ่มพวง",
-      "url": "https://lottery.kapook.com/view301750.html",
-      "lead": [],
-      "two": [
-        "34"
-      ],
-      "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "หวยปฏิทินครอบครัวข่าว",
-      "url": "https://lottery.kapook.com/view301699.html",
-      "lead": [],
-      "two": [
-        "67",
-        "79",
-        "98",
-        "69",
-        "78",
-        "68",
-        "16"
-      ],
-      "three": []
-    },
-    {
-      "site": "kapook",
+      "site": "sanook",
       "name": "หวยคำชะโนด",
-      "url": "https://lottery.kapook.com/view301690.html",
+      "url": "https://news.sanook.com/9892886/",
       "lead": [
-        "2",
-        "3",
-        "5",
         "95",
         "46",
         "23",
-        "34"
+        "3",
+        "5"
       ],
       "two": [
+        "95",
+        "59",
         "98",
         "90",
         "93",
@@ -85,73 +64,14 @@
         "26",
         "30",
         "39",
-        "59",
         "31",
         "51",
-        "09",
-        "14"
+        "16"
       ],
       "three": [
         "825",
         "826"
       ]
-    },
-    {
-      "site": "kapook",
-      "name": "หวยปฏิทินจีน",
-      "url": "https://lottery.kapook.com/view301599.html",
-      "lead": [
-        "1",
-        "16",
-        "5",
-        "7",
-        "2",
-        "3",
-        "9",
-        "34"
-      ],
-      "two": [
-        "17",
-        "29",
-        "52",
-        "37",
-        "59",
-        "32",
-        "39",
-        "13",
-        "35",
-        "33"
-      ],
-      "three": [
-        "517",
-        "329",
-        "752",
-        "137",
-        "259"
-      ]
-    },
-    {
-      "site": "kapook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://lottery.kapook.com/view301594.html",
-      "lead": [
-        "4",
-        "6",
-        "16",
-        "05",
-        "29"
-      ],
-      "two": [
-        "43",
-        "49",
-        "63",
-        "69",
-        "13",
-        "19",
-        "53",
-        "59"
-      ],
-      "three": []
     },
     {
       "site": "sanook",
@@ -192,30 +112,6 @@
   ],
   "topTwo": [
     {
-      "digits": "59",
-      "mentions": 3
-    },
-    {
-      "digits": "69",
-      "mentions": 3
-    },
-    {
-      "digits": "13",
-      "mentions": 2
-    },
-    {
-      "digits": "14",
-      "mentions": 2
-    },
-    {
-      "digits": "17",
-      "mentions": 2
-    },
-    {
-      "digits": "19",
-      "mentions": 2
-    },
-    {
       "digits": "30",
       "mentions": 2
     },
@@ -224,21 +120,45 @@
       "mentions": 2
     },
     {
-      "digits": "39",
+      "digits": "93",
       "mentions": 2
     },
     {
-      "digits": "43",
-      "mentions": 2
+      "digits": "08",
+      "mentions": 1
+    },
+    {
+      "digits": "14",
+      "mentions": 1
+    },
+    {
+      "digits": "16",
+      "mentions": 1
+    },
+    {
+      "digits": "17",
+      "mentions": 1
+    },
+    {
+      "digits": "18",
+      "mentions": 1
+    },
+    {
+      "digits": "19",
+      "mentions": 1
+    },
+    {
+      "digits": "25",
+      "mentions": 1
     }
   ],
   "topThree": [
     {
-      "digits": "124",
+      "digits": "086",
       "mentions": 1
     },
     {
-      "digits": "137",
+      "digits": "124",
       "mentions": 1
     },
     {
@@ -247,14 +167,6 @@
     },
     {
       "digits": "179",
-      "mentions": 1
-    },
-    {
-      "digits": "259",
-      "mentions": 1
-    },
-    {
-      "digits": "329",
       "mentions": 1
     },
     {
@@ -271,6 +183,14 @@
     },
     {
       "digits": "443",
+      "mentions": 1
+    },
+    {
+      "digits": "670",
+      "mentions": 1
+    },
+    {
+      "digits": "678",
       "mentions": 1
     }
   ]
