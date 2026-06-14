@@ -2,19 +2,9 @@
   "schemaVersion": 1,
   "drawDate": "2026-06-16",
   "drawDateThai": "16 มิถุนายน 2569",
-  "generatedAt": "2026-06-13T19:42:58.439Z",
+  "generatedAt": "2026-06-14T04:26:04.556Z",
   "sourceCount": 8,
   "sources": [
-    {
-      "site": "kapook",
-      "name": "หวยพุ่มพวง",
-      "url": "https://lottery.kapook.com/view301750.html",
-      "lead": [],
-      "two": [
-        "34"
-      ],
-      "three": []
-    },
     {
       "site": "kapook",
       "name": "หวยเจ๊ฟองเบียร์",
@@ -88,6 +78,20 @@
       "three": [
         "825",
         "826"
+      ]
+    },
+    {
+      "site": "kapook",
+      "name": "หวยหลวงพ่อใหญ่วัดห้วยสูบ",
+      "url": "https://lottery.kapook.com/view301665.html",
+      "lead": [
+        "34"
+      ],
+      "two": [
+        "29"
+      ],
+      "three": [
+        "773"
       ]
     },
     {
@@ -257,7 +261,7 @@
       "mentions": 2
     },
     {
-      "digits": "30",
+      "digits": "29",
       "mentions": 2
     }
   ],
