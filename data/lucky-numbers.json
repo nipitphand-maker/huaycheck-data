@@ -2,9 +2,26 @@
   "schemaVersion": 1,
   "drawDate": "2026-06-16",
   "drawDateThai": "16 มิถุนายน 2569",
-  "generatedAt": "2026-06-15T12:23:04.691Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-06-16T04:46:05.552Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยแม่น้ำหนึ่ง",
+      "url": "https://lottery.kapook.com/view301791.html",
+      "lead": [
+        "5"
+      ],
+      "two": [
+        "57",
+        "81",
+        "58",
+        "51",
+        "71",
+        "78"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "โค้งสุดท้าย หวยดุ่ย ภรัญฯ ปล่อยเลขเด็ดงวดนี้ 16 มิ",
@@ -74,46 +91,6 @@
         "16"
       ],
       "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "หวยคำชะโนด",
-      "url": "https://lottery.kapook.com/view301690.html",
-      "lead": [
-        "2",
-        "3",
-        "5",
-        "95",
-        "46",
-        "23",
-        "34"
-      ],
-      "two": [
-        "98",
-        "90",
-        "93",
-        "58",
-        "50",
-        "53",
-        "45",
-        "69",
-        "43",
-        "47",
-        "25",
-        "38",
-        "26",
-        "30",
-        "39",
-        "59",
-        "31",
-        "51",
-        "09",
-        "14"
-      ],
-      "three": [
-        "825",
-        "826"
-      ]
     },
     {
       "site": "kapook",
@@ -197,139 +174,53 @@
         "137",
         "259"
       ]
-    },
-    {
-      "site": "kapook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://lottery.kapook.com/view301594.html",
-      "lead": [
-        "4",
-        "6",
-        "16",
-        "05",
-        "29"
-      ],
-      "two": [
-        "43",
-        "49",
-        "63",
-        "69",
-        "13",
-        "19",
-        "53",
-        "59"
-      ],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "สถิติหวยออกวันอังคาร ย้อนหลัง 10 ปี เลขเด็ดงวดนี้ ",
-      "url": "https://news.sanook.com/9894338/",
-      "lead": [
-        "5",
-        "9",
-        "3",
-        "7",
-        "2",
-        "36",
-        "59",
-        "98",
-        "95",
-        "53"
-      ],
-      "two": [
-        "52",
-        "58",
-        "91",
-        "36",
-        "59",
-        "21",
-        "79",
-        "99",
-        "65",
-        "47",
-        "70",
-        "42",
-        "07",
-        "30",
-        "57",
-        "45",
-        "19",
-        "39",
-        "84",
-        "98"
-      ],
-      "three": [
-        "014",
-        "449",
-        "308",
-        "703",
-        "261",
-        "918",
-        "180",
-        "666",
-        "079",
-        "566"
-      ]
     }
   ],
   "topTwo": [
     {
-      "digits": "59",
-      "mentions": 4
+      "digits": "81",
+      "mentions": 3
     },
     {
       "digits": "91",
-      "mentions": 4
-    },
-    {
-      "digits": "98",
-      "mentions": 4
-    },
-    {
-      "digits": "39",
       "mentions": 3
-    },
-    {
-      "digits": "58",
-      "mentions": 3
-    },
-    {
-      "digits": "69",
-      "mentions": 3
-    },
-    {
-      "digits": "09",
-      "mentions": 2
-    },
-    {
-      "digits": "13",
-      "mentions": 2
-    },
-    {
-      "digits": "19",
-      "mentions": 2
     },
     {
       "digits": "29",
       "mentions": 2
+    },
+    {
+      "digits": "58",
+      "mentions": 2
+    },
+    {
+      "digits": "71",
+      "mentions": 2
+    },
+    {
+      "digits": "78",
+      "mentions": 2
+    },
+    {
+      "digits": "85",
+      "mentions": 2
+    },
+    {
+      "digits": "95",
+      "mentions": 2
+    },
+    {
+      "digits": "98",
+      "mentions": 2
+    },
+    {
+      "digits": "09",
+      "mentions": 1
     }
   ],
   "topThree": [
     {
-      "digits": "014",
-      "mentions": 1
-    },
-    {
-      "digits": "079",
-      "mentions": 1
-    },
-    {
       "digits": "137",
-      "mentions": 1
-    },
-    {
-      "digits": "180",
       "mentions": 1
     },
     {
@@ -341,19 +232,31 @@
       "mentions": 1
     },
     {
-      "digits": "261",
-      "mentions": 1
-    },
-    {
       "digits": "298",
       "mentions": 1
     },
     {
-      "digits": "308",
+      "digits": "329",
       "mentions": 1
     },
     {
-      "digits": "329",
+      "digits": "498",
+      "mentions": 1
+    },
+    {
+      "digits": "517",
+      "mentions": 1
+    },
+    {
+      "digits": "581",
+      "mentions": 1
+    },
+    {
+      "digits": "711",
+      "mentions": 1
+    },
+    {
+      "digits": "752",
       "mentions": 1
     }
   ]
