@@ -2,9 +2,48 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-16T17:01:27.762Z",
-  "sourceCount": 0,
-  "sources": [],
+  "generatedAt": "2026-06-19T15:27:58.814Z",
+  "sourceCount": 2,
+  "sources": [
+    {
+      "site": "kapook",
+      "name": "มัดรวม 10 ทำนายฝันเห็นงู พร้อมตีหวยเด็ด ลุ้นโชคงวด",
+      "url": "https://lottery.kapook.com/view274921.html",
+      "lead": [
+        "4",
+        "5",
+        "9",
+        "2",
+        "82",
+        "91",
+        "85",
+        "3",
+        "56",
+        "06"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "เปิดเลขเด็ด 10 คำทำนายฝันแม่น ๆ เตรียมลุ้นโชค 1 ก.",
+      "url": "https://lottery.kapook.com/view261842.html",
+      "lead": [
+        "0",
+        "1",
+        "2",
+        "9",
+        "17",
+        "09",
+        "08",
+        "88",
+        "28",
+        "78"
+      ],
+      "two": [],
+      "three": []
+    }
+  ],
   "topTwo": [],
   "topThree": []
 }
