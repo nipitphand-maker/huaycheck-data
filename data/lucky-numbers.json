@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-21T14:19:05.304Z",
-  "sourceCount": 4,
+  "generatedAt": "2026-06-21T19:48:15.014Z",
+  "sourceCount": 5,
   "sources": [
     {
       "site": "kapook",
@@ -20,6 +20,25 @@
         "3",
         "56",
         "06"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "เปิดเลขเด็ด 10 คำทำนายฝันแม่น ๆ เตรียมลุ้นโชค 1 ก.",
+      "url": "https://lottery.kapook.com/view261842.html",
+      "lead": [
+        "0",
+        "1",
+        "2",
+        "9",
+        "17",
+        "09",
+        "08",
+        "88",
+        "28",
+        "78"
       ],
       "two": [],
       "three": []
@@ -59,8 +78,8 @@
       "url": "https://news.sanook.com/9895274/",
       "lead": [
         "3",
-        "17",
-        "05"
+        "22",
+        "16"
       ],
       "two": [],
       "three": []
