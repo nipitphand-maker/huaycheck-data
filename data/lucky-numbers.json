@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-21T09:55:14.478Z",
-  "sourceCount": 3,
+  "generatedAt": "2026-06-21T14:19:05.304Z",
+  "sourceCount": 4,
   "sources": [
     {
       "site": "kapook",
@@ -25,20 +25,42 @@
       "three": []
     },
     {
-      "site": "kapook",
-      "name": "เปิดเลขเด็ด 10 คำทำนายฝันแม่น ๆ เตรียมลุ้นโชค 1 ก.",
-      "url": "https://lottery.kapook.com/view261842.html",
+      "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9895278/",
+      "lead": [],
+      "two": [
+        "69",
+        "40",
+        "12",
+        "43",
+        "02",
+        "48",
+        "06",
+        "63",
+        "93",
+        "68",
+        "98",
+        "31",
+        "41",
+        "81",
+        "32",
+        "42",
+        "82"
+      ],
+      "three": [
+        "963",
+        "968"
+      ]
+    },
+    {
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9895274/",
       "lead": [
-        "0",
-        "1",
-        "2",
-        "9",
+        "3",
         "17",
-        "09",
-        "08",
-        "88",
-        "28",
-        "78"
+        "05"
       ],
       "two": [],
       "three": []
@@ -69,12 +91,53 @@
   "topTwo": [
     {
       "digits": "68",
+      "mentions": 2
+    },
+    {
+      "digits": "02",
       "mentions": 1
     },
     {
-      "digits": "89",
+      "digits": "06",
+      "mentions": 1
+    },
+    {
+      "digits": "12",
+      "mentions": 1
+    },
+    {
+      "digits": "31",
+      "mentions": 1
+    },
+    {
+      "digits": "32",
+      "mentions": 1
+    },
+    {
+      "digits": "40",
+      "mentions": 1
+    },
+    {
+      "digits": "41",
+      "mentions": 1
+    },
+    {
+      "digits": "42",
+      "mentions": 1
+    },
+    {
+      "digits": "43",
       "mentions": 1
     }
   ],
-  "topThree": []
+  "topThree": [
+    {
+      "digits": "963",
+      "mentions": 1
+    },
+    {
+      "digits": "968",
+      "mentions": 1
+    }
+  ]
 }
