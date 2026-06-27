@@ -2,9 +2,39 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-25T14:39:12.121Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-06-27T03:46:15.327Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "มาแล้ว หวยแม่ตุ๊กตาพารวย เลขเด็ดงวดนี้ 1 ก.ค. 69 เ",
+      "url": "https://lottery.kapook.com/view302088.html",
+      "lead": [
+        "2",
+        "3",
+        "1",
+        "6",
+        "4",
+        "5",
+        "31",
+        "64",
+        "10",
+        "43"
+      ],
+      "two": [
+        "16",
+        "14",
+        "36",
+        "65",
+        "45",
+        "11",
+        "33",
+        "66",
+        "44",
+        "55"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "เลขเด็ดงวดนี้ 1 ก.ค. 69 หวยทักษามหาเฮง จัดหนักเลข ",
@@ -139,6 +169,10 @@
       "mentions": 2
     },
     {
+      "digits": "44",
+      "mentions": 2
+    },
+    {
       "digits": "48",
       "mentions": 2
     },
@@ -163,15 +197,11 @@
       "mentions": 1
     },
     {
+      "digits": "11",
+      "mentions": 1
+    },
+    {
       "digits": "12",
-      "mentions": 1
-    },
-    {
-      "digits": "13",
-      "mentions": 1
-    },
-    {
-      "digits": "25",
       "mentions": 1
     }
   ],
