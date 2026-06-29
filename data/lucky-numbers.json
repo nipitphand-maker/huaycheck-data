@@ -2,9 +2,27 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-28T08:57:29.038Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-06-29T04:16:14.129Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยดุ่ย ภรัญฯ เปิดเลขเด็ดงวดนี้ 1 ก.ค. 69 เช็กเลยม",
+      "url": "https://lottery.kapook.com/view302104.html",
+      "lead": [],
+      "two": [
+        "11",
+        "71",
+        "81",
+        "85",
+        "91"
+      ],
+      "three": [
+        "711",
+        "791",
+        "581"
+      ]
+    },
     {
       "site": "kapook",
       "name": "มาแล้ว หวยแม่ตุ๊กตาพารวย เลขเด็ดงวดนี้ 1 ก.ค. 69 เ",
@@ -165,6 +183,14 @@
   ],
   "topTwo": [
     {
+      "digits": "81",
+      "mentions": 3
+    },
+    {
+      "digits": "11",
+      "mentions": 2
+    },
+    {
       "digits": "41",
       "mentions": 2
     },
@@ -181,10 +207,6 @@
       "mentions": 2
     },
     {
-      "digits": "81",
-      "mentions": 2
-    },
-    {
       "digits": "89",
       "mentions": 2
     },
@@ -197,15 +219,23 @@
       "mentions": 1
     },
     {
-      "digits": "11",
-      "mentions": 1
-    },
-    {
       "digits": "12",
       "mentions": 1
     }
   ],
   "topThree": [
+    {
+      "digits": "581",
+      "mentions": 1
+    },
+    {
+      "digits": "711",
+      "mentions": 1
+    },
+    {
+      "digits": "791",
+      "mentions": 1
+    },
     {
       "digits": "963",
       "mentions": 1
