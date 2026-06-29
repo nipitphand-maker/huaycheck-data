@@ -2,9 +2,34 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-29T04:16:14.129Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-06-29T11:07:04.894Z",
+  "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view302108.html",
+      "lead": [
+        "5",
+        "7",
+        "4",
+        "2",
+        "3"
+      ],
+      "two": [
+        "58",
+        "56",
+        "70",
+        "76",
+        "45",
+        "40",
+        "85",
+        "80",
+        "11",
+        "42"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยดุ่ย ภรัญฯ เปิดเลขเด็ดงวดนี้ 1 ก.ค. 69 เช็กเลยม",
@@ -183,11 +208,15 @@
   ],
   "topTwo": [
     {
+      "digits": "11",
+      "mentions": 3
+    },
+    {
       "digits": "81",
       "mentions": 3
     },
     {
-      "digits": "11",
+      "digits": "40",
       "mentions": 2
     },
     {
@@ -195,7 +224,15 @@
       "mentions": 2
     },
     {
+      "digits": "42",
+      "mentions": 2
+    },
+    {
       "digits": "44",
+      "mentions": 2
+    },
+    {
+      "digits": "45",
       "mentions": 2
     },
     {
@@ -207,20 +244,8 @@
       "mentions": 2
     },
     {
-      "digits": "89",
+      "digits": "85",
       "mentions": 2
-    },
-    {
-      "digits": "02",
-      "mentions": 1
-    },
-    {
-      "digits": "06",
-      "mentions": 1
-    },
-    {
-      "digits": "12",
-      "mentions": 1
     }
   ],
   "topThree": [
