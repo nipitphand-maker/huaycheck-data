@@ -2,9 +2,20 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-30T03:57:29.371Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-06-30T09:43:19.576Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "แห่ส่องเลขทะเบียนรถหลวงปู่ศิลา หลังร่วมพิธีใหญ่ที่",
+      "url": "https://lottery.kapook.com/view302129.html",
+      "lead": [
+        "2",
+        "3"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยม้าสีหมอก",
@@ -177,8 +188,8 @@
       "url": "https://news.sanook.com/9895274/",
       "lead": [
         "3",
-        "22",
-        "16"
+        "14",
+        "21"
       ],
       "two": [],
       "three": []
