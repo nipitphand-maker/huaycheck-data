@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-29T20:03:31.578Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-06-30T03:57:29.371Z",
+  "sourceCount": 9,
   "sources": [
     {
       "site": "kapook",
@@ -75,6 +75,32 @@
         "66",
         "44",
         "55"
+      ],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "เลขเด็ดงวดนี้ 1 ก.ค. 69 หวยทักษามหาเฮง จัดหนักเลข ",
+      "url": "https://lottery.kapook.com/view302047.html",
+      "lead": [
+        "4",
+        "8",
+        "9",
+        "1",
+        "3"
+      ],
+      "two": [
+        "48",
+        "13",
+        "39",
+        "89",
+        "41",
+        "44",
+        "81",
+        "38",
+        "84",
+        "49",
+        "25"
       ],
       "three": []
     },
@@ -186,7 +212,15 @@
       "mentions": 3
     },
     {
+      "digits": "81",
+      "mentions": 3
+    },
+    {
       "digits": "40",
+      "mentions": 2
+    },
+    {
+      "digits": "41",
       "mentions": 2
     },
     {
@@ -194,7 +228,15 @@
       "mentions": 2
     },
     {
+      "digits": "44",
+      "mentions": 2
+    },
+    {
       "digits": "45",
+      "mentions": 2
+    },
+    {
+      "digits": "48",
       "mentions": 2
     },
     {
@@ -202,24 +244,8 @@
       "mentions": 2
     },
     {
-      "digits": "81",
-      "mentions": 2
-    },
-    {
       "digits": "85",
       "mentions": 2
-    },
-    {
-      "digits": "02",
-      "mentions": 1
-    },
-    {
-      "digits": "06",
-      "mentions": 1
-    },
-    {
-      "digits": "12",
-      "mentions": 1
     }
   ],
   "topThree": [
