@@ -2,9 +2,32 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-01",
   "drawDateThai": "1 กรกฎาคม 2569",
-  "generatedAt": "2026-06-30T20:03:40.122Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-07-01T04:12:34.085Z",
+  "sourceCount": 11,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยแม่น้ำหนึ่ง",
+      "url": "https://lottery.kapook.com/view302156.html",
+      "lead": [
+        "2",
+        "3",
+        "1",
+        "9"
+      ],
+      "two": [
+        "12",
+        "39",
+        "13",
+        "19",
+        "29",
+        "23"
+      ],
+      "three": [
+        "123",
+        "239"
+      ]
+    },
     {
       "site": "kapook",
       "name": "แห่ส่องเลขทะเบียนรถหลวงปู่ศิลา หลังร่วมพิธีใหญ่ที่",
@@ -14,6 +37,31 @@
         "3"
       ],
       "two": [],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view302108.html",
+      "lead": [
+        "5",
+        "7",
+        "4",
+        "2",
+        "3"
+      ],
+      "two": [
+        "42",
+        "58",
+        "56",
+        "70",
+        "76",
+        "45",
+        "40",
+        "85",
+        "80",
+        "11"
+      ],
       "three": []
     },
     {
@@ -95,6 +143,7 @@
       "name": "หวยคำชะโนด",
       "url": "https://news.sanook.com/9895278/",
       "lead": [
+        "1",
         "4"
       ],
       "two": [
@@ -161,36 +210,13 @@
     },
     {
       "site": "sanook",
-      "name": "หวยแม่น้ำหนึ่ง",
-      "url": "https://news.sanook.com/9896866/",
-      "lead": [
-        "2",
-        "3",
-        "1",
-        "9",
-        "4"
-      ],
-      "two": [
-        "12",
-        "39",
-        "13",
-        "19",
-        "29",
-        "23"
-      ],
-      "three": [
-        "123",
-        "239"
-      ]
-    },
-    {
-      "site": "sanook",
       "name": "หวยปฏิทินจีน",
       "url": "https://news.sanook.com/9895274/",
       "lead": [
         "3",
         "15",
         "21",
+        "1",
         "4"
       ],
       "two": [],
@@ -221,12 +247,12 @@
   ],
   "topTwo": [
     {
-      "digits": "81",
+      "digits": "11",
       "mentions": 3
     },
     {
-      "digits": "11",
-      "mentions": 2
+      "digits": "81",
+      "mentions": 3
     },
     {
       "digits": "12",
@@ -241,7 +267,15 @@
       "mentions": 2
     },
     {
+      "digits": "40",
+      "mentions": 2
+    },
+    {
       "digits": "41",
+      "mentions": 2
+    },
+    {
+      "digits": "42",
       "mentions": 2
     },
     {
@@ -249,15 +283,7 @@
       "mentions": 2
     },
     {
-      "digits": "48",
-      "mentions": 2
-    },
-    {
-      "digits": "68",
-      "mentions": 2
-    },
-    {
-      "digits": "89",
+      "digits": "45",
       "mentions": 2
     }
   ],
