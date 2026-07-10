@@ -2,9 +2,32 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-16",
   "drawDateThai": "16 กรกฎาคม 2569",
-  "generatedAt": "2026-07-09T19:50:37.866Z",
-  "sourceCount": 5,
+  "generatedAt": "2026-07-10T09:40:50.154Z",
+  "sourceCount": 6,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view302384.html",
+      "lead": [
+        "2",
+        "3",
+        "8",
+        "23",
+        "29",
+        "83",
+        "89",
+        "5",
+        "31",
+        "39"
+      ],
+      "two": [
+        "14",
+        "38",
+        "27"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "อิงฟ้า วราหะ รำถวายพญาศรีสัตตนาคราช คอหวยไม่พลาดตี",
@@ -124,6 +147,10 @@
   ],
   "topTwo": [
     {
+      "digits": "14",
+      "mentions": 2
+    },
+    {
       "digits": "02",
       "mentions": 1
     },
@@ -136,7 +163,7 @@
       "mentions": 1
     },
     {
-      "digits": "14",
+      "digits": "27",
       "mentions": 1
     },
     {
@@ -148,19 +175,15 @@
       "mentions": 1
     },
     {
+      "digits": "38",
+      "mentions": 1
+    },
+    {
       "digits": "40",
       "mentions": 1
     },
     {
       "digits": "41",
-      "mentions": 1
-    },
-    {
-      "digits": "42",
-      "mentions": 1
-    },
-    {
-      "digits": "43",
       "mentions": 1
     }
   ],
