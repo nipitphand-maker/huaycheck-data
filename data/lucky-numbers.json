@@ -2,9 +2,38 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-16",
   "drawDateThai": "16 กรกฎาคม 2569",
-  "generatedAt": "2026-07-10T09:40:50.154Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-07-11T08:01:00.582Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยทักษามหาเฮง งวดนี้ออกเลขอะไร ? เปิดเลขเด็ดงวดนี",
+      "url": "https://lottery.kapook.com/view302415.html",
+      "lead": [
+        "5",
+        "1",
+        "4",
+        "3",
+        "8",
+        "9"
+      ],
+      "two": [
+        "51",
+        "48",
+        "35",
+        "89",
+        "13",
+        "85",
+        "59",
+        "93",
+        "81",
+        "45",
+        "11",
+        "53",
+        "46"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยม้าสีหมอก",
@@ -151,6 +180,18 @@
       "mentions": 2
     },
     {
+      "digits": "48",
+      "mentions": 2
+    },
+    {
+      "digits": "81",
+      "mentions": 2
+    },
+    {
+      "digits": "93",
+      "mentions": 2
+    },
+    {
       "digits": "02",
       "mentions": 1
     },
@@ -159,31 +200,19 @@
       "mentions": 1
     },
     {
+      "digits": "11",
+      "mentions": 1
+    },
+    {
       "digits": "12",
       "mentions": 1
     },
     {
+      "digits": "13",
+      "mentions": 1
+    },
+    {
       "digits": "27",
-      "mentions": 1
-    },
-    {
-      "digits": "31",
-      "mentions": 1
-    },
-    {
-      "digits": "32",
-      "mentions": 1
-    },
-    {
-      "digits": "38",
-      "mentions": 1
-    },
-    {
-      "digits": "40",
-      "mentions": 1
-    },
-    {
-      "digits": "41",
       "mentions": 1
     }
   ],
