@@ -2,9 +2,42 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-16",
   "drawDateThai": "16 กรกฎาคม 2569",
-  "generatedAt": "2026-07-11T08:01:00.582Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-07-12T08:22:30.737Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยปฏิทินครอบครัวข่าว",
+      "url": "https://lottery.kapook.com/view302420.html",
+      "lead": [
+        "2",
+        "3",
+        "7",
+        "0",
+        "5",
+        "9",
+        "1",
+        "6",
+        "10",
+        "47"
+      ],
+      "two": [
+        "70",
+        "05",
+        "59",
+        "75",
+        "79",
+        "16",
+        "62"
+      ],
+      "three": [
+        "705",
+        "059",
+        "759",
+        "168",
+        "288"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยทักษามหาเฮง งวดนี้ออกเลขอะไร ? เปิดเลขเด็ดงวดนี",
@@ -184,6 +217,14 @@
       "mentions": 2
     },
     {
+      "digits": "59",
+      "mentions": 2
+    },
+    {
+      "digits": "62",
+      "mentions": 2
+    },
+    {
       "digits": "81",
       "mentions": 2
     },
@@ -196,37 +237,41 @@
       "mentions": 1
     },
     {
+      "digits": "05",
+      "mentions": 1
+    },
+    {
       "digits": "06",
       "mentions": 1
     },
     {
       "digits": "11",
       "mentions": 1
-    },
-    {
-      "digits": "12",
-      "mentions": 1
-    },
-    {
-      "digits": "13",
-      "mentions": 1
-    },
-    {
-      "digits": "27",
-      "mentions": 1
     }
   ],
   "topThree": [
     {
       "digits": "059",
-      "mentions": 1
-    },
-    {
-      "digits": "105",
-      "mentions": 1
+      "mentions": 2
     },
     {
       "digits": "168",
+      "mentions": 2
+    },
+    {
+      "digits": "288",
+      "mentions": 2
+    },
+    {
+      "digits": "705",
+      "mentions": 2
+    },
+    {
+      "digits": "759",
+      "mentions": 2
+    },
+    {
+      "digits": "105",
       "mentions": 1
     },
     {
@@ -234,23 +279,11 @@
       "mentions": 1
     },
     {
-      "digits": "288",
-      "mentions": 1
-    },
-    {
       "digits": "403",
       "mentions": 1
     },
     {
-      "digits": "705",
-      "mentions": 1
-    },
-    {
       "digits": "730",
-      "mentions": 1
-    },
-    {
-      "digits": "759",
       "mentions": 1
     },
     {
