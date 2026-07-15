@@ -2,9 +2,25 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-16",
   "drawDateThai": "16 กรกฎาคม 2569",
-  "generatedAt": "2026-07-15T02:43:14.189Z",
+  "generatedAt": "2026-07-15T13:49:30.510Z",
   "sourceCount": 11,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยแม่จำเนียร",
+      "url": "https://lottery.kapook.com/view302494.html",
+      "lead": [
+        "2",
+        "3"
+      ],
+      "two": [
+        "10",
+        "15",
+        "58",
+        "45"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยเสือตกถัง",
@@ -195,25 +211,6 @@
       "three": []
     },
     {
-      "site": "kapook",
-      "name": "10 คำทำนายฝันแม่น ๆ ฟรี พร้อมดูเลขเด็ดให้โชคงวด 16",
-      "url": "https://lottery.kapook.com/view263469.html",
-      "lead": [
-        "0",
-        "3",
-        "7",
-        "4",
-        "5",
-        "9",
-        "6",
-        "8",
-        "2",
-        "1"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
       "site": "sanook",
       "name": "หวยปฏิทินจีน",
       "url": "https://news.sanook.com/9897974/",
@@ -272,7 +269,15 @@
       "mentions": 3
     },
     {
+      "digits": "45",
+      "mentions": 2
+    },
+    {
       "digits": "48",
+      "mentions": 2
+    },
+    {
+      "digits": "58",
       "mentions": 2
     },
     {
@@ -297,14 +302,6 @@
     },
     {
       "digits": "02",
-      "mentions": 1
-    },
-    {
-      "digits": "05",
-      "mentions": 1
-    },
-    {
-      "digits": "06",
       "mentions": 1
     }
   ],
