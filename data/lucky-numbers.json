@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-16",
   "drawDateThai": "16 กรกฎาคม 2569",
-  "generatedAt": "2026-07-15T13:49:30.510Z",
-  "sourceCount": 11,
+  "generatedAt": "2026-07-15T19:16:20.513Z",
+  "sourceCount": 12,
   "sources": [
     {
       "site": "kapook",
@@ -206,6 +206,25 @@
         "8",
         "10",
         "70"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "มัดรวมเลขเด็ด งวด 16/7/69 คอหวยกว้านซื้อเลข 3 เหตุ",
+      "url": "https://news.sanook.com/9899278/",
+      "lead": [
+        "76",
+        "56",
+        "3",
+        "04",
+        "10",
+        "95",
+        "75",
+        "74",
+        "73",
+        "28"
       ],
       "two": [],
       "three": []
