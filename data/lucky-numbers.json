@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-16",
   "drawDateThai": "16 กรกฎาคม 2569",
-  "generatedAt": "2026-07-16T02:50:00.210Z",
-  "sourceCount": 12,
+  "generatedAt": "2026-07-16T08:19:10.248Z",
+  "sourceCount": 9,
   "sources": [
     {
       "site": "kapook",
@@ -134,12 +134,12 @@
       "lead": [
         "2",
         "3",
-        "6",
         "7",
         "0",
         "5",
         "9",
         "1",
+        "6",
         "10",
         "47"
       ],
@@ -211,77 +211,6 @@
         "27"
       ],
       "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "มัดรวมเลขเด็ด งวด 16/7/69 คอหวยกว้านซื้อเลข 3 เหตุ",
-      "url": "https://news.sanook.com/9899278/",
-      "lead": [
-        "76",
-        "56",
-        "3",
-        "04",
-        "10",
-        "95",
-        "75",
-        "74",
-        "73",
-        "28"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยปฏิทินจีน",
-      "url": "https://news.sanook.com/9897974/",
-      "lead": [
-        "4",
-        "7",
-        "0",
-        "5",
-        "9",
-        "1",
-        "6",
-        "16",
-        "8"
-      ],
-      "two": [
-        "62"
-      ],
-      "three": [
-        "705",
-        "059",
-        "759",
-        "168",
-        "288"
-      ]
-    },
-    {
-      "site": "sanook",
-      "name": "หวยแปลปกสลาก",
-      "url": "https://news.sanook.com/9897966/",
-      "lead": [
-        "1",
-        "5",
-        "3",
-        "0",
-        "2",
-        "10"
-      ],
-      "two": [],
-      "three": [
-        "952",
-        "105",
-        "893",
-        "951",
-        "173",
-        "779",
-        "403",
-        "906",
-        "824",
-        "730"
-      ]
     }
   ],
   "topTwo": [
@@ -306,10 +235,6 @@
       "mentions": 2
     },
     {
-      "digits": "62",
-      "mentions": 2
-    },
-    {
       "digits": "79",
       "mentions": 2
     },
@@ -324,47 +249,39 @@
     {
       "digits": "02",
       "mentions": 1
+    },
+    {
+      "digits": "05",
+      "mentions": 1
     }
   ],
   "topThree": [
     {
       "digits": "059",
-      "mentions": 2
+      "mentions": 1
     },
     {
       "digits": "168",
-      "mentions": 2
+      "mentions": 1
     },
     {
       "digits": "288",
-      "mentions": 2
+      "mentions": 1
     },
     {
       "digits": "705",
-      "mentions": 2
+      "mentions": 1
     },
     {
       "digits": "759",
-      "mentions": 2
-    },
-    {
-      "digits": "105",
       "mentions": 1
     },
     {
-      "digits": "173",
+      "digits": "963",
       "mentions": 1
     },
     {
-      "digits": "403",
-      "mentions": 1
-    },
-    {
-      "digits": "730",
-      "mentions": 1
-    },
-    {
-      "digits": "779",
+      "digits": "968",
       "mentions": 1
     }
   ]
