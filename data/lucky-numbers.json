@@ -2,9 +2,24 @@
   "schemaVersion": 1,
   "drawDate": "2026-07-16",
   "drawDateThai": "16 กรกฎาคม 2569",
-  "generatedAt": "2026-07-15T19:16:20.513Z",
+  "generatedAt": "2026-07-16T02:50:00.210Z",
   "sourceCount": 12,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยท้าวเวสสุวรรณ",
+      "url": "https://lottery.kapook.com/view302504.html",
+      "lead": [
+        "2",
+        "3"
+      ],
+      "two": [
+        "09",
+        "28",
+        "21"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยแม่จำเนียร",
@@ -119,12 +134,12 @@
       "lead": [
         "2",
         "3",
-        "5",
+        "6",
         "7",
         "0",
+        "5",
         "9",
         "1",
-        "6",
         "10",
         "47"
       ],
@@ -195,19 +210,6 @@
         "38",
         "27"
       ],
-      "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "อิงฟ้า วราหะ รำถวายพญาศรีสัตตนาคราช คอหวยไม่พลาดตี",
-      "url": "https://lottery.kapook.com/view302343.html",
-      "lead": [
-        "7",
-        "8",
-        "10",
-        "70"
-      ],
-      "two": [],
       "three": []
     },
     {
