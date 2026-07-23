@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-23T03:14:17.840Z",
-  "sourceCount": 2,
+  "generatedAt": "2026-07-23T19:22:38.719Z",
+  "sourceCount": 4,
   "sources": [
     {
       "site": "kapook",
@@ -45,19 +45,74 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9900422/",
+      "lead": [
+        "2",
+        "3",
+        "7",
+        "8",
+        "0",
+        "4"
+      ],
+      "two": [
+        "78",
+        "80",
+        "02",
+        "24",
+        "74",
+        "82",
+        "70",
+        "04"
+      ],
+      "three": [
+        "780",
+        "802",
+        "024",
+        "782",
+        "824",
+        "702",
+        "724"
+      ]
+    },
+    {
+      "site": "sanook",
+      "name": "หวยแปลปกสลาก",
+      "url": "https://news.sanook.com/9900414/",
+      "lead": [
+        "8",
+        "80",
+        "18",
+        "26",
+        "1",
+        "0",
+        "7",
+        "28",
+        "69",
+        "52"
+      ],
+      "two": [],
+      "three": []
     }
   ],
   "topTwo": [
     {
       "digits": "04",
+      "mentions": 2
+    },
+    {
+      "digits": "24",
+      "mentions": 2
+    },
+    {
+      "digits": "02",
       "mentions": 1
     },
     {
       "digits": "07",
-      "mentions": 1
-    },
-    {
-      "digits": "24",
       "mentions": 1
     },
     {
@@ -73,13 +128,46 @@
       "mentions": 1
     },
     {
-      "digits": "94",
+      "digits": "70",
       "mentions": 1
     },
     {
-      "digits": "98",
+      "digits": "74",
+      "mentions": 1
+    },
+    {
+      "digits": "78",
       "mentions": 1
     }
   ],
-  "topThree": []
+  "topThree": [
+    {
+      "digits": "024",
+      "mentions": 1
+    },
+    {
+      "digits": "702",
+      "mentions": 1
+    },
+    {
+      "digits": "724",
+      "mentions": 1
+    },
+    {
+      "digits": "780",
+      "mentions": 1
+    },
+    {
+      "digits": "782",
+      "mentions": 1
+    },
+    {
+      "digits": "802",
+      "mentions": 1
+    },
+    {
+      "digits": "824",
+      "mentions": 1
+    }
+  ]
 }
