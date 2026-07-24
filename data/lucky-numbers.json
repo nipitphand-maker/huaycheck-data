@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-24T02:53:36.404Z",
+  "generatedAt": "2026-07-24T08:31:50.749Z",
   "sourceCount": 5,
   "sources": [
     {
@@ -56,23 +56,42 @@
       "three": []
     },
     {
-      "site": "kapook",
-      "name": "เปิด 10 อันดับหวยแม่ทำเนียน เลขเด็ดงวดนี้ 1 ส.ค. 6",
-      "url": "https://lottery.kapook.com/view302648.html",
+      "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9900506/",
       "lead": [
-        "10",
-        "28",
-        "74",
-        "12",
-        "94",
-        "29",
-        "75",
-        "18",
-        "93",
-        "04"
+        "05",
+        "25",
+        "87",
+        "2",
+        "1"
       ],
-      "two": [],
-      "three": []
+      "two": [
+        "07",
+        "08",
+        "56",
+        "57",
+        "58",
+        "83",
+        "73",
+        "89",
+        "76",
+        "01",
+        "02",
+        "51",
+        "54",
+        "26",
+        "27",
+        "28",
+        "16",
+        "17",
+        "18"
+      ],
+      "three": [
+        "306",
+        "283",
+        "289"
+      ]
     },
     {
       "site": "sanook",
@@ -128,7 +147,23 @@
   ],
   "topTwo": [
     {
+      "digits": "28",
+      "mentions": 3
+    },
+    {
+      "digits": "02",
+      "mentions": 2
+    },
+    {
       "digits": "04",
+      "mentions": 2
+    },
+    {
+      "digits": "07",
+      "mentions": 2
+    },
+    {
+      "digits": "08",
       "mentions": 2
     },
     {
@@ -136,7 +171,11 @@
       "mentions": 2
     },
     {
-      "digits": "28",
+      "digits": "27",
+      "mentions": 2
+    },
+    {
+      "digits": "57",
       "mentions": 2
     },
     {
@@ -146,31 +185,23 @@
     {
       "digits": "78",
       "mentions": 2
-    },
-    {
-      "digits": "02",
-      "mentions": 1
-    },
-    {
-      "digits": "07",
-      "mentions": 1
-    },
-    {
-      "digits": "08",
-      "mentions": 1
-    },
-    {
-      "digits": "27",
-      "mentions": 1
-    },
-    {
-      "digits": "38",
-      "mentions": 1
     }
   ],
   "topThree": [
     {
       "digits": "024",
+      "mentions": 1
+    },
+    {
+      "digits": "283",
+      "mentions": 1
+    },
+    {
+      "digits": "289",
+      "mentions": 1
+    },
+    {
+      "digits": "306",
       "mentions": 1
     },
     {
