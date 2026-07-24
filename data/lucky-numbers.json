@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-24T08:31:50.749Z",
-  "sourceCount": 5,
+  "generatedAt": "2026-07-24T13:50:42.669Z",
+  "sourceCount": 6,
   "sources": [
     {
       "site": "kapook",
@@ -53,6 +53,25 @@
         "94",
         "98"
       ],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "เปิด 10 อันดับหวยแม่ทำเนียน เลขเด็ดงวดนี้ 1 ส.ค. 6",
+      "url": "https://lottery.kapook.com/view302648.html",
+      "lead": [
+        "10",
+        "28",
+        "74",
+        "12",
+        "94",
+        "29",
+        "75",
+        "18",
+        "93",
+        "04"
+      ],
+      "two": [],
       "three": []
     },
     {
