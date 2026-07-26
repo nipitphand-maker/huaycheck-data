@@ -2,9 +2,43 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-25T02:52:50.669Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-07-26T08:30:28.251Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "ส่องเลขเด็ดงวดนี้ 1 ส.ค. 69 จากหวยปฏิทินช่อง 3 งวด",
+      "url": "https://lottery.kapook.com/view302726.html",
+      "lead": [
+        "2",
+        "3",
+        "7",
+        "8",
+        "4"
+      ],
+      "two": [
+        "78",
+        "72",
+        "74",
+        "82",
+        "84",
+        "24",
+        "28",
+        "42",
+        "27",
+        "47"
+      ],
+      "three": [
+        "782",
+        "784",
+        "724",
+        "824",
+        "428",
+        "278",
+        "742",
+        "284"
+      ]
+    },
     {
       "site": "sanook",
       "name": "หวยคำชะโนด",
@@ -167,6 +201,22 @@
   "topTwo": [
     {
       "digits": "28",
+      "mentions": 4
+    },
+    {
+      "digits": "24",
+      "mentions": 3
+    },
+    {
+      "digits": "27",
+      "mentions": 3
+    },
+    {
+      "digits": "74",
+      "mentions": 3
+    },
+    {
+      "digits": "78",
       "mentions": 3
     },
     {
@@ -186,33 +236,37 @@
       "mentions": 2
     },
     {
-      "digits": "24",
-      "mentions": 2
-    },
-    {
-      "digits": "27",
-      "mentions": 2
-    },
-    {
-      "digits": "57",
-      "mentions": 2
-    },
-    {
-      "digits": "74",
-      "mentions": 2
-    },
-    {
-      "digits": "78",
+      "digits": "42",
       "mentions": 2
     }
   ],
   "topThree": [
     {
+      "digits": "724",
+      "mentions": 2
+    },
+    {
+      "digits": "782",
+      "mentions": 2
+    },
+    {
+      "digits": "824",
+      "mentions": 2
+    },
+    {
       "digits": "024",
       "mentions": 1
     },
     {
+      "digits": "278",
+      "mentions": 1
+    },
+    {
       "digits": "283",
+      "mentions": 1
+    },
+    {
+      "digits": "284",
       "mentions": 1
     },
     {
@@ -224,27 +278,7 @@
       "mentions": 1
     },
     {
-      "digits": "702",
-      "mentions": 1
-    },
-    {
-      "digits": "724",
-      "mentions": 1
-    },
-    {
-      "digits": "780",
-      "mentions": 1
-    },
-    {
-      "digits": "782",
-      "mentions": 1
-    },
-    {
-      "digits": "802",
-      "mentions": 1
-    },
-    {
-      "digits": "824",
+      "digits": "428",
       "mentions": 1
     }
   ]
