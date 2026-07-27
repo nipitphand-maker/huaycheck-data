@@ -2,9 +2,28 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-26T19:15:52.403Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-07-27T03:28:12.109Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เลขเด็ดงวดนี้ 1 ส.ค. 69 หวยอาจารย์ทอง เมืองอุบล เป",
+      "url": "https://lottery.kapook.com/view302737.html",
+      "lead": [],
+      "two": [
+        "72",
+        "41",
+        "74",
+        "21",
+        "42",
+        "71",
+        "10"
+      ],
+      "three": [
+        "274",
+        "721"
+      ]
+    },
     {
       "site": "kapook",
       "name": "ส่องเลขเด็ดงวดนี้ 1 ส.ค. 69 จากหวยปฏิทินช่อง 3 งวด",
@@ -204,6 +223,10 @@
       "mentions": 4
     },
     {
+      "digits": "74",
+      "mentions": 4
+    },
+    {
       "digits": "24",
       "mentions": 3
     },
@@ -212,7 +235,7 @@
       "mentions": 3
     },
     {
-      "digits": "74",
+      "digits": "42",
       "mentions": 3
     },
     {
@@ -234,10 +257,6 @@
     {
       "digits": "08",
       "mentions": 2
-    },
-    {
-      "digits": "42",
-      "mentions": 2
     }
   ],
   "topThree": [
@@ -258,6 +277,10 @@
       "mentions": 1
     },
     {
+      "digits": "274",
+      "mentions": 1
+    },
+    {
       "digits": "278",
       "mentions": 1
     },
@@ -275,10 +298,6 @@
     },
     {
       "digits": "306",
-      "mentions": 1
-    },
-    {
-      "digits": "428",
       "mentions": 1
     }
   ]
