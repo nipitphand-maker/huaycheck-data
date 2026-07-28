@@ -2,9 +2,43 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-27T19:38:53.198Z",
+  "generatedAt": "2026-07-28T02:45:49.223Z",
   "sourceCount": 6,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเสือตกถัง",
+      "url": "https://lottery.kapook.com/view302763.html",
+      "lead": [
+        "5",
+        "6"
+      ],
+      "two": [
+        "58",
+        "50",
+        "53",
+        "51",
+        "68",
+        "60",
+        "63",
+        "61",
+        "57",
+        "52",
+        "67",
+        "62",
+        "10"
+      ],
+      "three": [
+        "658",
+        "650",
+        "653",
+        "651",
+        "756",
+        "256",
+        "456",
+        "956"
+      ]
+    },
     {
       "site": "kapook",
       "name": "เลขเด็ดงวดนี้ 1 ส.ค. 69 หวยอาจารย์ทอง เมืองอุบล เป",
@@ -22,40 +56,6 @@
       "three": [
         "274",
         "721"
-      ]
-    },
-    {
-      "site": "kapook",
-      "name": "ส่องเลขเด็ดงวดนี้ 1 ส.ค. 69 จากหวยปฏิทินช่อง 3 งวด",
-      "url": "https://lottery.kapook.com/view302726.html",
-      "lead": [
-        "2",
-        "3",
-        "7",
-        "8",
-        "4"
-      ],
-      "two": [
-        "78",
-        "72",
-        "74",
-        "82",
-        "84",
-        "24",
-        "28",
-        "42",
-        "27",
-        "47"
-      ],
-      "three": [
-        "782",
-        "784",
-        "724",
-        "824",
-        "428",
-        "278",
-        "742",
-        "284"
       ]
     },
     {
@@ -170,18 +170,10 @@
   "topTwo": [
     {
       "digits": "28",
-      "mentions": 4
-    },
-    {
-      "digits": "27",
       "mentions": 3
     },
     {
-      "digits": "42",
-      "mentions": 3
-    },
-    {
-      "digits": "74",
+      "digits": "57",
       "mentions": 3
     },
     {
@@ -193,37 +185,41 @@
       "mentions": 2
     },
     {
-      "digits": "24",
+      "digits": "10",
       "mentions": 2
     },
     {
-      "digits": "57",
+      "digits": "27",
       "mentions": 2
     },
     {
-      "digits": "72",
+      "digits": "42",
       "mentions": 2
     },
     {
-      "digits": "78",
+      "digits": "51",
+      "mentions": 2
+    },
+    {
+      "digits": "52",
+      "mentions": 2
+    },
+    {
+      "digits": "58",
       "mentions": 2
     }
   ],
   "topThree": [
     {
+      "digits": "256",
+      "mentions": 1
+    },
+    {
       "digits": "274",
       "mentions": 1
     },
     {
-      "digits": "278",
-      "mentions": 1
-    },
-    {
       "digits": "283",
-      "mentions": 1
-    },
-    {
-      "digits": "284",
       "mentions": 1
     },
     {
@@ -235,19 +231,23 @@
       "mentions": 1
     },
     {
-      "digits": "428",
+      "digits": "456",
       "mentions": 1
     },
     {
-      "digits": "721",
+      "digits": "650",
       "mentions": 1
     },
     {
-      "digits": "724",
+      "digits": "651",
       "mentions": 1
     },
     {
-      "digits": "742",
+      "digits": "653",
+      "mentions": 1
+    },
+    {
+      "digits": "658",
       "mentions": 1
     }
   ]
