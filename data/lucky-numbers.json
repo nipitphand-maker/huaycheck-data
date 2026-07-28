@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-28T02:45:49.223Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-07-28T08:39:10.729Z",
+  "sourceCount": 7,
   "sources": [
     {
       "site": "kapook",
@@ -56,6 +56,40 @@
       "three": [
         "274",
         "721"
+      ]
+    },
+    {
+      "site": "kapook",
+      "name": "ส่องเลขเด็ดงวดนี้ 1 ส.ค. 69 จากหวยปฏิทินช่อง 3 งวด",
+      "url": "https://lottery.kapook.com/view302726.html",
+      "lead": [
+        "2",
+        "3",
+        "7",
+        "8",
+        "4"
+      ],
+      "two": [
+        "78",
+        "72",
+        "74",
+        "82",
+        "84",
+        "24",
+        "28",
+        "42",
+        "27",
+        "47"
+      ],
+      "three": [
+        "782",
+        "784",
+        "724",
+        "824",
+        "428",
+        "278",
+        "742",
+        "284"
       ]
     },
     {
@@ -170,10 +204,22 @@
   "topTwo": [
     {
       "digits": "28",
+      "mentions": 4
+    },
+    {
+      "digits": "27",
+      "mentions": 3
+    },
+    {
+      "digits": "42",
       "mentions": 3
     },
     {
       "digits": "57",
+      "mentions": 3
+    },
+    {
+      "digits": "74",
       "mentions": 3
     },
     {
@@ -189,23 +235,11 @@
       "mentions": 2
     },
     {
-      "digits": "27",
-      "mentions": 2
-    },
-    {
-      "digits": "42",
+      "digits": "24",
       "mentions": 2
     },
     {
       "digits": "51",
-      "mentions": 2
-    },
-    {
-      "digits": "52",
-      "mentions": 2
-    },
-    {
-      "digits": "58",
       "mentions": 2
     }
   ],
@@ -219,7 +253,15 @@
       "mentions": 1
     },
     {
+      "digits": "278",
+      "mentions": 1
+    },
+    {
       "digits": "283",
+      "mentions": 1
+    },
+    {
+      "digits": "284",
       "mentions": 1
     },
     {
@@ -231,23 +273,15 @@
       "mentions": 1
     },
     {
+      "digits": "428",
+      "mentions": 1
+    },
+    {
       "digits": "456",
       "mentions": 1
     },
     {
       "digits": "650",
-      "mentions": 1
-    },
-    {
-      "digits": "651",
-      "mentions": 1
-    },
-    {
-      "digits": "653",
-      "mentions": 1
-    },
-    {
-      "digits": "658",
       "mentions": 1
     }
   ]
