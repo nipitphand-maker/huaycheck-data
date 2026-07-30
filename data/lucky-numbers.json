@@ -2,9 +2,28 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-29T08:45:14.412Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-07-30T08:31:44.937Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เลขเด็ดงวดนี้ 1 ส.ค. 69 หวยดุ่ย ภรัญฯ เปิดครบทั้งเ",
+      "url": "https://lottery.kapook.com/view302777.html",
+      "lead": [],
+      "two": [
+        "32",
+        "61",
+        "30",
+        "60",
+        "10",
+        "11",
+        "21",
+        "43"
+      ],
+      "three": [
+        "032"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยเสือตกถัง",
@@ -194,6 +213,10 @@
   ],
   "topTwo": [
     {
+      "digits": "10",
+      "mentions": 3
+    },
+    {
       "digits": "28",
       "mentions": 3
     },
@@ -218,7 +241,7 @@
       "mentions": 2
     },
     {
-      "digits": "10",
+      "digits": "21",
       "mentions": 2
     },
     {
@@ -228,13 +251,13 @@
     {
       "digits": "27",
       "mentions": 2
-    },
-    {
-      "digits": "51",
-      "mentions": 2
     }
   ],
   "topThree": [
+    {
+      "digits": "032",
+      "mentions": 1
+    },
     {
       "digits": "256",
       "mentions": 1
@@ -269,10 +292,6 @@
     },
     {
       "digits": "650",
-      "mentions": 1
-    },
-    {
-      "digits": "651",
       "mentions": 1
     }
   ]
