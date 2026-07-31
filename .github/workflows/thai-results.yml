@@ -8,6 +8,14 @@ on:
     # what keep publish latency near the announcement.
     - cron: '*/5 7-11 1,2,16,17,30 * *'
   workflow_dispatch:
+    inputs:
+      draw_date:
+        description: 'Draw date to collect (YYYY-MM-DD). Blank = today in ICT.'
+        required: false
+      force:
+        description: 'Collect even if the date is not a scheduled draw day'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -24,6 +32,9 @@ jobs:
         run: npm test
       - name: Collect complete result
         run: node thai-results.mjs
+        env:
+          DRAW_DATE: ${{ inputs.draw_date }}
+          FORCE: ${{ inputs.force && '1' || '' }}
       - name: Commit changed result
         run: |
           if git diff --quiet -- data/thai-latest.json; then

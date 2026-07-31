@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { unlinkSync } from 'node:fs';
 
-import { chooseVerifiedResult, parseThairathPage, validateResult } from '../thai-results.mjs';
+import { chooseVerifiedResult, parseThairathPage, validateResult, writeIfNewer } from '../thai-results.mjs';
 
 function numbers(start, count, width = 6) {
   return Array.from({ length: count }, (_, index) => String(start + index).padStart(width, '0'));
@@ -71,4 +72,15 @@ test('parses Thairath prizes from the nested Next.js lottery items state', () =>
     } },
   })}</script>`;
   assert.equal(parseThairathPage(html, '2026-07-16').firstPrize, '639214');
+});
+
+test('does not rewrite a published result when only publishedAt moved', async (t) => {
+  const path = new URL(`./tmp-latest-${process.pid}.json`, import.meta.url);
+  const result = { schemaVersion: 1, drawDate: '2026-08-01', firstPrize: '123456', publishedAt: '2026-08-01T08:20:00.000Z' };
+  t.after(() => { try { unlinkSync(path); } catch {} });
+
+  assert.equal(writeIfNewer(result, path), true, 'first publish writes');
+  assert.equal(writeIfNewer({ ...result, publishedAt: '2026-08-01T08:25:00.000Z' }, path), false, 'same numbers must not rewrite');
+  assert.equal(writeIfNewer({ ...result, firstPrize: '654321' }, path), true, 'corrected numbers do rewrite');
+  assert.equal(writeIfNewer({ ...result, drawDate: '2026-07-16' }, path), false, 'never regress to an older draw');
 });

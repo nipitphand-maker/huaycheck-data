@@ -170,17 +170,30 @@ function readLatest(path) {
   try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return null; }
 }
 
+/** Everything that is actually a result — `publishedAt` is just when we looked. */
+function resultFingerprint(value) {
+  if (!value || typeof value !== 'object') return '';
+  const { publishedAt, ...rest } = value;
+  return JSON.stringify(rest);
+}
+
 export function writeIfNewer(result, path) {
   const previous = readLatest(path);
   if (previous?.drawDate && previous.drawDate > result.drawDate) return false;
-  const next = `${JSON.stringify(result, null, 2)}\n`;
-  if (previous && JSON.stringify(previous) === JSON.stringify(result)) return false;
-  writeFileSync(path, next);
+  // Compare on the fingerprint, not the whole object: once a draw is published,
+  // every remaining run in the window re-collects the same numbers with a fresh
+  // publishedAt, and comparing that would commit an identical result every
+  // 5 minutes for the rest of the afternoon.
+  if (previous && resultFingerprint(previous) === resultFingerprint(result)) return false;
+  writeFileSync(path, `${JSON.stringify(result, null, 2)}\n`);
   return true;
 }
 
 async function main() {
-  const drawDate = process.env.DRAW_DATE ?? todayInIct();
+  // `||`, not `??`: workflow_dispatch inputs arrive as an empty string on every
+  // scheduled run, and `'' ?? x` keeps the empty string — which would fail the
+  // draw-day check forever.
+  const drawDate = process.env.DRAW_DATE || todayInIct();
   if (process.env.FORCE !== '1' && !mayBeDrawDay(drawDate)) {
     console.log(`${drawDate} is not a scheduled collection day`);
     return;
