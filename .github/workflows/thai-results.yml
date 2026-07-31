@@ -1,0 +1,45 @@
+name: Collect verified Thai lottery results
+
+on:
+  schedule:
+    # 14:00-18:55 ICT on nominal, shifted, and special draw days (UTC below).
+    # Every 5 min with no gap at the hour turn: GitHub queues scheduled runs on
+    # a best-effort basis and routinely delays them, so the extra attempts are
+    # what keep publish latency near the announcement.
+    - cron: '*/5 7-11 1,2,16,17,30 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate collector
+        run: npm test
+      - name: Collect complete result
+        run: node thai-results.mjs
+      - name: Commit changed result
+        run: |
+          if git diff --quiet -- data/thai-latest.json; then
+            echo "Verified result unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/thai-latest.json
+          git commit -m "Update verified Thai result ($(date -u +%Y-%m-%dT%H:%MZ))"
+          # The lucky-numbers scraper commits to this same branch. A delayed run
+          # of it overlapping the draw window would make a plain push a
+          # non-fast-forward and drop the result until the next 5-min attempt.
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "Push rejected (attempt $attempt) — rebasing onto origin/main."
+            git pull --rebase origin main
+          done
+          git push

@@ -43,3 +43,24 @@ https://raw.githubusercontent.com/nipitphand-maker/huaycheck-data/main/data/luck
   next draw haven't been published yet.
 
 Run locally: `node scrape.mjs` (Node 20+, no dependencies).
+
+## Verified Thai results
+
+`data/thai-latest.json` is the app-controlled, complete-result feed consumed
+before direct webpage scrapers:
+
+```
+https://raw.githubusercontent.com/nipitphand-maker/huaycheck-data/main/data/thai-latest.json
+```
+
+The `Collect verified Thai lottery results` workflow runs every five minutes in
+the 14:15-17:55 ICT draw window. It parses Sanook rendered result cards and
+Thairath's server-rendered Next.js result state independently, validates every
+prize count and digit width, and only publishes a complete result. When both
+sources are complete, the first prize and back-two result must agree.
+
+For an incident, open the workflow in GitHub Actions and use **Run workflow**.
+If both sites changed at once, a maintainer may place a fully validated result
+in `data/thai-override.json` and set `enabled` to `true`; disable it again once
+the collector is repaired. The app rejects malformed, partial, or wrong-date
+override data.
