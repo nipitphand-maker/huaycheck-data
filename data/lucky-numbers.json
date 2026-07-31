@@ -2,9 +2,28 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-30T08:31:44.937Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-07-31T08:54:01.380Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เจ๊นุ๊ก บารมีมหาเฮง เคาะเลขเด็ดงวดนี้ 1 ส.ค. 69 จั",
+      "url": "https://lottery.kapook.com/view302799.html",
+      "lead": [],
+      "two": [
+        "34",
+        "36",
+        "37",
+        "39",
+        "10",
+        "11",
+        "04",
+        "31"
+      ],
+      "three": [
+        "374"
+      ]
+    },
     {
       "site": "kapook",
       "name": "เลขเด็ดงวดนี้ 1 ส.ค. 69 หวยดุ่ย ภรัญฯ เปิดครบทั้งเ",
@@ -169,13 +188,13 @@
       "three": []
     },
     {
-      "site": "sanook",
+      "site": "kapook",
       "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9900966/",
+      "url": "https://lottery.kapook.com/view302660.html",
       "lead": [
+        "4",
         "7",
         "2",
-        "4",
         "9"
       ],
       "two": [
@@ -186,8 +205,7 @@
         "24",
         "28",
         "94",
-        "98",
-        "69"
+        "98"
       ],
       "three": []
     },
@@ -209,12 +227,28 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "มัดรวมเลขเด็ดโค้งสุดท้าย งวด 1 ส.ค. 69 กุ้ง-จ๊ะ-บอ",
+      "url": "https://news.sanook.com/9901470/",
+      "lead": [
+        "12",
+        "67",
+        "76",
+        "78",
+        "82",
+        "37",
+        "36"
+      ],
+      "two": [],
+      "three": []
     }
   ],
   "topTwo": [
     {
       "digits": "10",
-      "mentions": 3
+      "mentions": 4
     },
     {
       "digits": "28",
@@ -233,6 +267,10 @@
       "mentions": 3
     },
     {
+      "digits": "04",
+      "mentions": 2
+    },
+    {
       "digits": "07",
       "mentions": 2
     },
@@ -241,15 +279,11 @@
       "mentions": 2
     },
     {
+      "digits": "11",
+      "mentions": 2
+    },
+    {
       "digits": "21",
-      "mentions": 2
-    },
-    {
-      "digits": "24",
-      "mentions": 2
-    },
-    {
-      "digits": "27",
       "mentions": 2
     }
   ],
@@ -283,15 +317,15 @@
       "mentions": 1
     },
     {
+      "digits": "374",
+      "mentions": 1
+    },
+    {
       "digits": "428",
       "mentions": 1
     },
     {
       "digits": "456",
-      "mentions": 1
-    },
-    {
-      "digits": "650",
       "mentions": 1
     }
   ]
