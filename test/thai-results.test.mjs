@@ -378,3 +378,62 @@ test('treats non-array parsed prize fields as parser error rather than waiting',
     /parser error/,
   );
 });
+
+test('rejects a wrong present adjacent prize when its positional peer is missing', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => { throw new Error('timeout'); },
+        thairath: async () => thairathPage(result, { adjacentToFirst: ['000000'] }),
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    (error) => {
+      assert.match(error.message, /all sources failed/);
+      assert.match(error.message, /thairath: parser_error/);
+      return true;
+    },
+  );
+});
+
+test('rejects an impossible complete adjacent pair when first prize is absent', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => { throw new Error('timeout'); },
+        thairath: async () => thairathPage(result, {
+          firstPrize: [],
+          adjacentToFirst: ['639213', '639216'],
+        }),
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    (error) => {
+      assert.match(error.message, /all sources failed/);
+      assert.match(error.message, /thairath: parser_error/);
+      return true;
+    },
+  );
+});
+
+test('waits on a coherent complete adjacent pair when first prize is absent', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  const outcome = await collectVerifiedResult(
+    '2026-08-01',
+    fetchBySource({
+      sanook: async () => { throw new Error('timeout'); },
+      thairath: async () => thairathPage(result, {
+        firstPrize: [],
+        adjacentToFirst: ['639213', '639215'],
+      }),
+    }),
+    new Date('2026-08-01T10:59:59.000Z'),
+  );
+
+  assert.equal(outcome.status, 'waiting');
+  assert.deepEqual(outcome.diagnostics.map((diagnostic) => diagnostic.status), ['unavailable', 'partial']);
+});

@@ -218,10 +218,16 @@ function classifyParsedCandidate(candidate, drawDate, source) {
     if (values.length > 0) recognizablePrizeSlot = true;
   }
 
-  if (candidate.firstPrize !== '' && candidate.adjacentToFirst.length === 2) {
+  if (candidate.firstPrize !== '') {
     const [previous, next] = computedAdjacent(candidate.firstPrize);
-    if (candidate.adjacentToFirst[0] !== previous || candidate.adjacentToFirst[1] !== next) {
+    if (candidate.adjacentToFirst.some((value, index) => value !== [previous, next][index])) {
       return { status: 'parser_error', message: 'adjacent prizes do not surround first prize' };
+    }
+  } else if (candidate.adjacentToFirst.length === 2) {
+    const inferredFirst = String(Number(candidate.adjacentToFirst[0]) + 1).padStart(6, '0');
+    const [previous, next] = computedAdjacent(inferredFirst);
+    if (!isDigits(inferredFirst, 6) || candidate.adjacentToFirst[0] !== previous || candidate.adjacentToFirst[1] !== next) {
+      return { status: 'parser_error', message: 'adjacent prizes cannot surround a first prize' };
     }
   }
   if (!recognizablePrizeSlot) return { status: 'parser_error', message: 'no recognizable lottery structure' };
