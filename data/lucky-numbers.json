@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-08-01T03:16:55.085Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-08-01T08:25:18.584Z",
+  "sourceCount": 8,
   "sources": [
     {
       "site": "kapook",
@@ -202,71 +202,12 @@
         "49"
       ],
       "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวย AI ส่องเลขเด็ดงวดนี้ 1/8/69 สถิติหวยย้อนหลัง 1",
-      "url": "https://news.sanook.com/9901578/",
-      "lead": [
-        "2",
-        "7",
-        "8",
-        "10"
-      ],
-      "two": [
-        "27",
-        "72",
-        "85",
-        "91",
-        "06",
-        "10",
-        "87",
-        "07",
-        "12",
-        "60",
-        "93",
-        "78",
-        "58",
-        "19"
-      ],
-      "three": [
-        "387",
-        "077",
-        "972",
-        "865",
-        "391",
-        "785",
-        "298",
-        "318",
-        "602",
-        "530"
-      ]
-    },
-    {
-      "site": "sanook",
-      "name": "มัดรวมเลขเด็ดโค้งสุดท้าย งวด 1 ส.ค. 69 กุ้ง-จ๊ะ-บอ",
-      "url": "https://news.sanook.com/9901470/",
-      "lead": [
-        "12",
-        "67",
-        "76",
-        "78",
-        "82",
-        "37",
-        "36"
-      ],
-      "two": [],
-      "three": []
     }
   ],
   "topTwo": [
     {
       "digits": "10",
-      "mentions": 5
-    },
-    {
-      "digits": "27",
-      "mentions": 3
+      "mentions": 4
     },
     {
       "digits": "42",
@@ -277,37 +218,37 @@
       "mentions": 3
     },
     {
-      "digits": "58",
-      "mentions": 3
-    },
-    {
-      "digits": "60",
-      "mentions": 3
-    },
-    {
-      "digits": "72",
-      "mentions": 3
-    },
-    {
       "digits": "74",
       "mentions": 3
     },
     {
-      "digits": "78",
-      "mentions": 3
+      "digits": "08",
+      "mentions": 2
     },
     {
-      "digits": "87",
-      "mentions": 3
+      "digits": "11",
+      "mentions": 2
+    },
+    {
+      "digits": "21",
+      "mentions": 2
+    },
+    {
+      "digits": "27",
+      "mentions": 2
+    },
+    {
+      "digits": "28",
+      "mentions": 2
+    },
+    {
+      "digits": "51",
+      "mentions": 2
     }
   ],
   "topThree": [
     {
       "digits": "032",
-      "mentions": 1
-    },
-    {
-      "digits": "077",
       "mentions": 1
     },
     {
@@ -335,11 +276,15 @@
       "mentions": 1
     },
     {
-      "digits": "298",
+      "digits": "374",
       "mentions": 1
     },
     {
-      "digits": "318",
+      "digits": "382",
+      "mentions": 1
+    },
+    {
+      "digits": "428",
       "mentions": 1
     }
   ]
