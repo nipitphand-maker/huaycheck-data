@@ -2,9 +2,25 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-01",
   "drawDateThai": "1 สิงหาคม 2569",
-  "generatedAt": "2026-07-31T14:14:34.171Z",
-  "sourceCount": 11,
+  "generatedAt": "2026-08-01T03:16:55.085Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเจ๊ฟองเบียร์",
+      "url": "https://lottery.kapook.com/view302828.html",
+      "lead": [],
+      "two": [
+        "81",
+        "82",
+        "87"
+      ],
+      "three": [
+        "985",
+        "382",
+        "781"
+      ]
+    },
     {
       "site": "kapook",
       "name": "เจ๊นุ๊ก บารมีมหาเฮง เคาะเลขเด็ดงวดนี้ 1 ส.ค. 69 จั",
@@ -188,47 +204,6 @@
       "three": []
     },
     {
-      "site": "kapook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://lottery.kapook.com/view302660.html",
-      "lead": [
-        "4",
-        "7",
-        "2",
-        "9"
-      ],
-      "two": [
-        "04",
-        "64",
-        "07",
-        "67",
-        "24",
-        "28",
-        "94",
-        "98"
-      ],
-      "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "เปิด 10 อันดับหวยแม่ทำเนียน เลขเด็ดงวดนี้ 1 ส.ค. 6",
-      "url": "https://lottery.kapook.com/view302648.html",
-      "lead": [
-        "10",
-        "28",
-        "74",
-        "12",
-        "94",
-        "29",
-        "75",
-        "18",
-        "93",
-        "04"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
       "site": "sanook",
       "name": "หวย AI ส่องเลขเด็ดงวดนี้ 1/8/69 สถิติหวยย้อนหลัง 1",
       "url": "https://news.sanook.com/9901578/",
@@ -290,15 +265,7 @@
       "mentions": 5
     },
     {
-      "digits": "07",
-      "mentions": 3
-    },
-    {
       "digits": "27",
-      "mentions": 3
-    },
-    {
-      "digits": "28",
       "mentions": 3
     },
     {
@@ -323,6 +290,14 @@
     },
     {
       "digits": "74",
+      "mentions": 3
+    },
+    {
+      "digits": "78",
+      "mentions": 3
+    },
+    {
+      "digits": "87",
       "mentions": 3
     }
   ],
