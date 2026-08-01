@@ -255,6 +255,56 @@ function formatDiagnostics(outcomes) {
   return outcomes.map(({ source, status, message }) => `${source}: ${status}${message ? ` (${message})` : ''}`).join('; ');
 }
 
+function partialResultMismatch(source, reason) {
+  throw new Error(`source partial result mismatch: ${source}: ${reason}`);
+}
+
+function assertPartialResultMatches(completeResult, { candidate, source }) {
+  if (!candidate || typeof candidate !== 'object' || candidate.schemaVersion !== 1) {
+    partialResultMismatch(source, 'invalid schema metadata');
+  }
+  if (candidate.drawDate !== completeResult.drawDate) {
+    partialResultMismatch(source, 'draw date differs');
+  }
+  if (candidate.source !== source || !Array.isArray(candidate.sources) || candidate.sources.length !== 1 || candidate.sources[0] !== source) {
+    partialResultMismatch(source, 'source metadata differs');
+  }
+
+  const scalarSlots = [
+    ['firstPrize', 6],
+    ['backTwoDigits', 2],
+  ];
+  for (const [field, width] of scalarSlots) {
+    const value = candidate[field];
+    if (value === '') continue;
+    if (!isDigits(value, width) || value !== completeResult[field]) {
+      partialResultMismatch(source, `${field} differs`);
+    }
+  }
+
+  const listSlots = [
+    ['adjacentToFirst', 6],
+    ['secondPrizes', 6],
+    ['thirdPrizes', 6],
+    ['fourthPrizes', 6],
+    ['fifthPrizes', 6],
+    ['frontThreeDigits', 3],
+    ['backThreeDigits', 3],
+  ];
+  for (const [field, width] of listSlots) {
+    const values = candidate[field];
+    const completeValues = completeResult[field];
+    if (!Array.isArray(values) || values.length > completeValues.length) {
+      partialResultMismatch(source, `invalid ${field} count`);
+    }
+    for (let index = 0; index < values.length; index += 1) {
+      if (!isDigits(values[index], width) || values[index] !== completeValues[index]) {
+        partialResultMismatch(source, `${field}[${index}] differs`);
+      }
+    }
+  }
+}
+
 export async function collectVerifiedResult(drawDate, fetchPage = fetchHtml, now = () => new Date()) {
   const sanookUrl = `https://news.sanook.com/lotto/check/${isoToSanookSlug(drawDate)}/`;
   const thairathUrl = `https://www.thairath.co.th/lottery/check?date=${drawDate}`;
@@ -264,7 +314,13 @@ export async function collectVerifiedResult(drawDate, fetchPage = fetchHtml, now
   ]);
   const collectedAt = typeof now === 'function' ? now() : now;
   const candidates = outcomes.flatMap((outcome) => outcome.status === 'complete' ? [outcome.candidate] : []);
-  if (candidates.length > 0) return { status: 'complete', result: chooseVerifiedResult(candidates, collectedAt) };
+  if (candidates.length > 0) {
+    const result = chooseVerifiedResult(candidates, collectedAt);
+    for (const outcome of outcomes.filter((outcome) => outcome.status === 'partial')) {
+      assertPartialResultMatches(result, outcome);
+    }
+    return { status: 'complete', result };
+  }
 
   if (outcomes.some((outcome) => outcome.status === 'partial')) {
     const cutoff = new Date(`${drawDate}T11:00:00.000Z`);

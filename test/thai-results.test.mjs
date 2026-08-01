@@ -288,6 +288,81 @@ test('returns a complete result when one complete source is available', async ()
   assert.deepEqual(outcome.result.sources, ['sanook']);
 });
 
+test('publishes a complete source when a consistent peer is partial', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  const outcome = await collectVerifiedResult(
+    '2026-08-01',
+    fetchBySource({
+      sanook: async () => sanookPage(result),
+      thairath: async () => thairathPage(result, { fifthPrizes: result.fifthPrizes.slice(0, 99) }),
+    }),
+    new Date('2026-08-01T10:59:59.000Z'),
+  );
+
+  assert.equal(outcome.status, 'complete');
+  assert.deepEqual(outcome.result.sources, ['sanook']);
+});
+
+test('rejects a partial peer with a conflicting first prize', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => sanookPage(result),
+        thairath: async () => thairathPage(result, {
+          firstPrize: ['111111'],
+          adjacentToFirst: ['111110', '111112'],
+          fifthPrizes: result.fifthPrizes.slice(0, 99),
+        }),
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    /source partial result mismatch/,
+  );
+});
+
+test('rejects a partial peer with a conflicting later array element', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  const secondPrizes = [...result.secondPrizes];
+  secondPrizes[4] = '999999';
+
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => sanookPage(result),
+        thairath: async () => thairathPage(result, {
+          secondPrizes,
+          fifthPrizes: result.fifthPrizes.slice(0, 99),
+        }),
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    /source partial result mismatch/,
+  );
+});
+
+test('ignores missing slots from an otherwise consistent partial peer', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  const outcome = await collectVerifiedResult(
+    '2026-08-01',
+    fetchBySource({
+      sanook: async () => sanookPage(result),
+      thairath: async () => thairathPage(result, {
+        firstPrize: [],
+        adjacentToFirst: [],
+        secondPrizes: [],
+        backTwoDigits: [],
+      }),
+    }),
+    new Date('2026-08-01T10:59:59.000Z'),
+  );
+
+  assert.equal(outcome.status, 'complete');
+  assert.deepEqual(outcome.result.sources, ['sanook']);
+});
+
 test('returns a complete source when the other source has a malformed prize shape', async () => {
   const result = completeResult({ drawDate: '2026-08-01' });
   const outcome = await collectVerifiedResult(
