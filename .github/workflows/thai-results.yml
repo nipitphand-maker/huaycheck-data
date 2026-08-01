@@ -21,6 +21,8 @@ permissions:
   contents: write
 
 concurrency:
+  # Serialize collectors; GitHub keeps at most one pending run per group, and
+  # a newer pending run may replace an older one. Running jobs are not cancelled.
   group: verified-thai-results
   cancel-in-progress: false
 
@@ -52,6 +54,7 @@ jobs:
           # The lucky-numbers scraper commits to this same branch. A delayed run
           # of it overlapping the draw window would make a plain push a
           # non-fast-forward and drop the result until the next 5-min attempt.
+          # This loop is commit-conflict recovery, not source-collection retry.
           for attempt in 1 2 3; do
             git push && exit 0
             echo "Push rejected (attempt $attempt) — rebasing onto origin/main."
