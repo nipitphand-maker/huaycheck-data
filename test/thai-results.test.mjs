@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync, unlinkSync } from 'node:fs';
 
-import { chooseVerifiedResult, parseSanookPage, parseThairathPage, validateResult, writeIfNewer } from '../thai-results.mjs';
+import { chooseVerifiedResult, collectVerifiedResult, parseSanookPage, parseThairathPage, validateResult, writeIfNewer } from '../thai-results.mjs';
 
 function numbers(start, count, width = 6) {
   return Array.from({ length: count }, (_, index) => String(start + index).padStart(width, '0'));
@@ -26,6 +26,30 @@ function completeResult(overrides = {}) {
     sources: ['sanook'],
     ...overrides,
   };
+}
+
+function lotteryNumbers(numbers) {
+  return numbers.map((number) => `<span class="lotto__number">${number}</span>`).join('');
+}
+
+function sanookPage(result, { includePrizes = true } = {}) {
+  const slug = '01082569';
+  const prizes = includePrizes ? `
+    <span class="lotto__number lotto__number--first">${result.firstPrize}</span>
+    เลขหน้า 3 ตัว ${lotteryNumbers(result.frontThreeDigits)}
+    เลขท้าย 3 ตัว ${lotteryNumbers(result.backThreeDigits)}
+    เลขท้าย 2 ตัว ${lotteryNumbers([result.backTwoDigits])}
+    lottocheck__sec--nearby ${lotteryNumbers(result.adjacentToFirst)}
+    รางวัลที่ 2 มี ${lotteryNumbers(result.secondPrizes)}
+    รางวัลที่ 3 มี ${lotteryNumbers(result.thirdPrizes)}
+    รางวัลที่ 4 มี ${lotteryNumbers(result.fourthPrizes)}
+    รางวัลที่ 5 มี ${lotteryNumbers(result.fifthPrizes)}
+  ` : '<span class="lotto__number lotto__number--first">639214</span>';
+  return `<link rel="canonical" href="https://news.sanook.com/lotto/check/${slug}/"><main>${prizes}</main>`;
+}
+
+function fetchBySource({ sanook, thairath }) {
+  return (url) => url.includes('sanook') ? sanook() : thairath();
 }
 
 test('accepts a complete result with exact prize counts and digit widths', () => {
@@ -150,4 +174,90 @@ test('does not rewrite when an invalid payload is provided', async (t) => {
     /invalid result/,
   );
   assert.equal(readFileSync(path, 'utf8'), previousContents, 'invalid payload must not rewrite');
+});
+
+test('returns waiting for a requested-date partial source before 18:00 ICT', async () => {
+  const outcome = await collectVerifiedResult(
+    '2026-08-01',
+    fetchBySource({
+      sanook: async () => sanookPage(completeResult({ drawDate: '2026-08-01' }), { includePrizes: false }),
+      thairath: async () => { throw new Error('timeout'); },
+    }),
+    new Date('2026-08-01T10:59:59.000Z'),
+  );
+
+  assert.equal(outcome.status, 'waiting');
+  assert.deepEqual(outcome.diagnostics.map((diagnostic) => diagnostic.status), ['partial', 'unavailable']);
+  assert.match(outcome.diagnostics[1].message, /timeout/);
+});
+
+test('throws for a requested-date partial source at 18:00 ICT', async () => {
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => sanookPage(completeResult({ drawDate: '2026-08-01' }), { includePrizes: false }),
+        thairath: async () => { throw new Error('timeout'); },
+      }),
+      new Date('2026-08-01T11:00:00.000Z'),
+    ),
+    /18:00 ICT/,
+  );
+});
+
+test('throws all sources unavailable when both fetches reject', async () => {
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => { throw new Error('sanook connection reset'); },
+        thairath: async () => { throw new Error('thairath timeout'); },
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    /all sources unavailable/,
+  );
+});
+
+test('throws parser error for malformed source pages', async () => {
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => '<main>not a lottery page</main>',
+        thairath: async () => '<main>not a lottery page</main>',
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    /parser error/,
+  );
+});
+
+test('throws parser error for a dated page with no recognizable lottery structure', async () => {
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => '<link rel="canonical" href="https://news.sanook.com/lotto/check/01082569/"><main></main>',
+        thairath: async () => '<main>not a lottery page</main>',
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    /parser error/,
+  );
+});
+
+test('returns a complete result when one complete source is available', async () => {
+  const outcome = await collectVerifiedResult(
+    '2026-08-01',
+    fetchBySource({
+      sanook: async () => sanookPage(completeResult({ drawDate: '2026-08-01' })),
+      thairath: async () => { throw new Error('timeout'); },
+    }),
+    new Date('2026-08-01T10:59:59.000Z'),
+  );
+
+  assert.equal(outcome.status, 'complete');
+  assert.equal(outcome.result.firstPrize, '639214');
+  assert.deepEqual(outcome.result.sources, ['sanook']);
 });

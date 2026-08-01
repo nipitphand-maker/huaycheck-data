@@ -171,15 +171,76 @@ async function fetchHtml(url) {
   return response.text();
 }
 
+function errorMessage(error) {
+  return error instanceof Error ? error.message : String(error);
+}
+
+function hasRecognizableLotteryStructure(candidate) {
+  const numbers = [
+    candidate.firstPrize,
+    candidate.backTwoDigits,
+    ...(candidate.adjacentToFirst ?? []),
+    ...(candidate.secondPrizes ?? []),
+    ...(candidate.thirdPrizes ?? []),
+    ...(candidate.fourthPrizes ?? []),
+    ...(candidate.fifthPrizes ?? []),
+    ...(candidate.frontThreeDigits ?? []),
+    ...(candidate.backThreeDigits ?? []),
+  ];
+  return numbers.some((number) => typeof number === 'string' && /^\d+$/.test(number));
+}
+
+async function collectSourceOutcome({ source, url, parse }, drawDate, fetchPage) {
+  let html;
+  try {
+    html = await fetchPage(url);
+  } catch (error) {
+    return { status: 'unavailable', source, message: errorMessage(error) };
+  }
+
+  let candidate;
+  try {
+    candidate = parse(html, drawDate);
+  } catch (error) {
+    return { status: 'parser_error', source, message: errorMessage(error) };
+  }
+
+  const validation = validateResult(candidate);
+  if (validation.ok) return { status: 'complete', source, candidate };
+  if (hasRecognizableLotteryStructure(candidate)) {
+    return { status: 'partial', source, candidate, message: validation.reason };
+  }
+  return { status: 'parser_error', source, message: `no recognizable lottery structure: ${validation.reason}` };
+}
+
+function formatDiagnostics(outcomes) {
+  return outcomes.map(({ source, status, message }) => `${source}: ${status}${message ? ` (${message})` : ''}`).join('; ');
+}
+
 export async function collectVerifiedResult(drawDate, fetchPage = fetchHtml, now = new Date()) {
   const sanookUrl = `https://news.sanook.com/lotto/check/${isoToSanookSlug(drawDate)}/`;
   const thairathUrl = `https://www.thairath.co.th/lottery/check?date=${drawDate}`;
-  const settled = await Promise.allSettled([
-    fetchPage(sanookUrl).then((html) => parseSanookPage(html, drawDate)),
-    fetchPage(thairathUrl).then((html) => parseThairathPage(html, drawDate)),
+  const outcomes = await Promise.all([
+    collectSourceOutcome({ source: 'sanook', url: sanookUrl, parse: parseSanookPage }, drawDate, fetchPage),
+    collectSourceOutcome({ source: 'thairath', url: thairathUrl, parse: parseThairathPage }, drawDate, fetchPage),
   ]);
-  const candidates = settled.flatMap((item) => item.status === 'fulfilled' ? [item.value] : []);
-  return chooseVerifiedResult(candidates, now);
+  const candidates = outcomes.flatMap((outcome) => outcome.status === 'complete' ? [outcome.candidate] : []);
+  if (candidates.length > 0) return { status: 'complete', result: chooseVerifiedResult(candidates, now) };
+
+  if (outcomes.some((outcome) => outcome.status === 'partial')) {
+    const cutoff = new Date(`${drawDate}T11:00:00.000Z`);
+    if (now < cutoff) return { status: 'waiting', diagnostics: outcomes };
+    throw new Error(`incomplete source result after 18:00 ICT: ${formatDiagnostics(outcomes)}`);
+  }
+
+  const diagnostics = formatDiagnostics(outcomes);
+  if (outcomes.every((outcome) => outcome.status === 'unavailable')) {
+    throw new Error(`all sources unavailable: ${diagnostics}`);
+  }
+  if (outcomes.every((outcome) => outcome.status === 'parser_error')) {
+    throw new Error(`parser error: ${diagnostics}`);
+  }
+  throw new Error(`all sources failed: ${diagnostics}`);
 }
 
 function todayInIct(now = new Date()) {
@@ -222,9 +283,13 @@ async function main() {
     console.log(`${drawDate} is not a scheduled collection day`);
     return;
   }
-  const result = await collectVerifiedResult(drawDate);
-  const changed = writeIfNewer(result, new URL('./data/thai-latest.json', import.meta.url));
-  console.log(changed ? `published ${result.drawDate} from ${result.sources.join(', ')}` : 'verified result unchanged');
+  const outcome = await collectVerifiedResult(drawDate);
+  if (outcome.status === 'waiting') {
+    console.log(`Waiting for complete result: ${formatDiagnostics(outcome.diagnostics)}`);
+    return;
+  }
+  const changed = writeIfNewer(outcome.result, new URL('./data/thai-latest.json', import.meta.url));
+  console.log(changed ? `published ${outcome.result.drawDate} from ${outcome.result.sources.join(', ')}` : 'verified result unchanged');
 }
 
 // `import.meta.main` only exists from Node 22.16 / 24.2 — on the Node 20 runner
