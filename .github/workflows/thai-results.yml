@@ -20,6 +20,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: verified-thai-results
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
