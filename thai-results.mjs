@@ -175,19 +175,58 @@ function errorMessage(error) {
   return error instanceof Error ? error.message : String(error);
 }
 
-function hasRecognizableLotteryStructure(candidate) {
-  const numbers = [
-    candidate.firstPrize,
-    candidate.backTwoDigits,
-    ...(candidate.adjacentToFirst ?? []),
-    ...(candidate.secondPrizes ?? []),
-    ...(candidate.thirdPrizes ?? []),
-    ...(candidate.fourthPrizes ?? []),
-    ...(candidate.fifthPrizes ?? []),
-    ...(candidate.frontThreeDigits ?? []),
-    ...(candidate.backThreeDigits ?? []),
+function classifyParsedCandidate(candidate, drawDate, source) {
+  const validation = validateResult(candidate);
+  if (validation.ok) return { status: 'complete', candidate };
+  if (!candidate || typeof candidate !== 'object' || candidate.schemaVersion !== 1 || candidate.drawDate !== drawDate) {
+    return { status: 'parser_error', message: validation.reason };
+  }
+  if (candidate.source !== source || !Array.isArray(candidate.sources) || candidate.sources.length !== 1 || candidate.sources[0] !== source) {
+    return { status: 'parser_error', message: 'invalid source metadata' };
+  }
+
+  let missingPrizeSlot = false;
+  let recognizablePrizeSlot = false;
+  const scalarSlots = [
+    ['first prize', candidate.firstPrize, 6],
+    ['back-two prize', candidate.backTwoDigits, 2],
   ];
-  return numbers.some((number) => typeof number === 'string' && /^\d+$/.test(number));
+  for (const [name, value, width] of scalarSlots) {
+    if (value === '') {
+      missingPrizeSlot = true;
+      continue;
+    }
+    if (!isDigits(value, width)) return { status: 'parser_error', message: `invalid ${name}` };
+    recognizablePrizeSlot = true;
+  }
+
+  const listSlots = [
+    ['adjacent prizes', candidate.adjacentToFirst, 2, 6],
+    ['second prizes', candidate.secondPrizes, PRIZE_COUNTS.secondPrizes, 6],
+    ['third prizes', candidate.thirdPrizes, PRIZE_COUNTS.thirdPrizes, 6],
+    ['fourth prizes', candidate.fourthPrizes, PRIZE_COUNTS.fourthPrizes, 6],
+    ['fifth prizes', candidate.fifthPrizes, PRIZE_COUNTS.fifthPrizes, 6],
+    ['front-three prizes', candidate.frontThreeDigits, 2, 3],
+    ['back-three prizes', candidate.backThreeDigits, 2, 3],
+  ];
+  for (const [name, values, count, width] of listSlots) {
+    if (!Array.isArray(values)) return { status: 'parser_error', message: `invalid ${name} shape` };
+    if (values.length > count || !values.every((value) => isDigits(value, width))) {
+      return { status: 'parser_error', message: `invalid ${name}` };
+    }
+    if (values.length < count) missingPrizeSlot = true;
+    if (values.length > 0) recognizablePrizeSlot = true;
+  }
+
+  if (candidate.firstPrize !== '' && candidate.adjacentToFirst.length === 2) {
+    const [previous, next] = computedAdjacent(candidate.firstPrize);
+    if (candidate.adjacentToFirst[0] !== previous || candidate.adjacentToFirst[1] !== next) {
+      return { status: 'parser_error', message: 'adjacent prizes do not surround first prize' };
+    }
+  }
+  if (!recognizablePrizeSlot) return { status: 'parser_error', message: 'no recognizable lottery structure' };
+  if (missingPrizeSlot) return { status: 'partial', candidate, message: validation.reason };
+  return { status: 'parser_error', message: validation.reason };
 }
 
 async function collectSourceOutcome({ source, url, parse }, drawDate, fetchPage) {
@@ -198,38 +237,32 @@ async function collectSourceOutcome({ source, url, parse }, drawDate, fetchPage)
     return { status: 'unavailable', source, message: errorMessage(error) };
   }
 
-  let candidate;
   try {
-    candidate = parse(html, drawDate);
+    const classification = classifyParsedCandidate(parse(html, drawDate), drawDate, source);
+    return { ...classification, source };
   } catch (error) {
     return { status: 'parser_error', source, message: errorMessage(error) };
   }
-
-  const validation = validateResult(candidate);
-  if (validation.ok) return { status: 'complete', source, candidate };
-  if (hasRecognizableLotteryStructure(candidate)) {
-    return { status: 'partial', source, candidate, message: validation.reason };
-  }
-  return { status: 'parser_error', source, message: `no recognizable lottery structure: ${validation.reason}` };
 }
 
 function formatDiagnostics(outcomes) {
   return outcomes.map(({ source, status, message }) => `${source}: ${status}${message ? ` (${message})` : ''}`).join('; ');
 }
 
-export async function collectVerifiedResult(drawDate, fetchPage = fetchHtml, now = new Date()) {
+export async function collectVerifiedResult(drawDate, fetchPage = fetchHtml, now = () => new Date()) {
   const sanookUrl = `https://news.sanook.com/lotto/check/${isoToSanookSlug(drawDate)}/`;
   const thairathUrl = `https://www.thairath.co.th/lottery/check?date=${drawDate}`;
   const outcomes = await Promise.all([
     collectSourceOutcome({ source: 'sanook', url: sanookUrl, parse: parseSanookPage }, drawDate, fetchPage),
     collectSourceOutcome({ source: 'thairath', url: thairathUrl, parse: parseThairathPage }, drawDate, fetchPage),
   ]);
+  const collectedAt = typeof now === 'function' ? now() : now;
   const candidates = outcomes.flatMap((outcome) => outcome.status === 'complete' ? [outcome.candidate] : []);
-  if (candidates.length > 0) return { status: 'complete', result: chooseVerifiedResult(candidates, now) };
+  if (candidates.length > 0) return { status: 'complete', result: chooseVerifiedResult(candidates, collectedAt) };
 
   if (outcomes.some((outcome) => outcome.status === 'partial')) {
     const cutoff = new Date(`${drawDate}T11:00:00.000Z`);
-    if (now < cutoff) return { status: 'waiting', diagnostics: outcomes };
+    if (collectedAt < cutoff) return { status: 'waiting', diagnostics: outcomes };
     throw new Error(`incomplete source result after 18:00 ICT: ${formatDiagnostics(outcomes)}`);
   }
 

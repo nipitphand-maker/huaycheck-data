@@ -33,7 +33,8 @@ function lotteryNumbers(numbers) {
 }
 
 function sanookPage(result, { includePrizes = true } = {}) {
-  const slug = '01082569';
+  const [year, month, day] = result.drawDate.split('-');
+  const slug = `${day}${month}${Number(year) + 543}`;
   const prizes = includePrizes ? `
     <span class="lotto__number lotto__number--first">${result.firstPrize}</span>
     เลขหน้า 3 ตัว ${lotteryNumbers(result.frontThreeDigits)}
@@ -46,6 +47,31 @@ function sanookPage(result, { includePrizes = true } = {}) {
     รางวัลที่ 5 มี ${lotteryNumbers(result.fifthPrizes)}
   ` : '<span class="lotto__number lotto__number--first">639214</span>';
   return `<link rel="canonical" href="https://news.sanook.com/lotto/check/${slug}/"><main>${prizes}</main>`;
+}
+
+function thairathPage(result, overrides = {}) {
+  const prizeData = {
+    firstPrize: [result.firstPrize],
+    secondPrizes: result.secondPrizes,
+    thirdPrizes: result.thirdPrizes,
+    fourthPrizes: result.fourthPrizes,
+    fifthPrizes: result.fifthPrizes,
+    backThreeDigits: result.backThreeDigits,
+    backTwoDigits: [result.backTwoDigits],
+    frontThreeDigits: result.frontThreeDigits,
+    adjacentToFirst: result.adjacentToFirst,
+    ...overrides,
+  };
+  return `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({
+    props: { initialState: {
+      common: { data: { canonical: `https://www.thairath.co.th/lottery/check?date=${result.drawDate}` } },
+      lottery: { data: { items: { dates: [{ str: result.drawDate }], prizes: {
+        1: { data: prizeData.firstPrize }, 2: { data: prizeData.secondPrizes }, 3: { data: prizeData.thirdPrizes },
+        4: { data: prizeData.fourthPrizes }, 5: { data: prizeData.fifthPrizes }, 6: { data: prizeData.backThreeDigits },
+        7: { data: prizeData.backTwoDigits }, 10: { data: prizeData.frontThreeDigits }, 11: { data: prizeData.adjacentToFirst },
+      } } } },
+    } },
+  })}</script>`;
 }
 
 function fetchBySource({ sanook, thairath }) {
@@ -260,4 +286,95 @@ test('returns a complete result when one complete source is available', async ()
   assert.equal(outcome.status, 'complete');
   assert.equal(outcome.result.firstPrize, '639214');
   assert.deepEqual(outcome.result.sources, ['sanook']);
+});
+
+test('returns a complete source when the other source has a malformed prize shape', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  const outcome = await collectVerifiedResult(
+    '2026-08-01',
+    fetchBySource({
+      sanook: async () => sanookPage(result),
+      thairath: async () => thairathPage(result, { adjacentToFirst: {} }),
+    }),
+    new Date('2026-08-01T10:59:59.000Z'),
+  );
+
+  assert.equal(outcome.status, 'complete');
+  assert.equal(outcome.result.firstPrize, '639214');
+});
+
+test('returns a complete source when the other source has an ordinary parser error', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  const outcome = await collectVerifiedResult(
+    '2026-08-01',
+    fetchBySource({
+      sanook: async () => sanookPage(result),
+      thairath: async () => '<main>not a lottery page</main>',
+    }),
+    new Date('2026-08-01T10:59:59.000Z'),
+  );
+
+  assert.equal(outcome.status, 'complete');
+  assert.deepEqual(outcome.result.sources, ['sanook']);
+});
+
+test('uses the post-collection clock for a historical draw cutoff', async () => {
+  const result = completeResult({ drawDate: '2026-07-16' });
+  let collectionFinished = false;
+  let clockCalls = 0;
+  const clock = () => {
+    clockCalls += 1;
+    assert.equal(collectionFinished, true, 'clock must be sampled after both source attempts');
+    return new Date('2026-07-16T11:00:00.000Z');
+  };
+
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-07-16',
+      fetchBySource({
+        sanook: async () => {
+          collectionFinished = true;
+          return sanookPage(result, { includePrizes: false });
+        },
+        thairath: async () => { throw new Error('timeout'); },
+      }),
+      clock,
+    ),
+    /18:00 ICT/,
+  );
+  assert.equal(clockCalls, 1);
+});
+
+test('treats a fully populated candidate with invalid adjacent prizes as parser error', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => { throw new Error('timeout'); },
+        thairath: async () => thairathPage(result, { adjacentToFirst: ['639212', '639215'] }),
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    (error) => {
+      assert.match(error.message, /all sources failed/);
+      assert.match(error.message, /thairath: parser_error/);
+      return true;
+    },
+  );
+});
+
+test('treats non-array parsed prize fields as parser error rather than waiting', async () => {
+  const result = completeResult({ drawDate: '2026-08-01' });
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-08-01',
+      fetchBySource({
+        sanook: async () => '<main>not a lottery page</main>',
+        thairath: async () => thairathPage(result, { secondPrizes: {} }),
+      }),
+      new Date('2026-08-01T10:59:59.000Z'),
+    ),
+    /parser error/,
+  );
 });
