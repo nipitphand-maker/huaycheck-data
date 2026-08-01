@@ -84,14 +84,33 @@ function isoToSanookSlug(isoDate) {
   return `${day}${month}${Number(year) + 543}`;
 }
 
+function linkAttribute(tag, name) {
+  const attribute = new RegExp(`\\s${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s"'=<>]+))`, 'i');
+  const match = tag.match(attribute);
+  return match?.[1] ?? match?.[2] ?? match?.[3] ?? '';
+}
+
+function sanookCanonicalUrl(html) {
+  const links = html.match(/<link\b(?:[^>"']|"[^"]*"|'[^']*')*>/gi) ?? [];
+  for (const link of links) {
+    const rel = linkAttribute(link, 'rel');
+    if (rel.split(/\s+/).some((token) => token.toLowerCase() === 'canonical')) {
+      return linkAttribute(link, 'href');
+    }
+  }
+  return '';
+}
+
 function publishedCandidate(data, source) {
   return { schemaVersion: 1, source, sources: [source], publishedAt: new Date().toISOString(), ...data };
 }
 
 /** Parse Sanook's rendered lottery cards, intentionally ignoring JSON-LD summaries. */
 export function parseSanookPage(html, drawDate) {
-  const canonical = html.match(/<link\b(?=[^>]*\brel=["']canonical["'])(?=[^>]*\bhref=["']([^"']+)["'])[^>]*>/i)?.[1] ?? '';
-  if (!canonical.includes(`/lotto/check/${isoToSanookSlug(drawDate)}/`)) {
+  const expectedPath = `/lotto/check/${isoToSanookSlug(drawDate)}/`;
+  let canonical;
+  try { canonical = new URL(sanookCanonicalUrl(html)); } catch { canonical = null; }
+  if (canonical?.origin !== 'https://news.sanook.com' || canonical.pathname !== expectedPath) {
     throw new Error(`sanook: requested ${drawDate} but page date differs`);
   }
   const page = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');

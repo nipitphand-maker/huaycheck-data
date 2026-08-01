@@ -99,6 +99,33 @@ test('Sanook rejects a page whose canonical URL has a previous draw date', () =>
   assert.throws(() => parseSanookPage(html, '2026-08-01'), /page date differs/);
 });
 
+test('Sanook rejects a stale canonical path with the requested path in its query', () => {
+  const html = '<link rel="canonical" href="https://news.sanook.com/lotto/check/16072569/?next=/lotto/check/01082569/">';
+
+  assert.throws(() => parseSanookPage(html, '2026-08-01'), /page date differs/);
+});
+
+test('Sanook rejects a canonical URL from a non-Sanook origin', () => {
+  const html = '<link rel="canonical" href="https://example.com/lotto/check/01082569/">';
+
+  assert.throws(() => parseSanookPage(html, '2026-08-01'), /page date differs/);
+});
+
+test('Sanook accepts canonical attribute variations', () => {
+  const canonicalUrls = [
+    '<link href = https://news.sanook.com/lotto/check/01082569/ rel = canonical>',
+    '<link data-kind="lottery" rel="alternate canonical" href="https://news.sanook.com/lotto/check/01082569/?ref=home">',
+  ];
+
+  for (const html of canonicalUrls) {
+    assert.equal(parseSanookPage(html, '2026-08-01').drawDate, '2026-08-01');
+  }
+});
+
+test('Sanook rejects a page without canonical metadata', () => {
+  assert.throws(() => parseSanookPage('<main></main>', '2026-08-01'), /page date differs/);
+});
+
 test('does not rewrite a published result when only publishedAt moved', async (t) => {
   const path = new URL(`./tmp-latest-${process.pid}.json`, import.meta.url);
   const result = completeResult({ drawDate: '2026-08-01', publishedAt: '2026-08-01T08:20:00.000Z' });
