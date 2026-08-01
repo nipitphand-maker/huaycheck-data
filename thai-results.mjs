@@ -51,9 +51,10 @@ export function validateResult(value) {
 export function chooseVerifiedResult(candidates, now = new Date()) {
   const complete = candidates.filter((candidate) => validateResult(candidate).ok);
   if (complete.length === 0) throw new Error('no complete valid source result');
-  const [first, second] = complete;
-  if (second && (second.drawDate !== first.drawDate || second.firstPrize !== first.firstPrize || second.backTwoDigits !== first.backTwoDigits)) {
-    throw new Error('source first prize mismatch');
+  const [first] = complete;
+  const fingerprint = canonicalResultFingerprint(first);
+  if (complete.some((candidate) => canonicalResultFingerprint(candidate) !== fingerprint)) {
+    throw new Error('source result mismatch');
   }
   const sources = [...new Set(complete.map((candidate) => candidate.source))];
   return {
@@ -170,21 +171,21 @@ function readLatest(path) {
   try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return null; }
 }
 
-/** Everything that is actually a result — `publishedAt` is just when we looked. */
-function resultFingerprint(value) {
-  if (!value || typeof value !== 'object') return '';
-  const { publishedAt, ...rest } = value;
-  return JSON.stringify(rest);
+function canonicalResultFingerprint(value) {
+  const { source, sources, publishedAt, ...canonical } = value;
+  return JSON.stringify(canonical);
 }
 
 export function writeIfNewer(result, path) {
+  const validation = validateResult(result);
+  if (!validation.ok) throw new Error(`invalid result: ${validation.reason}`);
   const previous = readLatest(path);
   if (previous?.drawDate && previous.drawDate > result.drawDate) return false;
   // Compare on the fingerprint, not the whole object: once a draw is published,
   // every remaining run in the window re-collects the same numbers with a fresh
   // publishedAt, and comparing that would commit an identical result every
   // 5 minutes for the rest of the afternoon.
-  if (previous && resultFingerprint(previous) === resultFingerprint(result)) return false;
+  if (previous && canonicalResultFingerprint(previous) === canonicalResultFingerprint(result)) return false;
   writeFileSync(path, `${JSON.stringify(result, null, 2)}\n`);
   return true;
 }

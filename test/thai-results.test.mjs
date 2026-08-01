@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { unlinkSync } from 'node:fs';
+import { readFileSync, unlinkSync } from 'node:fs';
 
 import { chooseVerifiedResult, parseThairathPage, validateResult, writeIfNewer } from '../thai-results.mjs';
 
@@ -49,13 +49,26 @@ test('uses one complete source when the independent source is unavailable', () =
   assert.equal(result.source, 'verified-bot');
 });
 
-test('rejects complete sources with conflicting first prizes', () => {
+test('rejects complete sources with a first-prize mismatch', () => {
   assert.throws(
     () => chooseVerifiedResult([
       completeResult({ source: 'sanook' }),
       completeResult({ source: 'thairath', firstPrize: '111111', adjacentToFirst: ['111110', '111112'] }),
     ], new Date('2026-07-16T10:00:00.000Z')),
-    /first prize mismatch/,
+    /source result mismatch/,
+  );
+});
+
+test('rejects complete sources with a fifth-prize mismatch', () => {
+  const fifthPrizes = [...completeResult().fifthPrizes];
+  fifthPrizes[0] = '999999';
+
+  assert.throws(
+    () => chooseVerifiedResult([
+      completeResult({ source: 'sanook' }),
+      completeResult({ source: 'thairath', fifthPrizes }),
+    ], new Date('2026-07-16T10:00:00.000Z')),
+    /source result mismatch/,
   );
 });
 
@@ -76,11 +89,26 @@ test('parses Thairath prizes from the nested Next.js lottery items state', () =>
 
 test('does not rewrite a published result when only publishedAt moved', async (t) => {
   const path = new URL(`./tmp-latest-${process.pid}.json`, import.meta.url);
-  const result = { schemaVersion: 1, drawDate: '2026-08-01', firstPrize: '123456', publishedAt: '2026-08-01T08:20:00.000Z' };
+  const result = completeResult({ drawDate: '2026-08-01', publishedAt: '2026-08-01T08:20:00.000Z' });
   t.after(() => { try { unlinkSync(path); } catch {} });
 
   assert.equal(writeIfNewer(result, path), true, 'first publish writes');
   assert.equal(writeIfNewer({ ...result, publishedAt: '2026-08-01T08:25:00.000Z' }, path), false, 'same numbers must not rewrite');
-  assert.equal(writeIfNewer({ ...result, firstPrize: '654321' }, path), true, 'corrected numbers do rewrite');
+  assert.equal(writeIfNewer({ ...result, firstPrize: '654321', adjacentToFirst: ['654320', '654322'] }, path), true, 'corrected numbers do rewrite');
   assert.equal(writeIfNewer({ ...result, drawDate: '2026-07-16' }, path), false, 'never regress to an older draw');
+});
+
+test('does not rewrite when an invalid payload is provided', async (t) => {
+  const path = new URL(`./tmp-invalid-${process.pid}.json`, import.meta.url);
+  const valid = completeResult({ drawDate: '2026-08-01' });
+  t.after(() => { try { unlinkSync(path); } catch {} });
+
+  assert.equal(writeIfNewer(valid, path), true, 'first publish writes');
+  const previousContents = readFileSync(path, 'utf8');
+
+  assert.throws(
+    () => writeIfNewer({ ...valid, fifthPrizes: [] }, path),
+    /invalid result/,
+  );
+  assert.equal(readFileSync(path, 'utf8'), previousContents, 'invalid payload must not rewrite');
 });
