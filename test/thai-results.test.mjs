@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync, unlinkSync } from 'node:fs';
 
-import { chooseVerifiedResult, parseThairathPage, validateResult, writeIfNewer } from '../thai-results.mjs';
+import { chooseVerifiedResult, parseSanookPage, parseThairathPage, validateResult, writeIfNewer } from '../thai-results.mjs';
 
 function numbers(start, count, width = 6) {
   return Array.from({ length: count }, (_, index) => String(start + index).padStart(width, '0'));
@@ -85,6 +85,18 @@ test('parses Thairath prizes from the nested Next.js lottery items state', () =>
     } },
   })}</script>`;
   assert.equal(parseThairathPage(html, '2026-07-16').firstPrize, '639214');
+});
+
+test('Sanook accepts a page whose canonical URL has the requested draw date', () => {
+  const html = '<link rel="canonical" href="https://news.sanook.com/lotto/check/01082569/">';
+
+  assert.equal(parseSanookPage(html, '2026-08-01').drawDate, '2026-08-01');
+});
+
+test('Sanook rejects a page whose canonical URL has a previous draw date', () => {
+  const html = '<link rel="canonical" href="https://news.sanook.com/lotto/check/16072569/">';
+
+  assert.throws(() => parseSanookPage(html, '2026-08-01'), /page date differs/);
 });
 
 test('does not rewrite a published result when only publishedAt moved', async (t) => {

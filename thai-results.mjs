@@ -90,6 +90,10 @@ function publishedCandidate(data, source) {
 
 /** Parse Sanook's rendered lottery cards, intentionally ignoring JSON-LD summaries. */
 export function parseSanookPage(html, drawDate) {
+  const canonical = html.match(/<link\b(?=[^>]*\brel=["']canonical["'])(?=[^>]*\bhref=["']([^"']+)["'])[^>]*>/i)?.[1] ?? '';
+  if (!canonical.includes(`/lotto/check/${isoToSanookSlug(drawDate)}/`)) {
+    throw new Error(`sanook: requested ${drawDate} but page date differs`);
+  }
   const page = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
   const firstPrize = page.match(/class="lotto__number lotto__number--first">(\d{6})</)?.[1] ?? '';
   const frontThreeDigits = visibleNumbers(slice(page, /เลขหน้า 3 ตัว/, /เลขท้าย 3 ตัว/), 3);
