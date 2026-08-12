@@ -2,9 +2,33 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-16",
   "drawDateThai": "16 สิงหาคม 2569",
-  "generatedAt": "2026-08-12T02:09:39.062Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-08-12T07:37:04.251Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยแม่น้ำหนึ่ง",
+      "url": "https://lottery.kapook.com/view303039.html",
+      "lead": [
+        "7",
+        "3",
+        "2",
+        "11",
+        "42"
+      ],
+      "two": [
+        "07",
+        "14",
+        "74",
+        "71",
+        "01",
+        "04"
+      ],
+      "three": [
+        "071",
+        "714"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยปฏิทินครอบครัวข่าว",
@@ -179,6 +203,14 @@
   "topTwo": [
     {
       "digits": "07",
+      "mentions": 3
+    },
+    {
+      "digits": "01",
+      "mentions": 2
+    },
+    {
+      "digits": "04",
       "mentions": 2
     },
     {
@@ -202,25 +234,21 @@
       "mentions": 2
     },
     {
-      "digits": "01",
-      "mentions": 1
-    },
-    {
       "digits": "02",
       "mentions": 1
     },
     {
       "digits": "03",
       "mentions": 1
-    },
-    {
-      "digits": "04",
-      "mentions": 1
     }
   ],
   "topThree": [
     {
       "digits": "055",
+      "mentions": 1
+    },
+    {
+      "digits": "071",
       "mentions": 1
     },
     {
@@ -253,10 +281,6 @@
     },
     {
       "digits": "372",
-      "mentions": 1
-    },
-    {
-      "digits": "377",
       "mentions": 1
     }
   ]
