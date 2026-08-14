@@ -2,9 +2,78 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-16",
   "drawDateThai": "16 สิงหาคม 2569",
-  "generatedAt": "2026-08-13T13:18:03.987Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-08-14T07:36:39.716Z",
+  "sourceCount": 11,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเสือตกถัง",
+      "url": "https://lottery.kapook.com/view303084.html",
+      "lead": [
+        "2",
+        "3",
+        "8",
+        "9",
+        "7"
+      ],
+      "two": [
+        "85",
+        "95",
+        "84",
+        "94",
+        "83",
+        "80",
+        "81",
+        "87",
+        "93",
+        "90",
+        "91",
+        "97"
+      ],
+      "three": [
+        "985",
+        "984",
+        "983",
+        "980",
+        "189",
+        "789",
+        "689",
+        "289"
+      ]
+    },
+    {
+      "site": "kapook",
+      "name": "จับตา หวยเจ้าแม่ตะเคียนทอง เปิดเลขเด็ดงวดนี้ 16 ส.",
+      "url": "https://lottery.kapook.com/view303077.html",
+      "lead": [
+        "2",
+        "3",
+        "8",
+        "1",
+        "0",
+        "7"
+      ],
+      "two": [
+        "12",
+        "21",
+        "16",
+        "61",
+        "17",
+        "71",
+        "02",
+        "20",
+        "05",
+        "50",
+        "07",
+        "70"
+      ],
+      "three": [
+        "416",
+        "217",
+        "430",
+        "705"
+      ]
+    },
     {
       "site": "kapook",
       "name": "แฟนคลับส่องเลขเด็ดเต้ ดราก้อนไฟว์ หวยเด็ดงวดนี้ 16",
@@ -45,6 +114,7 @@
         "7",
         "3",
         "2",
+        "4",
         "17",
         "20",
         "37"
@@ -226,10 +296,14 @@
   "topTwo": [
     {
       "digits": "07",
-      "mentions": 3
+      "mentions": 4
     },
     {
       "digits": "01",
+      "mentions": 2
+    },
+    {
+      "digits": "02",
       "mentions": 2
     },
     {
@@ -241,6 +315,10 @@
       "mentions": 2
     },
     {
+      "digits": "20",
+      "mentions": 2
+    },
+    {
       "digits": "30",
       "mentions": 2
     },
@@ -249,23 +327,19 @@
       "mentions": 2
     },
     {
-      "digits": "73",
+      "digits": "61",
       "mentions": 2
     },
     {
-      "digits": "00",
-      "mentions": 1
-    },
-    {
-      "digits": "02",
-      "mentions": 1
-    },
-    {
-      "digits": "03",
-      "mentions": 1
+      "digits": "70",
+      "mentions": 2
     }
   ],
   "topThree": [
+    {
+      "digits": "289",
+      "mentions": 2
+    },
     {
       "digits": "055",
       "mentions": 1
@@ -279,7 +353,15 @@
       "mentions": 1
     },
     {
+      "digits": "189",
+      "mentions": 1
+    },
+    {
       "digits": "202",
+      "mentions": 1
+    },
+    {
+      "digits": "217",
       "mentions": 1
     },
     {
@@ -291,19 +373,7 @@
       "mentions": 1
     },
     {
-      "digits": "289",
-      "mentions": 1
-    },
-    {
       "digits": "302",
-      "mentions": 1
-    },
-    {
-      "digits": "307",
-      "mentions": 1
-    },
-    {
-      "digits": "372",
       "mentions": 1
     }
   ]
