@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-16",
   "drawDateThai": "16 สิงหาคม 2569",
-  "generatedAt": "2026-08-15T12:42:08.514Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-08-15T18:33:32.498Z",
+  "sourceCount": 10,
   "sources": [
     {
       "site": "kapook",
@@ -248,6 +248,25 @@
         "283",
         "289"
       ]
+    },
+    {
+      "site": "sanook",
+      "name": "รวมเลขเด็ด 16/8/69 โค้งสุดท้าย ฮลุน โซโล่-ป้าขยัน ",
+      "url": "https://news.sanook.com/9903803/",
+      "lead": [
+        "12",
+        "93",
+        "77",
+        "87",
+        "54",
+        "18",
+        "04",
+        "74",
+        "75",
+        "45"
+      ],
+      "two": [],
+      "three": []
     }
   ],
   "topTwo": [
