@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-16",
   "drawDateThai": "16 สิงหาคม 2569",
-  "generatedAt": "2026-08-15T18:33:32.498Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-08-16T01:29:04.148Z",
+  "sourceCount": 13,
   "sources": [
     {
       "site": "kapook",
@@ -267,12 +267,99 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวย AI ส่องเลขเด็ดงวดนี้ 16/8/69 วิเคราะห์สถิติหวย",
+      "url": "https://news.sanook.com/9903202/",
+      "lead": [
+        "10",
+        "1",
+        "0",
+        "2",
+        "6",
+        "9",
+        "4",
+        "8",
+        "06",
+        "60"
+      ],
+      "two": [
+        "94",
+        "20",
+        "62",
+        "15",
+        "40",
+        "06",
+        "04",
+        "29"
+      ],
+      "three": [
+        "866",
+        "377",
+        "606",
+        "202",
+        "272",
+        "404",
+        "811",
+        "522",
+        "787",
+        "055"
+      ]
+    },
+    {
+      "site": "sanook",
+      "name": "รวมเลขมงคล วันแม่แห่งชาติ 12 สิงหาคม 2569 สรุปเลขเ",
+      "url": "https://news.sanook.com/9903042/",
+      "lead": [
+        "06",
+        "44",
+        "1",
+        "2",
+        "8",
+        "9",
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://news.sanook.com/9902690/",
+      "lead": [
+        "06",
+        "43",
+        "1",
+        "2",
+        "5",
+        "0",
+        "8"
+      ],
+      "two": [
+        "13",
+        "17",
+        "53",
+        "57",
+        "10",
+        "40",
+        "18",
+        "48"
+      ],
+      "three": []
     }
   ],
   "topTwo": [
     {
       "digits": "07",
       "mentions": 4
+    },
+    {
+      "digits": "06",
+      "mentions": 3
     },
     {
       "digits": "81",
@@ -291,23 +378,19 @@
       "mentions": 2
     },
     {
-      "digits": "06",
+      "digits": "04",
       "mentions": 2
     },
     {
-      "digits": "30",
+      "digits": "17",
       "mentions": 2
     },
     {
-      "digits": "32",
+      "digits": "18",
       "mentions": 2
     },
     {
-      "digits": "56",
-      "mentions": 2
-    },
-    {
-      "digits": "60",
+      "digits": "20",
       "mentions": 2
     }
   ],
@@ -315,6 +398,10 @@
     {
       "digits": "289",
       "mentions": 2
+    },
+    {
+      "digits": "055",
+      "mentions": 1
     },
     {
       "digits": "071",
@@ -329,6 +416,10 @@
       "mentions": 1
     },
     {
+      "digits": "202",
+      "mentions": 1
+    },
+    {
       "digits": "217",
       "mentions": 1
     },
@@ -337,19 +428,11 @@
       "mentions": 1
     },
     {
+      "digits": "272",
+      "mentions": 1
+    },
+    {
       "digits": "283",
-      "mentions": 1
-    },
-    {
-      "digits": "302",
-      "mentions": 1
-    },
-    {
-      "digits": "307",
-      "mentions": 1
-    },
-    {
-      "digits": "372",
       "mentions": 1
     }
   ]
