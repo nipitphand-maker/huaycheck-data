@@ -2,9 +2,30 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-16",
   "drawDateThai": "16 สิงหาคม 2569",
-  "generatedAt": "2026-08-16T01:29:04.148Z",
-  "sourceCount": 13,
+  "generatedAt": "2026-08-16T06:43:33.596Z",
+  "sourceCount": 11,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "ส่องหวยน้องเพชรกล้า เด็กชายนำโชค เผยเลขเด็ดงวดนี้โ",
+      "url": "https://lottery.kapook.com/view303107.html",
+      "lead": [
+        "7",
+        "3",
+        "2"
+      ],
+      "two": [
+        "68",
+        "98",
+        "87",
+        "05",
+        "58",
+        "64",
+        "94",
+        "08"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "โค้งสุดท้าย หวยเจ้าพ่อปากแดง เผยเลขเด็ดงวดนี้ 16 ส",
@@ -212,44 +233,6 @@
       ]
     },
     {
-      "site": "kapook",
-      "name": "หวยคำชะโนด",
-      "url": "https://lottery.kapook.com/view302940.html",
-      "lead": [
-        "3",
-        "8",
-        "05",
-        "25",
-        "87"
-      ],
-      "two": [
-        "06",
-        "07",
-        "08",
-        "56",
-        "57",
-        "58",
-        "83",
-        "73",
-        "89",
-        "76",
-        "01",
-        "02",
-        "51",
-        "54",
-        "30",
-        "31",
-        "32",
-        "80",
-        "81",
-        "82"
-      ],
-      "three": [
-        "283",
-        "289"
-      ]
-    },
-    {
       "site": "sanook",
       "name": "รวมเลขเด็ด 16/8/69 โค้งสุดท้าย ฮลุน โซโล่-ป้าขยัน ",
       "url": "https://news.sanook.com/9903803/",
@@ -306,99 +289,51 @@
         "787",
         "055"
       ]
-    },
-    {
-      "site": "sanook",
-      "name": "รวมเลขมงคล วันแม่แห่งชาติ 12 สิงหาคม 2569 สรุปเลขเ",
-      "url": "https://news.sanook.com/9903042/",
-      "lead": [
-        "06",
-        "44",
-        "1",
-        "2",
-        "8",
-        "9",
-        "4",
-        "3",
-        "5",
-        "6"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9902690/",
-      "lead": [
-        "06",
-        "43",
-        "1",
-        "2",
-        "5",
-        "0",
-        "8"
-      ],
-      "two": [
-        "13",
-        "17",
-        "53",
-        "57",
-        "10",
-        "40",
-        "18",
-        "48"
-      ],
-      "three": []
     }
   ],
   "topTwo": [
     {
       "digits": "07",
-      "mentions": 4
-    },
-    {
-      "digits": "06",
       "mentions": 3
     },
     {
-      "digits": "81",
+      "digits": "94",
       "mentions": 3
-    },
-    {
-      "digits": "83",
-      "mentions": 3
-    },
-    {
-      "digits": "01",
-      "mentions": 2
-    },
-    {
-      "digits": "02",
-      "mentions": 2
     },
     {
       "digits": "04",
       "mentions": 2
     },
     {
-      "digits": "17",
+      "digits": "05",
       "mentions": 2
     },
     {
-      "digits": "18",
+      "digits": "06",
       "mentions": 2
     },
     {
       "digits": "20",
       "mentions": 2
+    },
+    {
+      "digits": "60",
+      "mentions": 2
+    },
+    {
+      "digits": "61",
+      "mentions": 2
+    },
+    {
+      "digits": "68",
+      "mentions": 2
+    },
+    {
+      "digits": "70",
+      "mentions": 2
     }
   ],
   "topThree": [
-    {
-      "digits": "289",
-      "mentions": 2
-    },
     {
       "digits": "055",
       "mentions": 1
@@ -432,7 +367,11 @@
       "mentions": 1
     },
     {
-      "digits": "283",
+      "digits": "289",
+      "mentions": 1
+    },
+    {
+      "digits": "302",
       "mentions": 1
     }
   ]
