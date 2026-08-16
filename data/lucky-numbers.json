@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-08-16",
   "drawDateThai": "16 สิงหาคม 2569",
-  "generatedAt": "2026-08-16T06:43:33.596Z",
-  "sourceCount": 11,
+  "generatedAt": "2026-08-16T12:43:49.947Z",
+  "sourceCount": 9,
   "sources": [
     {
       "site": "kapook",
@@ -185,7 +185,7 @@
         "7",
         "3",
         "2",
-        "5",
+        "6",
         "17",
         "20",
         "37"
@@ -231,64 +231,6 @@
         "372",
         "302"
       ]
-    },
-    {
-      "site": "sanook",
-      "name": "รวมเลขเด็ด 16/8/69 โค้งสุดท้าย ฮลุน โซโล่-ป้าขยัน ",
-      "url": "https://news.sanook.com/9903803/",
-      "lead": [
-        "12",
-        "93",
-        "77",
-        "87",
-        "54",
-        "18",
-        "04",
-        "74",
-        "75",
-        "45"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวย AI ส่องเลขเด็ดงวดนี้ 16/8/69 วิเคราะห์สถิติหวย",
-      "url": "https://news.sanook.com/9903202/",
-      "lead": [
-        "10",
-        "1",
-        "0",
-        "2",
-        "6",
-        "9",
-        "4",
-        "8",
-        "06",
-        "60"
-      ],
-      "two": [
-        "94",
-        "20",
-        "62",
-        "15",
-        "40",
-        "06",
-        "04",
-        "29"
-      ],
-      "three": [
-        "866",
-        "377",
-        "606",
-        "202",
-        "272",
-        "404",
-        "811",
-        "522",
-        "787",
-        "055"
-      ]
     }
   ],
   "topTwo": [
@@ -297,23 +239,7 @@
       "mentions": 3
     },
     {
-      "digits": "94",
-      "mentions": 3
-    },
-    {
-      "digits": "04",
-      "mentions": 2
-    },
-    {
       "digits": "05",
-      "mentions": 2
-    },
-    {
-      "digits": "06",
-      "mentions": 2
-    },
-    {
-      "digits": "20",
       "mentions": 2
     },
     {
@@ -331,13 +257,25 @@
     {
       "digits": "70",
       "mentions": 2
+    },
+    {
+      "digits": "71",
+      "mentions": 2
+    },
+    {
+      "digits": "81",
+      "mentions": 2
+    },
+    {
+      "digits": "83",
+      "mentions": 2
+    },
+    {
+      "digits": "85",
+      "mentions": 2
     }
   ],
   "topThree": [
-    {
-      "digits": "055",
-      "mentions": 1
-    },
     {
       "digits": "071",
       "mentions": 1
@@ -351,10 +289,6 @@
       "mentions": 1
     },
     {
-      "digits": "202",
-      "mentions": 1
-    },
-    {
       "digits": "217",
       "mentions": 1
     },
@@ -363,15 +297,23 @@
       "mentions": 1
     },
     {
-      "digits": "272",
-      "mentions": 1
-    },
-    {
       "digits": "289",
       "mentions": 1
     },
     {
       "digits": "302",
+      "mentions": 1
+    },
+    {
+      "digits": "307",
+      "mentions": 1
+    },
+    {
+      "digits": "372",
+      "mentions": 1
+    },
+    {
+      "digits": "416",
       "mentions": 1
     }
   ]
