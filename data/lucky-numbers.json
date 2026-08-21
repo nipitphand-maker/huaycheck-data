@@ -2,9 +2,19 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-20T06:50:45.586Z",
-  "sourceCount": 2,
+  "generatedAt": "2026-08-21T06:52:04.092Z",
+  "sourceCount": 3,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เปิด 10 หวยแม่ทำเนียน ลอตเตอรี่งวดนี้ 1 ก.ย. 69 เล",
+      "url": "https://lottery.kapook.com/view303220.html",
+      "lead": [
+        "10"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยปฏิทินจีน",
