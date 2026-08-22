@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-22T06:43:34.322Z",
-  "sourceCount": 3,
+  "generatedAt": "2026-08-22T18:34:19.987Z",
+  "sourceCount": 5,
   "sources": [
     {
       "site": "kapook",
@@ -65,9 +65,67 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://news.sanook.com/9904666/",
+      "lead": [
+        "3",
+        "9",
+        "2",
+        "30",
+        "34",
+        "90",
+        "94",
+        "6",
+        "23",
+        "28"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9904663/",
+      "lead": [
+        "19"
+      ],
+      "two": [
+        "37",
+        "68",
+        "69",
+        "65",
+        "98",
+        "64",
+        "97",
+        "36",
+        "70",
+        "34",
+        "78",
+        "60",
+        "61",
+        "62",
+        "90",
+        "91",
+        "94"
+      ],
+      "three": [
+        "936",
+        "934"
+      ]
     }
   ],
   "topTwo": [
+    {
+      "digits": "36",
+      "mentions": 2
+    },
+    {
+      "digits": "62",
+      "mentions": 2
+    },
     {
       "digits": "10",
       "mentions": 1
@@ -93,19 +151,11 @@
       "mentions": 1
     },
     {
+      "digits": "34",
+      "mentions": 1
+    },
+    {
       "digits": "35",
-      "mentions": 1
-    },
-    {
-      "digits": "36",
-      "mentions": 1
-    },
-    {
-      "digits": "62",
-      "mentions": 1
-    },
-    {
-      "digits": "66",
       "mentions": 1
     }
   ],
@@ -128,6 +178,14 @@
     },
     {
       "digits": "652",
+      "mentions": 1
+    },
+    {
+      "digits": "934",
+      "mentions": 1
+    },
+    {
+      "digits": "936",
       "mentions": 1
     }
   ]
