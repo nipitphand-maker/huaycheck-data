@@ -2,9 +2,133 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-22T01:22:32.430Z",
-  "sourceCount": 0,
-  "sources": [],
-  "topTwo": [],
-  "topThree": []
+  "generatedAt": "2026-08-22T06:43:34.322Z",
+  "sourceCount": 3,
+  "sources": [
+    {
+      "site": "kapook",
+      "name": "เปิด 10 หวยแม่ทำเนียน ลอตเตอรี่งวดนี้ 1 ก.ย. 69 เล",
+      "url": "https://lottery.kapook.com/view303220.html",
+      "lead": [
+        "10"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://lottery.kapook.com/view303190.html",
+      "lead": [
+        "5",
+        "1",
+        "6",
+        "0",
+        "2",
+        "3"
+      ],
+      "two": [
+        "32",
+        "16",
+        "62",
+        "10",
+        "36",
+        "66",
+        "35",
+        "21",
+        "13",
+        "30"
+      ],
+      "three": [
+        "326",
+        "510",
+        "652",
+        "066",
+        "136"
+      ]
+    },
+    {
+      "site": "kapook",
+      "name": "มัดรวม 10 ทำนายฝันเห็นงู พร้อมตีหวยเด็ด ลุ้นโชคงวด",
+      "url": "https://lottery.kapook.com/view274921.html",
+      "lead": [
+        "4",
+        "5",
+        "9",
+        "2",
+        "82",
+        "91",
+        "85",
+        "3",
+        "56",
+        "06"
+      ],
+      "two": [],
+      "three": []
+    }
+  ],
+  "topTwo": [
+    {
+      "digits": "10",
+      "mentions": 1
+    },
+    {
+      "digits": "13",
+      "mentions": 1
+    },
+    {
+      "digits": "16",
+      "mentions": 1
+    },
+    {
+      "digits": "21",
+      "mentions": 1
+    },
+    {
+      "digits": "30",
+      "mentions": 1
+    },
+    {
+      "digits": "32",
+      "mentions": 1
+    },
+    {
+      "digits": "35",
+      "mentions": 1
+    },
+    {
+      "digits": "36",
+      "mentions": 1
+    },
+    {
+      "digits": "62",
+      "mentions": 1
+    },
+    {
+      "digits": "66",
+      "mentions": 1
+    }
+  ],
+  "topThree": [
+    {
+      "digits": "066",
+      "mentions": 1
+    },
+    {
+      "digits": "136",
+      "mentions": 1
+    },
+    {
+      "digits": "326",
+      "mentions": 1
+    },
+    {
+      "digits": "510",
+      "mentions": 1
+    },
+    {
+      "digits": "652",
+      "mentions": 1
+    }
+  ]
 }
