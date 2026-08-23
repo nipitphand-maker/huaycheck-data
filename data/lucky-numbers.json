@@ -2,9 +2,31 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-22T18:34:19.987Z",
+  "generatedAt": "2026-08-23T06:45:43.232Z",
   "sourceCount": 5,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view303247.html",
+      "lead": [
+        "3",
+        "9",
+        "2",
+        "6"
+      ],
+      "two": [
+        "30",
+        "34",
+        "90",
+        "94",
+        "23",
+        "28",
+        "60",
+        "68"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "เปิด 10 หวยแม่ทำเนียน ลอตเตอรี่งวดนี้ 1 ก.ย. 69 เล",
@@ -68,25 +90,6 @@
     },
     {
       "site": "sanook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9904666/",
-      "lead": [
-        "3",
-        "9",
-        "2",
-        "30",
-        "34",
-        "90",
-        "94",
-        "6",
-        "23",
-        "28"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
       "name": "หวยคำชะโนด",
       "url": "https://news.sanook.com/9904663/",
       "lead": [
@@ -119,11 +122,35 @@
   ],
   "topTwo": [
     {
+      "digits": "30",
+      "mentions": 2
+    },
+    {
+      "digits": "34",
+      "mentions": 2
+    },
+    {
       "digits": "36",
       "mentions": 2
     },
     {
+      "digits": "60",
+      "mentions": 2
+    },
+    {
       "digits": "62",
+      "mentions": 2
+    },
+    {
+      "digits": "68",
+      "mentions": 2
+    },
+    {
+      "digits": "90",
+      "mentions": 2
+    },
+    {
+      "digits": "94",
       "mentions": 2
     },
     {
@@ -132,30 +159,6 @@
     },
     {
       "digits": "13",
-      "mentions": 1
-    },
-    {
-      "digits": "16",
-      "mentions": 1
-    },
-    {
-      "digits": "21",
-      "mentions": 1
-    },
-    {
-      "digits": "30",
-      "mentions": 1
-    },
-    {
-      "digits": "32",
-      "mentions": 1
-    },
-    {
-      "digits": "34",
-      "mentions": 1
-    },
-    {
-      "digits": "35",
       "mentions": 1
     }
   ],
