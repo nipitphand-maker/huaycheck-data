@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-25T06:52:28.864Z",
+  "generatedAt": "2026-08-25T12:52:09.198Z",
   "sourceCount": 6,
   "sources": [
     {
@@ -136,49 +136,48 @@
     },
     {
       "site": "sanook",
-      "name": "หวยคำชะโนด",
-      "url": "https://news.sanook.com/9904663/",
+      "name": "หวย AI ส่องเลขเด็ดงวดนี้ 1/9/69 วิเคราะห์สถิติหวยอ",
+      "url": "https://news.sanook.com/9904947/",
       "lead": [
-        "19"
+        "3",
+        "5",
+        "9",
+        "8",
+        "6",
+        "2",
+        "35",
+        "53",
+        "82"
       ],
       "two": [
-        "37",
-        "68",
-        "69",
-        "65",
-        "98",
-        "64",
-        "97",
+        "86",
+        "35",
         "36",
-        "70",
-        "34",
-        "78",
-        "60",
-        "61",
-        "62",
-        "90",
+        "39",
+        "57",
+        "97",
+        "98",
+        "19",
+        "03",
+        "46",
+        "14",
+        "12",
+        "68",
         "91",
-        "94"
+        "93",
+        "89",
+        "78",
+        "70"
       ],
       "three": [
-        "936",
-        "934"
+        "519",
+        "061",
+        "392",
+        "512"
       ]
     }
   ],
   "topTwo": [
-    {
-      "digits": "34",
-      "mentions": 3
-    },
-    {
-      "digits": "62",
-      "mentions": 3
-    },
-    {
-      "digits": "90",
-      "mentions": 3
-    },
     {
       "digits": "30",
       "mentions": 2
@@ -188,33 +187,45 @@
       "mentions": 2
     },
     {
+      "digits": "34",
+      "mentions": 2
+    },
+    {
+      "digits": "35",
+      "mentions": 2
+    },
+    {
       "digits": "36",
       "mentions": 2
     },
     {
-      "digits": "37",
+      "digits": "39",
       "mentions": 2
     },
     {
-      "digits": "60",
+      "digits": "46",
       "mentions": 2
     },
     {
-      "digits": "61",
+      "digits": "62",
       "mentions": 2
     },
     {
-      "digits": "64",
+      "digits": "68",
+      "mentions": 2
+    },
+    {
+      "digits": "90",
       "mentions": 2
     }
   ],
   "topThree": [
     {
-      "digits": "934",
-      "mentions": 2
+      "digits": "031",
+      "mentions": 1
     },
     {
-      "digits": "031",
+      "digits": "061",
       "mentions": 1
     },
     {
@@ -234,19 +245,19 @@
       "mentions": 1
     },
     {
+      "digits": "392",
+      "mentions": 1
+    },
+    {
       "digits": "510",
       "mentions": 1
     },
     {
-      "digits": "539",
+      "digits": "512",
       "mentions": 1
     },
     {
-      "digits": "561",
-      "mentions": 1
-    },
-    {
-      "digits": "632",
+      "digits": "519",
       "mentions": 1
     }
   ]
