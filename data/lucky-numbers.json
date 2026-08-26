@@ -2,15 +2,45 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-25T12:52:09.198Z",
+  "generatedAt": "2026-08-26T12:57:57.214Z",
   "sourceCount": 6,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "คัดมาให้แล้ว หวยปฏิทินช่อง 3 เลขเด็ดงวดนี้ 1 ก.ย. ",
+      "url": "https://lottery.kapook.com/view303335.html",
+      "lead": [
+        "3",
+        "4",
+        "9",
+        "6",
+        "7",
+        "15",
+        "13",
+        "48"
+      ],
+      "two": [
+        "96",
+        "97",
+        "94",
+        "69",
+        "67",
+        "64",
+        "79",
+        "76",
+        "74",
+        "49",
+        "47",
+        "46"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยอาจารย์หนู",
       "url": "https://lottery.kapook.com/view303302.html",
       "lead": [
-        "1",
+        "2",
         "3",
         "6",
         "4",
@@ -116,25 +146,6 @@
       ]
     },
     {
-      "site": "kapook",
-      "name": "มัดรวม 10 ทำนายฝันเห็นงู พร้อมตีหวยเด็ด ลุ้นโชคงวด",
-      "url": "https://lottery.kapook.com/view274921.html",
-      "lead": [
-        "4",
-        "5",
-        "9",
-        "2",
-        "82",
-        "91",
-        "85",
-        "3",
-        "56",
-        "06"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
       "site": "sanook",
       "name": "หวย AI ส่องเลขเด็ดงวดนี้ 1/9/69 วิเคราะห์สถิติหวยอ",
       "url": "https://news.sanook.com/9904947/",
@@ -179,6 +190,14 @@
   ],
   "topTwo": [
     {
+      "digits": "46",
+      "mentions": 3
+    },
+    {
+      "digits": "97",
+      "mentions": 3
+    },
+    {
       "digits": "30",
       "mentions": 2
     },
@@ -203,19 +222,11 @@
       "mentions": 2
     },
     {
-      "digits": "46",
+      "digits": "47",
       "mentions": 2
     },
     {
-      "digits": "62",
-      "mentions": 2
-    },
-    {
-      "digits": "68",
-      "mentions": 2
-    },
-    {
-      "digits": "90",
+      "digits": "49",
       "mentions": 2
     }
   ],
