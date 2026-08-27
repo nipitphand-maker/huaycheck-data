@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-26T12:57:57.214Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-08-27T08:17:41.586Z",
+  "sourceCount": 5,
   "sources": [
     {
       "site": "kapook",
@@ -144,59 +144,9 @@
         "066",
         "136"
       ]
-    },
-    {
-      "site": "sanook",
-      "name": "หวย AI ส่องเลขเด็ดงวดนี้ 1/9/69 วิเคราะห์สถิติหวยอ",
-      "url": "https://news.sanook.com/9904947/",
-      "lead": [
-        "3",
-        "5",
-        "9",
-        "8",
-        "6",
-        "2",
-        "35",
-        "53",
-        "82"
-      ],
-      "two": [
-        "86",
-        "35",
-        "36",
-        "39",
-        "57",
-        "97",
-        "98",
-        "19",
-        "03",
-        "46",
-        "14",
-        "12",
-        "68",
-        "91",
-        "93",
-        "89",
-        "78",
-        "70"
-      ],
-      "three": [
-        "519",
-        "061",
-        "392",
-        "512"
-      ]
     }
   ],
   "topTwo": [
-    {
-      "digits": "46",
-      "mentions": 3
-    },
-    {
-      "digits": "97",
-      "mentions": 3
-    },
     {
       "digits": "30",
       "mentions": 2
@@ -210,15 +160,7 @@
       "mentions": 2
     },
     {
-      "digits": "35",
-      "mentions": 2
-    },
-    {
-      "digits": "36",
-      "mentions": 2
-    },
-    {
-      "digits": "39",
+      "digits": "46",
       "mentions": 2
     },
     {
@@ -228,15 +170,27 @@
     {
       "digits": "49",
       "mentions": 2
+    },
+    {
+      "digits": "62",
+      "mentions": 2
+    },
+    {
+      "digits": "64",
+      "mentions": 2
+    },
+    {
+      "digits": "67",
+      "mentions": 2
+    },
+    {
+      "digits": "90",
+      "mentions": 2
     }
   ],
   "topThree": [
     {
       "digits": "031",
-      "mentions": 1
-    },
-    {
-      "digits": "061",
       "mentions": 1
     },
     {
@@ -256,19 +210,23 @@
       "mentions": 1
     },
     {
-      "digits": "392",
-      "mentions": 1
-    },
-    {
       "digits": "510",
       "mentions": 1
     },
     {
-      "digits": "512",
+      "digits": "539",
       "mentions": 1
     },
     {
-      "digits": "519",
+      "digits": "561",
+      "mentions": 1
+    },
+    {
+      "digits": "632",
+      "mentions": 1
+    },
+    {
+      "digits": "652",
       "mentions": 1
     }
   ]
