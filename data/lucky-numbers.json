@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-27T21:59:02.737Z",
-  "sourceCount": 5,
+  "generatedAt": "2026-08-28T10:19:12.402Z",
+  "sourceCount": 4,
   "sources": [
     {
       "site": "kapook",
@@ -60,7 +60,6 @@
       "name": "หวยอาจารย์หนู",
       "url": "https://lottery.kapook.com/view303302.html",
       "lead": [
-        "2",
         "3",
         "6",
         "4",
@@ -121,16 +120,6 @@
         "60",
         "68"
       ],
-      "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "เปิด 10 หวยแม่ทำเนียน ลอตเตอรี่งวดนี้ 1 ก.ย. 69 เล",
-      "url": "https://lottery.kapook.com/view303220.html",
-      "lead": [
-        "10"
-      ],
-      "two": [],
       "three": []
     }
   ],
