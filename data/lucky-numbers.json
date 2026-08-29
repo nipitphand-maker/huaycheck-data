@@ -2,9 +2,33 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-29T06:19:03.224Z",
-  "sourceCount": 5,
+  "generatedAt": "2026-08-29T16:26:00.691Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเด็ดเงินเทวดา 1 ก.ย. 69 เปิดชุดเลขน่าลุ้น เลขวิ",
+      "url": "https://lottery.kapook.com/view303410.html",
+      "lead": [
+        "2",
+        "3",
+        "7",
+        "5",
+        "75",
+        "95",
+        "97",
+        "54",
+        "56",
+        "63"
+      ],
+      "two": [],
+      "three": [
+        "278",
+        "275",
+        "942",
+        "032"
+      ]
+    },
     {
       "site": "kapook",
       "name": "แม่ตุ๊กตาพารวย จัดเลขเด็ดงวดนี้ 1 ก.ย. 69 ทั้งเลขเ",
@@ -124,6 +148,25 @@
     },
     {
       "site": "sanook",
+      "name": "รวมเลขเด็ดหวยสัญจรระยอง 1 ก.ย. 69 ส่องอายุผู้ว่าฯ ",
+      "url": "https://news.sanook.com/9905374/",
+      "lead": [
+        "30",
+        "2",
+        "06",
+        "11",
+        "12",
+        "14",
+        "21",
+        "31",
+        "57",
+        "58"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "sanook",
       "name": "หวย AI ส่องเลขเด็ดงวดนี้ 1/9/69 วิเคราะห์สถิติหวยอ",
       "url": "https://news.sanook.com/9904947/",
       "lead": [
@@ -213,7 +256,19 @@
       "mentions": 1
     },
     {
+      "digits": "032",
+      "mentions": 1
+    },
+    {
       "digits": "061",
+      "mentions": 1
+    },
+    {
+      "digits": "275",
+      "mentions": 1
+    },
+    {
+      "digits": "278",
       "mentions": 1
     },
     {
@@ -234,18 +289,6 @@
     },
     {
       "digits": "539",
-      "mentions": 1
-    },
-    {
-      "digits": "561",
-      "mentions": 1
-    },
-    {
-      "digits": "632",
-      "mentions": 1
-    },
-    {
-      "digits": "762",
       "mentions": 1
     }
   ]
