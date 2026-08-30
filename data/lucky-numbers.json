@@ -2,18 +2,55 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-29T20:39:24.628Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-08-30T11:31:56.603Z",
+  "sourceCount": 5,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเสือตกถัง",
+      "url": "https://lottery.kapook.com/view303415.html",
+      "lead": [
+        "2",
+        "9",
+        "3",
+        "11",
+        "53",
+        "44"
+      ],
+      "two": [
+        "20",
+        "26",
+        "23",
+        "21",
+        "28",
+        "27",
+        "90",
+        "96",
+        "93",
+        "91",
+        "98",
+        "97"
+      ],
+      "three": [
+        "829",
+        "920",
+        "926",
+        "923",
+        "921",
+        "729",
+        "429",
+        "529"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยเด็ดเงินเทวดา 1 ก.ย. 69 เปิดชุดเลขน่าลุ้น เลขวิ",
       "url": "https://lottery.kapook.com/view303410.html",
       "lead": [
-        "2",
         "3",
         "7",
         "5",
+        "2",
         "75",
         "95",
         "97",
@@ -123,53 +160,16 @@
         "867",
         "539"
       ]
-    },
-    {
-      "site": "kapook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://lottery.kapook.com/view303247.html",
-      "lead": [
-        "3",
-        "9",
-        "2",
-        "6"
-      ],
-      "two": [
-        "30",
-        "34",
-        "90",
-        "94",
-        "23",
-        "28",
-        "60",
-        "68"
-      ],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "รวมเลขเด็ดหวยสัญจรระยอง 1 ก.ย. 69 ส่องอายุผู้ว่าฯ ",
-      "url": "https://news.sanook.com/9905374/",
-      "lead": [
-        "30",
-        "2",
-        "06",
-        "11",
-        "12",
-        "14",
-        "21",
-        "31",
-        "57",
-        "58"
-      ],
-      "two": [],
-      "three": []
     }
   ],
   "topTwo": [
     {
-      "digits": "34",
-      "mentions": 2
+      "digits": "96",
+      "mentions": 3
+    },
+    {
+      "digits": "97",
+      "mentions": 3
     },
     {
       "digits": "46",
@@ -196,16 +196,12 @@
       "mentions": 2
     },
     {
-      "digits": "94",
+      "digits": "93",
       "mentions": 2
     },
     {
-      "digits": "96",
-      "mentions": 2
-    },
-    {
-      "digits": "97",
-      "mentions": 2
+      "digits": "20",
+      "mentions": 1
     }
   ],
   "topThree": [
@@ -230,6 +226,14 @@
       "mentions": 1
     },
     {
+      "digits": "429",
+      "mentions": 1
+    },
+    {
+      "digits": "529",
+      "mentions": 1
+    },
+    {
       "digits": "539",
       "mentions": 1
     },
@@ -239,14 +243,6 @@
     },
     {
       "digits": "632",
-      "mentions": 1
-    },
-    {
-      "digits": "762",
-      "mentions": 1
-    },
-    {
-      "digits": "837",
       "mentions": 1
     }
   ]
