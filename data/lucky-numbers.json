@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-31T13:05:05.807Z",
+  "generatedAt": "2026-08-31T22:38:16.365Z",
   "sourceCount": 8,
   "sources": [
     {
@@ -44,9 +44,10 @@
       "name": "หวยเสือตกถัง",
       "url": "https://lottery.kapook.com/view303415.html",
       "lead": [
-        "3",
+        "4",
         "2",
         "9",
+        "3",
         "11",
         "53",
         "44"
@@ -152,6 +153,30 @@
     },
     {
       "site": "sanook",
+      "name": "เลขเด็ด ทะเบียนรถบัส อนุทิน นั่งลงพื้นที่สงขลา ลุ้",
+      "url": "https://news.sanook.com/9905567/",
+      "lead": [
+        "1",
+        "0",
+        "5"
+      ],
+      "two": [
+        "10",
+        "05",
+        "15",
+        "01",
+        "50",
+        "51"
+      ],
+      "three": [
+        "105",
+        "150",
+        "501",
+        "510"
+      ]
+    },
+    {
+      "site": "sanook",
       "name": "หวยแม่น้ำหนึ่ง",
       "url": "https://news.sanook.com/9905563/",
       "lead": [
@@ -165,25 +190,6 @@
         "39",
         "97",
         "93"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "รวมเลขเด็ดหวยสัญจรระยอง 1 ก.ย. 69 ส่องอายุผู้ว่าฯ ",
-      "url": "https://news.sanook.com/9905374/",
-      "lead": [
-        "30",
-        "2",
-        "06",
-        "11",
-        "12",
-        "14",
-        "21",
-        "31",
-        "57",
-        "58"
       ],
       "two": [],
       "three": []
@@ -211,6 +217,10 @@
       "mentions": 2
     },
     {
+      "digits": "01",
+      "mentions": 1
+    },
+    {
       "digits": "03",
       "mentions": 1
     },
@@ -219,21 +229,25 @@
       "mentions": 1
     },
     {
-      "digits": "20",
+      "digits": "05",
       "mentions": 1
     },
     {
-      "digits": "21",
-      "mentions": 1
-    },
-    {
-      "digits": "23",
+      "digits": "10",
       "mentions": 1
     }
   ],
   "topThree": [
     {
       "digits": "032",
+      "mentions": 1
+    },
+    {
+      "digits": "105",
+      "mentions": 1
+    },
+    {
+      "digits": "150",
       "mentions": 1
     },
     {
@@ -249,27 +263,19 @@
       "mentions": 1
     },
     {
+      "digits": "501",
+      "mentions": 1
+    },
+    {
+      "digits": "510",
+      "mentions": 1
+    },
+    {
       "digits": "529",
       "mentions": 1
     },
     {
       "digits": "703",
-      "mentions": 1
-    },
-    {
-      "digits": "704",
-      "mentions": 1
-    },
-    {
-      "digits": "729",
-      "mentions": 1
-    },
-    {
-      "digits": "829",
-      "mentions": 1
-    },
-    {
-      "digits": "920",
       "mentions": 1
     }
   ]
