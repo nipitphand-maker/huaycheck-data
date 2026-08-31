@@ -2,9 +2,25 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-31T04:32:40.311Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-08-31T13:05:05.807Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยดุ่ย ภรัญฯ ปล่อยเลขเด็ดงวดนี้ 1 ก.ย. 69 ให้สายล",
+      "url": "https://lottery.kapook.com/view303439.html",
+      "lead": [],
+      "two": [
+        "04",
+        "73",
+        "03",
+        "70"
+      ],
+      "three": [
+        "703",
+        "704"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยปิงปองน้องเพชรกล้า เลขเด็ดงวดนี้ 1 ก.ย. 69 มีอะ",
@@ -28,9 +44,9 @@
       "name": "หวยเสือตกถัง",
       "url": "https://lottery.kapook.com/view303415.html",
       "lead": [
+        "3",
         "2",
         "9",
-        "3",
         "11",
         "53",
         "44"
@@ -65,6 +81,7 @@
       "name": "หวยเด็ดเงินเทวดา 1 ก.ย. 69 เปิดชุดเลขน่าลุ้น เลขวิ",
       "url": "https://lottery.kapook.com/view303410.html",
       "lead": [
+        "4",
         "3",
         "7",
         "5",
@@ -73,8 +90,7 @@
         "95",
         "97",
         "54",
-        "56",
-        "63"
+        "56"
       ],
       "two": [],
       "three": [
@@ -135,49 +151,23 @@
       "three": []
     },
     {
-      "site": "kapook",
-      "name": "หวยอาจารย์หนู",
-      "url": "https://lottery.kapook.com/view303302.html",
+      "site": "sanook",
+      "name": "หวยแม่น้ำหนึ่ง",
+      "url": "https://news.sanook.com/9905563/",
       "lead": [
+        "7",
         "3",
-        "6",
-        "4",
         "9",
-        "12",
-        "58",
-        "26"
-      ],
-      "two": [
-        "31",
-        "32",
-        "34",
+        "2",
+        "73",
+        "79",
         "37",
-        "61",
-        "62",
-        "64",
-        "67",
         "39",
-        "40",
-        "43",
-        "46",
-        "47",
-        "90",
-        "93",
-        "96",
         "97",
-        "49"
+        "93"
       ],
-      "three": [
-        "031",
-        "632",
-        "934",
-        "837",
-        "561",
-        "762",
-        "364",
-        "867",
-        "539"
-      ]
+      "two": [],
+      "three": []
     },
     {
       "site": "sanook",
@@ -201,51 +191,47 @@
   ],
   "topTwo": [
     {
-      "digits": "46",
-      "mentions": 3
-    },
-    {
-      "digits": "49",
-      "mentions": 3
-    },
-    {
-      "digits": "96",
-      "mentions": 3
-    },
-    {
-      "digits": "97",
-      "mentions": 3
-    },
-    {
       "digits": "26",
       "mentions": 2
     },
     {
-      "digits": "40",
+      "digits": "46",
       "mentions": 2
     },
     {
-      "digits": "47",
+      "digits": "49",
       "mentions": 2
     },
     {
-      "digits": "64",
+      "digits": "96",
       "mentions": 2
     },
     {
-      "digits": "67",
+      "digits": "97",
       "mentions": 2
     },
     {
-      "digits": "90",
-      "mentions": 2
+      "digits": "03",
+      "mentions": 1
+    },
+    {
+      "digits": "04",
+      "mentions": 1
+    },
+    {
+      "digits": "20",
+      "mentions": 1
+    },
+    {
+      "digits": "21",
+      "mentions": 1
+    },
+    {
+      "digits": "23",
+      "mentions": 1
     }
   ],
   "topThree": [
-    {
-      "digits": "031",
-      "mentions": 1
-    },
     {
       "digits": "032",
       "mentions": 1
@@ -259,10 +245,6 @@
       "mentions": 1
     },
     {
-      "digits": "364",
-      "mentions": 1
-    },
-    {
       "digits": "429",
       "mentions": 1
     },
@@ -271,15 +253,23 @@
       "mentions": 1
     },
     {
-      "digits": "539",
+      "digits": "703",
       "mentions": 1
     },
     {
-      "digits": "561",
+      "digits": "704",
       "mentions": 1
     },
     {
-      "digits": "632",
+      "digits": "729",
+      "mentions": 1
+    },
+    {
+      "digits": "829",
+      "mentions": 1
+    },
+    {
+      "digits": "920",
       "mentions": 1
     }
   ]
