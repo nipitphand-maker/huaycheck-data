@@ -2,9 +2,33 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-01",
   "drawDateThai": "1 กันยายน 2569",
-  "generatedAt": "2026-08-31T22:38:16.365Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-09-01T04:15:07.086Z",
+  "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยแม่จำเนียร",
+      "url": "https://lottery.kapook.com/view303451.html",
+      "lead": [
+        "10",
+        "1"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "หวยสเตฟาน มาแล้ว เปิด 3 ตัวน่าตาม เลขเด็ดงวดนี้ 1 ",
+      "url": "https://lottery.kapook.com/view303446.html",
+      "lead": [
+        "3",
+        "09",
+        "28",
+        "57"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยดุ่ย ภรัญฯ ปล่อยเลขเด็ดงวดนี้ 1 ก.ย. 69 ให้สายล",
@@ -44,7 +68,7 @@
       "name": "หวยเสือตกถัง",
       "url": "https://lottery.kapook.com/view303415.html",
       "lead": [
-        "4",
+        "5",
         "2",
         "9",
         "3",
@@ -121,37 +145,6 @@
       "three": []
     },
     {
-      "site": "kapook",
-      "name": "คัดมาให้แล้ว หวยปฏิทินช่อง 3 เลขเด็ดงวดนี้ 1 ก.ย. ",
-      "url": "https://lottery.kapook.com/view303335.html",
-      "lead": [
-        "2",
-        "3",
-        "4",
-        "9",
-        "6",
-        "7",
-        "15",
-        "13",
-        "48"
-      ],
-      "two": [
-        "96",
-        "97",
-        "94",
-        "69",
-        "67",
-        "64",
-        "79",
-        "76",
-        "74",
-        "49",
-        "47",
-        "46"
-      ],
-      "three": []
-    },
-    {
       "site": "sanook",
       "name": "เลขเด็ด ทะเบียนรถบัส อนุทิน นั่งลงพื้นที่สงขลา ลุ้",
       "url": "https://news.sanook.com/9905567/",
@@ -201,22 +194,6 @@
       "mentions": 2
     },
     {
-      "digits": "46",
-      "mentions": 2
-    },
-    {
-      "digits": "49",
-      "mentions": 2
-    },
-    {
-      "digits": "96",
-      "mentions": 2
-    },
-    {
-      "digits": "97",
-      "mentions": 2
-    },
-    {
       "digits": "01",
       "mentions": 1
     },
@@ -234,6 +211,22 @@
     },
     {
       "digits": "10",
+      "mentions": 1
+    },
+    {
+      "digits": "15",
+      "mentions": 1
+    },
+    {
+      "digits": "20",
+      "mentions": 1
+    },
+    {
+      "digits": "21",
+      "mentions": 1
+    },
+    {
+      "digits": "23",
       "mentions": 1
     }
   ],
