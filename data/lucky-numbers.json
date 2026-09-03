@@ -2,9 +2,29 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-16",
   "drawDateThai": "16 กันยายน 2569",
-  "generatedAt": "2026-09-01T20:45:49.841Z",
-  "sourceCount": 0,
-  "sources": [],
+  "generatedAt": "2026-09-03T20:42:29.339Z",
+  "sourceCount": 1,
+  "sources": [
+    {
+      "site": "kapook",
+      "name": "10 คำทำนายฝันแม่น ๆ ฟรี พร้อมดูเลขเด็ดให้โชคงวด 16",
+      "url": "https://lottery.kapook.com/view263469.html",
+      "lead": [
+        "0",
+        "3",
+        "7",
+        "4",
+        "5",
+        "9",
+        "6",
+        "8",
+        "2",
+        "1"
+      ],
+      "two": [],
+      "three": []
+    }
+  ],
   "topTwo": [],
   "topThree": []
 }
