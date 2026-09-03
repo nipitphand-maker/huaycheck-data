@@ -122,6 +122,40 @@ test('rejects complete sources with a fifth-prize mismatch', () => {
   );
 });
 
+test('reports no_draw when every source says the page is about another date', async () => {
+  // The 2nd and the 17th are checked speculatively for a holiday-shifted draw.
+  // In a month with no shift both sources correctly serve the previous draw,
+  // and that used to surface as `parser error` — a red run every month for an
+  // entirely normal condition, which is how a real breakage hides.
+  const outcome = await collectVerifiedResult(
+    '2026-09-02',
+    fetchBySource({
+      sanook: async () => '<html><head><link rel="canonical" href="https://news.sanook.com/lotto/check/01092569/"></head></html>',
+      thairath: async () => thairathPage(completeResult({ drawDate: '2026-09-01' })),
+    }),
+    new Date('2026-09-02T10:00:00.000Z'),
+  );
+  assert.equal(outcome.status, 'no_draw');
+});
+
+test('a broken page is a parser error, never a quiet no_draw', async () => {
+  // The distinction this fix turns on. A page with no canonical link at all is
+  // Sanook's markup having changed or an error page being served — if that were
+  // reported as no_draw it would look exactly like an ordinary unshifted month
+  // and the collector would go silently blind.
+  await assert.rejects(
+    collectVerifiedResult(
+      '2026-09-02',
+      fetchBySource({
+        sanook: async () => '<main>not a lottery page</main>',
+        thairath: async () => '<main>not a lottery page</main>',
+      }),
+      new Date('2026-09-02T10:00:00.000Z'),
+    ),
+    /parser error/,
+  );
+});
+
 test('accepts sources that agree on every number but list the tiers in a different order', () => {
   // This is the 2026-09-01 outage. Sanook and Thairath returned identical
   // digits in all 165 prize slots and differed only in sequence; the
@@ -214,7 +248,10 @@ test('Sanook rejects a stale canonical path with the requested path in its query
 test('Sanook rejects a canonical URL from a non-Sanook origin', () => {
   const html = '<link rel="canonical" href="https://example.com/lotto/check/01082569/">';
 
-  assert.throws(() => parseSanookPage(html, '2026-08-01'), /page date differs/);
+  // Rejected as a broken page, not as a date mismatch: the date in that URL
+  // happens to be the right one, and only the origin is wrong. Classifying it
+  // as "no draw on this date" would be both untrue and quiet.
+  assert.throws(() => parseSanookPage(html, '2026-08-01'), /no usable canonical link/);
 });
 
 test('Sanook accepts canonical attribute variations', () => {
@@ -229,7 +266,10 @@ test('Sanook accepts canonical attribute variations', () => {
 });
 
 test('Sanook rejects a page without canonical metadata', () => {
-  assert.throws(() => parseSanookPage('<main></main>', '2026-08-01'), /page date differs/);
+  // A page carrying no canonical link says nothing about any date. It is the
+  // markup having changed or an error page being served, and it must stay a
+  // loud parser error rather than collapse into the ordinary no_draw case.
+  assert.throws(() => parseSanookPage('<main></main>', '2026-08-01'), /no usable canonical link/);
 });
 
 test('does not rewrite a published result when only publishedAt moved', async (t) => {

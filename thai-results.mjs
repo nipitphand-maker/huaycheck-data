@@ -105,13 +105,33 @@ function publishedCandidate(data, source) {
   return { schemaVersion: 1, source, sources: [source], publishedAt: new Date().toISOString(), ...data };
 }
 
+/**
+ * The requested date is not the date the page is about.
+ *
+ * Distinct from an ordinary parser error because it has a legitimate cause:
+ * the collector also runs on the 2nd and the 17th, which exist to catch a draw
+ * that GLO shifted off the 1st or the 16th for a holiday. In a month with no
+ * shift there simply is no draw on those days, both sources correctly serve the
+ * previous draw, and treating that as a parse failure reported a red run every
+ * month for a condition that is entirely normal. Recurring expected failures
+ * are how a real breakage goes unnoticed.
+ */
+class DateMismatchError extends Error {}
+
 /** Parse Sanook's rendered lottery cards, intentionally ignoring JSON-LD summaries. */
 export function parseSanookPage(html, drawDate) {
   const expectedPath = `/lotto/check/${isoToSanookSlug(drawDate)}/`;
   let canonical;
   try { canonical = new URL(sanookCanonicalUrl(html)); } catch { canonical = null; }
-  if (canonical?.origin !== 'https://news.sanook.com' || canonical.pathname !== expectedPath) {
-    throw new Error(`sanook: requested ${drawDate} but page date differs`);
+  // No usable canonical link is a BROKEN page, not a page about another date.
+  // Collapsing the two would let a genuine parser breakage — Sanook changing
+  // its markup, an error page, a redirect to the homepage — be reported as the
+  // ordinary "no shifted draw today" and disappear from the logs.
+  if (canonical?.origin !== 'https://news.sanook.com') {
+    throw new Error('sanook: no usable canonical link on the page');
+  }
+  if (canonical.pathname !== expectedPath) {
+    throw new DateMismatchError(`sanook: requested ${drawDate} but page date differs`);
   }
   const page = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
   const firstPrize = page.match(/class="lotto__number lotto__number--first">(\d{6})</)?.[1] ?? '';
@@ -144,8 +164,13 @@ export function parseThairathPage(html, expectedDate) {
   const state = JSON.parse(raw).props?.initialState;
   const lottery = state?.lottery?.data?.items;
   const canonical = state?.common?.data?.canonical ?? '';
-  if (!canonical.includes(`date=${expectedDate}`) || !lottery?.dates?.some((date) => date.str === expectedDate)) {
-    throw new Error(`thairath: requested ${expectedDate} but page date differs`);
+  // Same split as Sanook: missing structure is a parser error, structure that
+  // is present and names a different date is a date mismatch.
+  if (!canonical || !Array.isArray(lottery?.dates)) {
+    throw new Error('thairath: missing canonical or lottery dates');
+  }
+  if (!canonical.includes(`date=${expectedDate}`) || !lottery.dates.some((date) => date.str === expectedDate)) {
+    throw new DateMismatchError(`thairath: requested ${expectedDate} but page date differs`);
   }
   const prizes = lottery.prizes;
   return publishedCandidate({
@@ -247,6 +272,9 @@ async function collectSourceOutcome({ source, url, parse }, drawDate, fetchPage)
     const classification = classifyParsedCandidate(parse(html, drawDate), drawDate, source);
     return { ...classification, source };
   } catch (error) {
+    if (error instanceof DateMismatchError) {
+      return { status: 'date_mismatch', source, message: errorMessage(error) };
+    }
     return { status: 'parser_error', source, message: errorMessage(error) };
   }
 }
@@ -329,6 +357,13 @@ export async function collectVerifiedResult(drawDate, fetchPage = fetchHtml, now
   }
 
   const diagnostics = formatDiagnostics(outcomes);
+  // Every source agrees this date is not a draw date. Report it as its own
+  // outcome rather than an error and let the caller decide: on the 2nd or the
+  // 17th it means "no shifted draw this month", which is ordinary; on the 1st
+  // or the 16th it means something is genuinely wrong.
+  if (outcomes.every((outcome) => outcome.status === 'date_mismatch')) {
+    return { status: 'no_draw', diagnostics: outcomes };
+  }
   if (outcomes.every((outcome) => outcome.status === 'unavailable')) {
     throw new Error(`all sources unavailable: ${diagnostics}`);
   }
@@ -344,6 +379,18 @@ function todayInIct(now = new Date()) {
 
 function mayBeDrawDay(isoDate) {
   return [1, 2, 16, 17, 30].includes(Number(isoDate.slice(-2)));
+}
+
+/**
+ * Days that are only *candidates* for a draw, never guaranteed to have one.
+ *
+ * GLO draws on the 1st and the 16th and shifts to the following day when a
+ * holiday collides, so the 2nd and the 17th are checked speculatively. The 30th
+ * is NOT one of these — it is the announced year-end draw, so a missing result
+ * there is a real failure, same as the 1st or the 16th.
+ */
+function isShiftFallbackDay(isoDate) {
+  return [2, 17].includes(Number(isoDate.slice(-2)));
 }
 
 function readLatest(path) {
@@ -414,6 +461,18 @@ async function main() {
   if (outcome.status === 'waiting') {
     console.log(`Waiting for complete result: ${formatDiagnostics(outcome.diagnostics)}`);
     return;
+  }
+  if (outcome.status === 'no_draw') {
+    // On a shift-fallback day this is the expected answer in any month where
+    // GLO did not move the draw. On a nominal draw day it is not — both
+    // sources serving a different date on the 1st or the 16th means the draw
+    // moved without us knowing, or a source changed its URL scheme, and that
+    // must stay loud.
+    if (isShiftFallbackDay(drawDate)) {
+      console.log(`${drawDate}: no shifted draw (both sources report another date)`);
+      return;
+    }
+    throw new Error(`no result on a scheduled draw day: ${formatDiagnostics(outcome.diagnostics)}`);
   }
   const changed = writeIfNewer(outcome.result, new URL('./data/thai-latest.json', import.meta.url));
   console.log(changed ? `published ${outcome.result.drawDate} from ${outcome.result.sources.join(', ')}` : 'verified result unchanged');
