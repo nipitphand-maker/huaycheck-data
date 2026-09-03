@@ -122,6 +122,62 @@ test('rejects complete sources with a fifth-prize mismatch', () => {
   );
 });
 
+test('accepts sources that agree on every number but list the tiers in a different order', () => {
+  // This is the 2026-09-01 outage. Sanook and Thairath returned identical
+  // digits in all 165 prize slots and differed only in sequence; the
+  // order-sensitive fingerprint read that as disagreement and the month's
+  // biggest draw was never published. Order carries no meaning in a set of
+  // 100 fifth-prize numbers.
+  const base = completeResult({ source: 'sanook' });
+  const shuffled = completeResult({
+    source: 'thairath',
+    secondPrizes: [...base.secondPrizes].reverse(),
+    thirdPrizes: [...base.thirdPrizes].reverse(),
+    fourthPrizes: [...base.fourthPrizes].reverse(),
+    fifthPrizes: [...base.fifthPrizes].reverse(),
+    frontThreeDigits: [...base.frontThreeDigits].reverse(),
+    backThreeDigits: [...base.backThreeDigits].reverse(),
+  });
+
+  const result = chooseVerifiedResult([base, shuffled], new Date('2026-07-16T10:00:00.000Z'));
+  assert.equal(result.firstPrize, '639214');
+  // The published payload keeps the winning candidate's own order — only the
+  // comparison ignores it. Sorting the payload would change what every
+  // installed app renders for the 2nd-5th prize tiers.
+  assert.deepEqual(result.fifthPrizes, base.fifthPrizes);
+});
+
+test('still rejects sources that disagree on a number, whatever the order', () => {
+  // The guard that matters must survive the fix: a genuinely different digit
+  // is not an ordering difference, and reversing the list must not hide it.
+  const base = completeResult({ source: 'sanook' });
+  const wrong = [...base.fifthPrizes].reverse();
+  wrong[0] = '999999';
+
+  assert.throws(
+    () => chooseVerifiedResult([base, completeResult({ source: 'thairath', fifthPrizes: wrong })],
+      new Date('2026-07-16T10:00:00.000Z')),
+    /source result mismatch/,
+  );
+});
+
+test('a differently ordered republish of the same draw is not a change', () => {
+  // Without this, whichever source wins a given run flips the stored order and
+  // every 5-minute run commits an identical result under a new publishedAt.
+  const path = new URL('./tmp-order-churn.json', import.meta.url);
+  const result = completeResult();
+  try {
+    assert.equal(writeIfNewer(result, path), true, 'first publish writes');
+    assert.equal(
+      writeIfNewer({ ...result, fifthPrizes: [...result.fifthPrizes].reverse() }, path),
+      false,
+      'the same numbers in another order must not rewrite',
+    );
+  } finally {
+    try { unlinkSync(path); } catch {}
+  }
+});
+
 test('parses Thairath prizes from the nested Next.js lottery items state', () => {
   const result = completeResult({ source: 'thairath', sources: ['thairath'] });
   const html = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({

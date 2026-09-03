@@ -350,8 +350,40 @@ function readLatest(path) {
   try { return JSON.parse(readFileSync(path, 'utf8')); } catch { return null; }
 }
 
+// Prize tiers where the numbers are a SET — the announcement lists them in
+// whatever order it likes and no meaning attaches to the sequence. Sanook and
+// Thairath genuinely do order them differently.
+//
+// Deliberately excluded: `firstPrize` and `backTwoDigits` are scalars, and
+// `adjacentToFirst` is positional — it is [previous, next] around the first
+// prize and validateResult checks it against firstPrize. Sorting that pair
+// would silently defeat the check.
+const UNORDERED_PRIZE_FIELDS = [
+  'secondPrizes', 'thirdPrizes', 'fourthPrizes', 'fifthPrizes',
+  'frontThreeDigits', 'backThreeDigits',
+];
+
+/**
+ * Identity of a result, ignoring which source reported it, when, and in what
+ * order the unordered tiers were listed.
+ *
+ * The ordering part is not a nicety. This fingerprint is what decides whether
+ * two sources "agree", and a plain JSON.stringify is order-sensitive: on
+ * 2026-09-01 Sanook and Thairath returned identical digits in all 165 prize
+ * slots, differing only in sequence, and the collector rejected the draw as a
+ * `source result mismatch`. The 1 Sep result was never published — the biggest
+ * draw of the month, lost to a false positive in the cross-verification.
+ *
+ * This does not weaken "late is better than wrong": that rule is about never
+ * publishing a number no source confirmed, and every number here is confirmed
+ * by both. The published payload still carries the winning candidate's own
+ * order; only the comparison is order-insensitive.
+ */
 function canonicalResultFingerprint(value) {
   const { source, sources, publishedAt, ...canonical } = value;
+  for (const field of UNORDERED_PRIZE_FIELDS) {
+    if (Array.isArray(canonical[field])) canonical[field] = [...canonical[field]].sort();
+  }
   return JSON.stringify(canonical);
 }
 
