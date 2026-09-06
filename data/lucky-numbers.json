@@ -2,9 +2,28 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-16",
   "drawDateThai": "16 กันยายน 2569",
-  "generatedAt": "2026-09-05T10:12:30.125Z",
-  "sourceCount": 2,
+  "generatedAt": "2026-09-06T10:33:08.446Z",
+  "sourceCount": 3,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view303557.html",
+      "lead": [
+        "4",
+        "7",
+        "2",
+        "41",
+        "45",
+        "71",
+        "75",
+        "0",
+        "8",
+        "01"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "เปิดเลขเด็ดงวดนี้ 16 ก.ย. 69 จากหวยปฏิทินช่อง 3 ลุ",
