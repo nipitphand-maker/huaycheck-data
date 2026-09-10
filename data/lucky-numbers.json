@@ -2,9 +2,41 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-16",
   "drawDateThai": "16 กันยายน 2569",
-  "generatedAt": "2026-09-09T10:57:35.521Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-09-10T03:47:30.904Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยคำชะโนด",
+      "url": "https://lottery.kapook.com/view303639.html",
+      "lead": [
+        "2",
+        "3"
+      ],
+      "two": [
+        "37",
+        "68",
+        "69",
+        "65",
+        "98",
+        "64",
+        "97",
+        "36",
+        "70",
+        "34",
+        "78",
+        "60",
+        "61",
+        "62",
+        "90",
+        "91",
+        "94"
+      ],
+      "three": [
+        "936",
+        "934"
+      ]
+    },
     {
       "site": "kapook",
       "name": "ส่องหวยแม่ตุ๊กตาพารวย เลขเด็ดงวดนี้ 16 ก.ย. 69 ถูก",
@@ -119,6 +151,18 @@
       "mentions": 2
     },
     {
+      "digits": "60",
+      "mentions": 2
+    },
+    {
+      "digits": "68",
+      "mentions": 2
+    },
+    {
+      "digits": "69",
+      "mentions": 2
+    },
+    {
       "digits": "02",
       "mentions": 1
     },
@@ -127,33 +171,30 @@
       "mentions": 1
     },
     {
+      "digits": "34",
+      "mentions": 1
+    },
+    {
+      "digits": "36",
+      "mentions": 1
+    },
+    {
+      "digits": "37",
+      "mentions": 1
+    },
+    {
       "digits": "50",
-      "mentions": 1
-    },
-    {
-      "digits": "55",
-      "mentions": 1
-    },
-    {
-      "digits": "56",
-      "mentions": 1
-    },
-    {
-      "digits": "58",
-      "mentions": 1
-    },
-    {
-      "digits": "59",
-      "mentions": 1
-    },
-    {
-      "digits": "60",
-      "mentions": 1
-    },
-    {
-      "digits": "66",
       "mentions": 1
     }
   ],
-  "topThree": []
+  "topThree": [
+    {
+      "digits": "934",
+      "mentions": 1
+    },
+    {
+      "digits": "936",
+      "mentions": 1
+    }
+  ]
 }
