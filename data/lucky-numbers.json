@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-16",
   "drawDateThai": "16 กันยายน 2569",
-  "generatedAt": "2026-09-10T10:54:29.986Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-09-10T16:03:35.901Z",
+  "sourceCount": 9,
   "sources": [
     {
       "site": "kapook",
@@ -125,27 +125,22 @@
       "three": []
     },
     {
-      "site": "sanook",
+      "site": "kapook",
       "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9906087/",
+      "url": "https://lottery.kapook.com/view303557.html",
       "lead": [
-        "11",
-        "09",
         "4",
         "7",
-        "0",
-        "8"
-      ],
-      "two": [
+        "2",
         "41",
         "45",
         "71",
         "75",
-        "01",
-        "04",
-        "81",
-        "84"
+        "0",
+        "8",
+        "01"
       ],
+      "two": [],
       "three": []
     },
     {
@@ -222,25 +217,6 @@
         "181",
         "236"
       ]
-    },
-    {
-      "site": "sanook",
-      "name": "หวยปฏิทินจีน",
-      "url": "https://news.sanook.com/9906075/",
-      "lead": [
-        "3",
-        "2",
-        "82",
-        "21",
-        "16",
-        "81",
-        "86",
-        "26",
-        "27",
-        "76"
-      ],
-      "two": [],
-      "three": []
     }
   ],
   "topTwo": [
@@ -273,15 +249,15 @@
       "mentions": 2
     },
     {
-      "digits": "41",
-      "mentions": 2
-    },
-    {
       "digits": "50",
       "mentions": 2
     },
     {
       "digits": "56",
+      "mentions": 2
+    },
+    {
+      "digits": "60",
       "mentions": 2
     }
   ],
