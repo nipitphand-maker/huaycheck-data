@@ -2,9 +2,34 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-16",
   "drawDateThai": "16 กันยายน 2569",
-  "generatedAt": "2026-09-10T16:03:35.901Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-09-12T03:48:05.687Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเสือตกถัง",
+      "url": "https://lottery.kapook.com/view303689.html",
+      "lead": [
+        "6",
+        "1",
+        "09",
+        "13",
+        "53"
+      ],
+      "two": [
+        "63",
+        "64",
+        "68",
+        "69",
+        "62",
+        "13",
+        "14",
+        "18",
+        "19",
+        "12"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยท้าวเวสสุวรรณ",
@@ -221,11 +246,15 @@
   ],
   "topTwo": [
     {
+      "digits": "68",
+      "mentions": 4
+    },
+    {
       "digits": "58",
       "mentions": 3
     },
     {
-      "digits": "68",
+      "digits": "69",
       "mentions": 3
     },
     {
@@ -249,15 +278,11 @@
       "mentions": 2
     },
     {
+      "digits": "12",
+      "mentions": 2
+    },
+    {
       "digits": "50",
-      "mentions": 2
-    },
-    {
-      "digits": "56",
-      "mentions": 2
-    },
-    {
-      "digits": "60",
       "mentions": 2
     }
   ],
