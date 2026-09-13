@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "drawDate": "2026-09-16",
   "drawDateThai": "16 กันยายน 2569",
-  "generatedAt": "2026-09-12T20:20:12.770Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-09-13T03:56:27.222Z",
+  "sourceCount": 8,
   "sources": [
     {
       "site": "kapook",
       "name": "หวยเสือตกถัง",
       "url": "https://lottery.kapook.com/view303689.html",
       "lead": [
-        "6",
         "1",
+        "6",
         "09",
         "13",
         "53"
@@ -150,27 +150,22 @@
       "three": []
     },
     {
-      "site": "sanook",
+      "site": "kapook",
       "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9906087/",
+      "url": "https://lottery.kapook.com/view303557.html",
       "lead": [
-        "11",
-        "09",
         "4",
         "7",
-        "0",
-        "8"
-      ],
-      "two": [
+        "2",
         "41",
         "45",
         "71",
         "75",
-        "01",
-        "04",
-        "81",
-        "84"
+        "0",
+        "8",
+        "01"
       ],
+      "two": [],
       "three": []
     },
     {
@@ -181,44 +176,6 @@
       "two": [
         "10"
       ],
-      "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "10 คำทำนายฝันแม่น ๆ ฟรี พร้อมดูเลขเด็ดให้โชคงวด 16",
-      "url": "https://lottery.kapook.com/view263469.html",
-      "lead": [
-        "0",
-        "3",
-        "7",
-        "4",
-        "5",
-        "9",
-        "6",
-        "8",
-        "2",
-        "1"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยปฏิทินจีน",
-      "url": "https://news.sanook.com/9906075/",
-      "lead": [
-        "3",
-        "2",
-        "82",
-        "21",
-        "16",
-        "81",
-        "86",
-        "26",
-        "27",
-        "76"
-      ],
-      "two": [],
       "three": []
     }
   ],
@@ -233,10 +190,6 @@
     },
     {
       "digits": "10",
-      "mentions": 2
-    },
-    {
-      "digits": "41",
       "mentions": 2
     },
     {
@@ -262,6 +215,10 @@
     {
       "digits": "67",
       "mentions": 2
+    },
+    {
+      "digits": "00",
+      "mentions": 1
     }
   ],
   "topThree": [
