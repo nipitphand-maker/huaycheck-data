@@ -2,9 +2,31 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-18T20:37:11.001Z",
-  "sourceCount": 1,
+  "generatedAt": "2026-09-19T10:32:34.518Z",
+  "sourceCount": 2,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเสือตกถัง",
+      "url": "https://lottery.kapook.com/view303840.html",
+      "lead": [
+        "8",
+        "9"
+      ],
+      "two": [
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "เปิดเลขเด็ด 10 คำทำนายฝันแม่น ๆ เตรียมลุ้นโชค 1 ต.",
@@ -25,6 +47,47 @@
       "three": []
     }
   ],
-  "topTwo": [],
+  "topTwo": [
+    {
+      "digits": "84",
+      "mentions": 1
+    },
+    {
+      "digits": "85",
+      "mentions": 1
+    },
+    {
+      "digits": "86",
+      "mentions": 1
+    },
+    {
+      "digits": "87",
+      "mentions": 1
+    },
+    {
+      "digits": "88",
+      "mentions": 1
+    },
+    {
+      "digits": "94",
+      "mentions": 1
+    },
+    {
+      "digits": "95",
+      "mentions": 1
+    },
+    {
+      "digits": "96",
+      "mentions": 1
+    },
+    {
+      "digits": "97",
+      "mentions": 1
+    },
+    {
+      "digits": "98",
+      "mentions": 1
+    }
+  ],
   "topThree": []
 }
