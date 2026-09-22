@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-20T10:55:04.672Z",
-  "sourceCount": 3,
+  "generatedAt": "2026-09-22T16:34:06.365Z",
+  "sourceCount": 6,
   "sources": [
     {
       "site": "kapook",
@@ -65,47 +65,115 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://news.sanook.com/9907330/",
+      "lead": [
+        "2",
+        "5"
+      ],
+      "two": [
+        "32",
+        "62",
+        "35",
+        "65",
+        "42",
+        "45",
+        "92",
+        "95"
+      ],
+      "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9907327/",
+      "lead": [],
+      "two": [
+        "18",
+        "56",
+        "08",
+        "69",
+        "02",
+        "28",
+        "27",
+        "78",
+        "05",
+        "67",
+        "35",
+        "68",
+        "60",
+        "62",
+        "29",
+        "49",
+        "09"
+      ],
+      "three": [
+        "905",
+        "935"
+      ]
+    },
+    {
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9907326/",
+      "lead": [
+        "5",
+        "2",
+        "7",
+        "8",
+        "0",
+        "3",
+        "27",
+        "78",
+        "80",
+        "03"
+      ],
+      "two": [],
+      "three": []
     }
   ],
   "topTwo": [
     {
       "digits": "08",
-      "mentions": 1
+      "mentions": 2
+    },
+    {
+      "digits": "35",
+      "mentions": 2
     },
     {
       "digits": "60",
-      "mentions": 1
+      "mentions": 2
+    },
+    {
+      "digits": "62",
+      "mentions": 2
     },
     {
       "digits": "67",
-      "mentions": 1
+      "mentions": 2
     },
     {
       "digits": "68",
+      "mentions": 2
+    },
+    {
+      "digits": "95",
+      "mentions": 2
+    },
+    {
+      "digits": "02",
       "mentions": 1
     },
     {
-      "digits": "84",
+      "digits": "05",
       "mentions": 1
     },
     {
-      "digits": "85",
-      "mentions": 1
-    },
-    {
-      "digits": "86",
-      "mentions": 1
-    },
-    {
-      "digits": "87",
-      "mentions": 1
-    },
-    {
-      "digits": "88",
-      "mentions": 1
-    },
-    {
-      "digits": "94",
+      "digits": "09",
       "mentions": 1
     }
   ],
@@ -116,6 +184,14 @@
     },
     {
       "digits": "608",
+      "mentions": 1
+    },
+    {
+      "digits": "905",
+      "mentions": 1
+    },
+    {
+      "digits": "935",
       "mentions": 1
     }
   ]
