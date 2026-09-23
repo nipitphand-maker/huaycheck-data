@@ -2,9 +2,31 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-22T21:01:34.223Z",
-  "sourceCount": 5,
+  "generatedAt": "2026-09-23T03:57:25.289Z",
+  "sourceCount": 6,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view303908.html",
+      "lead": [
+        "2",
+        "5"
+      ],
+      "two": [
+        "32",
+        "62",
+        "35",
+        "65",
+        "42",
+        "45",
+        "92",
+        "95",
+        "09",
+        "18"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "ส่องหวย อ.น๊อตตี้ เลขเด็ดงวดนี้ 1 ต.ค. 69 จัดชุดเล",
@@ -68,22 +90,21 @@
     },
     {
       "site": "sanook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9907330/",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9907326/",
       "lead": [
+        "5",
         "2",
-        "5"
+        "7",
+        "8",
+        "0",
+        "3",
+        "27",
+        "78",
+        "80",
+        "03"
       ],
-      "two": [
-        "32",
-        "62",
-        "35",
-        "65",
-        "42",
-        "45",
-        "92",
-        "95"
-      ],
+      "two": [],
       "three": []
     },
     {
@@ -122,6 +143,14 @@
       "mentions": 2
     },
     {
+      "digits": "09",
+      "mentions": 2
+    },
+    {
+      "digits": "18",
+      "mentions": 2
+    },
+    {
       "digits": "35",
       "mentions": 2
     },
@@ -147,14 +176,6 @@
     },
     {
       "digits": "02",
-      "mentions": 1
-    },
-    {
-      "digits": "05",
-      "mentions": 1
-    },
-    {
-      "digits": "09",
       "mentions": 1
     }
   ],
