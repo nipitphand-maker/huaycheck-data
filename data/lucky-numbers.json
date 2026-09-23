@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-23T03:57:25.289Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-09-23T11:03:28.836Z",
+  "sourceCount": 5,
   "sources": [
     {
       "site": "kapook",
@@ -84,25 +84,6 @@
         "88",
         "28",
         "78"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยปฏิทินจีน",
-      "url": "https://news.sanook.com/9907326/",
-      "lead": [
-        "5",
-        "2",
-        "7",
-        "8",
-        "0",
-        "3",
-        "27",
-        "78",
-        "80",
-        "03"
       ],
       "two": [],
       "three": []
