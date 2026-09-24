@@ -2,9 +2,19 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-23T16:24:52.416Z",
-  "sourceCount": 5,
+  "generatedAt": "2026-09-24T11:21:28.369Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยท้าวเวสสุวรรณ",
+      "url": "https://lottery.kapook.com/view303946.html",
+      "lead": [],
+      "two": [
+        "10"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยม้าสีหมอก",
@@ -127,15 +137,87 @@
         "544",
         "591"
       ]
+    },
+    {
+      "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9907327/",
+      "lead": [],
+      "two": [
+        "18",
+        "56",
+        "08",
+        "69",
+        "02",
+        "28",
+        "27",
+        "78",
+        "05",
+        "67",
+        "35",
+        "68",
+        "60",
+        "62",
+        "29",
+        "49",
+        "09"
+      ],
+      "three": [
+        "905",
+        "935"
+      ]
+    },
+    {
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9907326/",
+      "lead": [
+        "5",
+        "2",
+        "7",
+        "8",
+        "0",
+        "3",
+        "27",
+        "78",
+        "80",
+        "03"
+      ],
+      "two": [],
+      "three": []
     }
   ],
   "topTwo": [
     {
       "digits": "09",
-      "mentions": 2
+      "mentions": 3
     },
     {
       "digits": "35",
+      "mentions": 3
+    },
+    {
+      "digits": "08",
+      "mentions": 2
+    },
+    {
+      "digits": "18",
+      "mentions": 2
+    },
+    {
+      "digits": "60",
+      "mentions": 2
+    },
+    {
+      "digits": "62",
+      "mentions": 2
+    },
+    {
+      "digits": "67",
+      "mentions": 2
+    },
+    {
+      "digits": "68",
       "mentions": 2
     },
     {
@@ -145,30 +227,6 @@
     {
       "digits": "95",
       "mentions": 2
-    },
-    {
-      "digits": "08",
-      "mentions": 1
-    },
-    {
-      "digits": "14",
-      "mentions": 1
-    },
-    {
-      "digits": "16",
-      "mentions": 1
-    },
-    {
-      "digits": "17",
-      "mentions": 1
-    },
-    {
-      "digits": "18",
-      "mentions": 1
-    },
-    {
-      "digits": "32",
-      "mentions": 1
     }
   ],
   "topThree": [
@@ -202,6 +260,14 @@
     },
     {
       "digits": "608",
+      "mentions": 1
+    },
+    {
+      "digits": "905",
+      "mentions": 1
+    },
+    {
+      "digits": "935",
       "mentions": 1
     }
   ]
