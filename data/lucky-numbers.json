@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-26T04:11:13.689Z",
+  "generatedAt": "2026-09-26T11:02:21.752Z",
   "sourceCount": 7,
   "sources": [
     {
@@ -41,6 +41,7 @@
       "name": "หวยหลวงพ่อปากแดง",
       "url": "https://lottery.kapook.com/view303965.html",
       "lead": [
+        "1",
         "0",
         "2",
         "5",
