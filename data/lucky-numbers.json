@@ -2,9 +2,40 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-25T21:15:58.982Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-09-26T04:11:13.689Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://lottery.kapook.com/view303992.html",
+      "lead": [],
+      "two": [
+        "05",
+        "06",
+        "07",
+        "09",
+        "56",
+        "57",
+        "59",
+        "67",
+        "69",
+        "79",
+        "10"
+      ],
+      "three": [
+        "056",
+        "057",
+        "059",
+        "067",
+        "069",
+        "079",
+        "567",
+        "569",
+        "579",
+        "679"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยหลวงพ่อปากแดง",
@@ -121,6 +152,14 @@
   "topTwo": [
     {
       "digits": "10",
+      "mentions": 3
+    },
+    {
+      "digits": "09",
+      "mentions": 2
+    },
+    {
+      "digits": "67",
       "mentions": 2
     },
     {
@@ -128,11 +167,19 @@
       "mentions": 2
     },
     {
-      "digits": "08",
+      "digits": "05",
       "mentions": 1
     },
     {
-      "digits": "09",
+      "digits": "06",
+      "mentions": 1
+    },
+    {
+      "digits": "07",
+      "mentions": 1
+    },
+    {
+      "digits": "08",
       "mentions": 1
     },
     {
@@ -142,31 +189,47 @@
     {
       "digits": "32",
       "mentions": 1
-    },
-    {
-      "digits": "35",
-      "mentions": 1
-    },
-    {
-      "digits": "42",
-      "mentions": 1
-    },
-    {
-      "digits": "45",
-      "mentions": 1
-    },
-    {
-      "digits": "60",
-      "mentions": 1
     }
   ],
   "topThree": [
     {
-      "digits": "607",
+      "digits": "056",
       "mentions": 1
     },
     {
-      "digits": "608",
+      "digits": "057",
+      "mentions": 1
+    },
+    {
+      "digits": "059",
+      "mentions": 1
+    },
+    {
+      "digits": "067",
+      "mentions": 1
+    },
+    {
+      "digits": "069",
+      "mentions": 1
+    },
+    {
+      "digits": "079",
+      "mentions": 1
+    },
+    {
+      "digits": "567",
+      "mentions": 1
+    },
+    {
+      "digits": "569",
+      "mentions": 1
+    },
+    {
+      "digits": "579",
+      "mentions": 1
+    },
+    {
+      "digits": "607",
       "mentions": 1
     }
   ]
