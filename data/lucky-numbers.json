@@ -2,9 +2,32 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-29T04:56:54.284Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-09-29T12:24:14.632Z",
+  "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "ส่องด่วน เลขเด็ดงวดนี้ 1 ต.ค. 69 หวยน้องเพชรกล้า ป",
+      "url": "https://lottery.kapook.com/view304036.html",
+      "lead": [
+        "2",
+        "3"
+      ],
+      "two": [
+        "85",
+        "35",
+        "24",
+        "62",
+        "92",
+        "68",
+        "98",
+        "15",
+        "14",
+        "33",
+        "44"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "เลขเด็ดงวดนี้ 1 ต.ค. 69 หวยดุ่ย ภรัญฯ เปิดเลขเด่น-",
@@ -172,6 +195,10 @@
       "mentions": 4
     },
     {
+      "digits": "85",
+      "mentions": 3
+    },
+    {
       "digits": "05",
       "mentions": 2
     },
@@ -180,7 +207,15 @@
       "mentions": 2
     },
     {
+      "digits": "35",
+      "mentions": 2
+    },
+    {
       "digits": "60",
+      "mentions": 2
+    },
+    {
+      "digits": "62",
       "mentions": 2
     },
     {
@@ -188,24 +223,12 @@
       "mentions": 2
     },
     {
-      "digits": "85",
+      "digits": "68",
       "mentions": 2
     },
     {
-      "digits": "95",
+      "digits": "92",
       "mentions": 2
-    },
-    {
-      "digits": "06",
-      "mentions": 1
-    },
-    {
-      "digits": "07",
-      "mentions": 1
-    },
-    {
-      "digits": "08",
-      "mentions": 1
     }
   ],
   "topThree": [
