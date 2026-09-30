@@ -2,9 +2,23 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-09-29T22:00:58.455Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-09-30T04:43:24.198Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยมนต์สิทธิ์ เผยเลขที่ชอบ ใครกำลังหาเลขเด็ดงวดนี้",
+      "url": "https://lottery.kapook.com/view304055.html",
+      "lead": [
+        "2",
+        "3",
+        "09",
+        "59",
+        "49"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "ส่องด่วน เลขเด็ดงวดนี้ 1 ต.ค. 69 หวยน้องเพชรกล้า ป",
@@ -166,24 +180,14 @@
       ]
     },
     {
-      "site": "kapook",
-      "name": "หวยเสือตกถัง",
-      "url": "https://lottery.kapook.com/view303840.html",
-      "lead": [
-        "8",
-        "9"
-      ],
+      "site": "sanook",
+      "name": "งวดนี้มาแน่ เลขเด็ดอ่างน้ำมนต์ อาศรมฤๅษีเณร เห็นชั",
+      "url": "https://news.sanook.com/9907774/",
+      "lead": [],
       "two": [
-        "84",
         "85",
-        "86",
-        "87",
-        "88",
-        "94",
-        "95",
-        "96",
-        "97",
-        "98"
+        "90",
+        "16"
       ],
       "three": []
     }
