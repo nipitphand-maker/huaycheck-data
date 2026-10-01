@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-01",
   "drawDateThai": "1 ตุลาคม 2569",
-  "generatedAt": "2026-10-01T04:55:35.243Z",
-  "sourceCount": 11,
+  "generatedAt": "2026-10-01T12:43:18.454Z",
+  "sourceCount": 10,
   "sources": [
     {
       "site": "kapook",
@@ -109,7 +109,6 @@
       "lead": [
         "2",
         "3",
-        "1",
         "06",
         "11",
         "25",
@@ -173,8 +172,9 @@
       "name": "หวยหลวงพ่อปากแดง",
       "url": "https://lottery.kapook.com/view303965.html",
       "lead": [
-        "2",
+        "3",
         "0",
+        "2",
         "5",
         "7",
         "9",
@@ -218,20 +218,6 @@
         "18"
       ],
       "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "งวดนี้มาแน่ เลขเด็ดอ่างน้ำมนต์ อาศรมฤๅษีเณร เห็นชั",
-      "url": "https://news.sanook.com/9907774/",
-      "lead": [
-        "10"
-      ],
-      "two": [
-        "85",
-        "90",
-        "16"
-      ],
-      "three": []
     }
   ],
   "topTwo": [
@@ -248,10 +234,6 @@
       "mentions": 3
     },
     {
-      "digits": "85",
-      "mentions": 3
-    },
-    {
       "digits": "33",
       "mentions": 2
     },
@@ -265,6 +247,10 @@
     },
     {
       "digits": "62",
+      "mentions": 2
+    },
+    {
+      "digits": "85",
       "mentions": 2
     },
     {
