@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-03T20:45:57.738Z",
-  "sourceCount": 1,
+  "generatedAt": "2026-10-06T13:00:16.004Z",
+  "sourceCount": 2,
   "sources": [
     {
       "site": "kapook",
@@ -23,8 +23,103 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "ส่องเลขมงคล วันเกิด เนวิน ชิดชอบ ครบ 68 ปี เผยชุดต",
+      "url": "https://news.sanook.com/9908474/",
+      "lead": [
+        "68",
+        "14",
+        "45",
+        "4",
+        "2",
+        "6",
+        "8"
+      ],
+      "two": [
+        "04",
+        "40",
+        "10",
+        "01",
+        "68",
+        "86",
+        "69",
+        "96",
+        "02",
+        "20"
+      ],
+      "three": [
+        "410",
+        "468",
+        "680",
+        "501",
+        "269"
+      ]
     }
   ],
-  "topTwo": [],
-  "topThree": []
+  "topTwo": [
+    {
+      "digits": "01",
+      "mentions": 1
+    },
+    {
+      "digits": "02",
+      "mentions": 1
+    },
+    {
+      "digits": "04",
+      "mentions": 1
+    },
+    {
+      "digits": "10",
+      "mentions": 1
+    },
+    {
+      "digits": "20",
+      "mentions": 1
+    },
+    {
+      "digits": "40",
+      "mentions": 1
+    },
+    {
+      "digits": "68",
+      "mentions": 1
+    },
+    {
+      "digits": "69",
+      "mentions": 1
+    },
+    {
+      "digits": "86",
+      "mentions": 1
+    },
+    {
+      "digits": "96",
+      "mentions": 1
+    }
+  ],
+  "topThree": [
+    {
+      "digits": "269",
+      "mentions": 1
+    },
+    {
+      "digits": "410",
+      "mentions": 1
+    },
+    {
+      "digits": "468",
+      "mentions": 1
+    },
+    {
+      "digits": "501",
+      "mentions": 1
+    },
+    {
+      "digits": "680",
+      "mentions": 1
+    }
+  ]
 }
