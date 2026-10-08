@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-08T05:13:20.661Z",
-  "sourceCount": 2,
+  "generatedAt": "2026-10-08T13:02:55.562Z",
+  "sourceCount": 1,
   "sources": [
     {
       "site": "kapook",
@@ -23,69 +23,8 @@
       ],
       "two": [],
       "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9908510/",
-      "lead": [
-        "2",
-        "3",
-        "9",
-        "0",
-        "6",
-        "35",
-        "38",
-        "95",
-        "98",
-        "03"
-      ],
-      "two": [
-        "35",
-        "38",
-        "95",
-        "98",
-        "03",
-        "08",
-        "63",
-        "68"
-      ],
-      "three": []
     }
   ],
-  "topTwo": [
-    {
-      "digits": "03",
-      "mentions": 1
-    },
-    {
-      "digits": "08",
-      "mentions": 1
-    },
-    {
-      "digits": "35",
-      "mentions": 1
-    },
-    {
-      "digits": "38",
-      "mentions": 1
-    },
-    {
-      "digits": "63",
-      "mentions": 1
-    },
-    {
-      "digits": "68",
-      "mentions": 1
-    },
-    {
-      "digits": "95",
-      "mentions": 1
-    },
-    {
-      "digits": "98",
-      "mentions": 1
-    }
-  ],
+  "topTwo": [],
   "topThree": []
 }
