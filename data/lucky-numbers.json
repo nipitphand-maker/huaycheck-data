@@ -2,9 +2,28 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-08T13:02:55.562Z",
-  "sourceCount": 1,
+  "generatedAt": "2026-10-09T05:16:11.609Z",
+  "sourceCount": 2,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "มาตามนัด เลขเด็ดงวดนี้ 16 ต.ค. 69 หวย อ.น๊อตตี้ แจ",
+      "url": "https://lottery.kapook.com/view304244.html",
+      "lead": [
+        "2",
+        "3",
+        "09",
+        "49",
+        "08"
+      ],
+      "two": [
+        "87",
+        "81",
+        "71",
+        "80"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "อย่าพลาด 15 ทำนายฝันเห็นสัตว์ต่าง ๆ พร้อมตีเลขเด็ด",
@@ -25,6 +44,23 @@
       "three": []
     }
   ],
-  "topTwo": [],
+  "topTwo": [
+    {
+      "digits": "71",
+      "mentions": 1
+    },
+    {
+      "digits": "80",
+      "mentions": 1
+    },
+    {
+      "digits": "81",
+      "mentions": 1
+    },
+    {
+      "digits": "87",
+      "mentions": 1
+    }
+  ],
   "topThree": []
 }
