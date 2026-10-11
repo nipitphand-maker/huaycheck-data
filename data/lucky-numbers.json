@@ -2,9 +2,31 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-10T05:01:10.334Z",
-  "sourceCount": 3,
+  "generatedAt": "2026-10-11T12:21:29.772Z",
+  "sourceCount": 4,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "ส่องเลขเด็ดงวดนี้ 16 ต.ค. 69 หวยแม่นมากขั้นเทพ ปล่",
+      "url": "https://lottery.kapook.com/view304285.html",
+      "lead": [
+        "2",
+        "3",
+        "10",
+        "30",
+        "13",
+        "38",
+        "41"
+      ],
+      "two": [
+        "02",
+        "12",
+        "22",
+        "82",
+        "92"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยเสือตกถัง",
@@ -48,6 +70,7 @@
       "lead": [
         "2",
         "3",
+        "1",
         "09",
         "49",
         "08"
@@ -82,7 +105,15 @@
   ],
   "topTwo": [
     {
+      "digits": "02",
+      "mentions": 1
+    },
+    {
       "digits": "10",
+      "mentions": 1
+    },
+    {
+      "digits": "12",
       "mentions": 1
     },
     {
@@ -106,19 +137,11 @@
       "mentions": 1
     },
     {
+      "digits": "22",
+      "mentions": 1
+    },
+    {
       "digits": "50",
-      "mentions": 1
-    },
-    {
-      "digits": "53",
-      "mentions": 1
-    },
-    {
-      "digits": "54",
-      "mentions": 1
-    },
-    {
-      "digits": "56",
       "mentions": 1
     }
   ],
