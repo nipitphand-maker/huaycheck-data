@@ -2,21 +2,59 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-12T05:04:44.146Z",
-  "sourceCount": 5,
+  "generatedAt": "2026-10-12T14:49:15.313Z",
+  "sourceCount": 7,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เลขธูป",
+      "url": "https://lottery.kapook.com/view304310.html",
+      "lead": [
+        "2"
+      ],
+      "two": [
+        "41",
+        "19",
+        "56",
+        "63"
+      ],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "หวยม้าสีหมอก",
+      "url": "https://lottery.kapook.com/view304298.html",
+      "lead": [
+        "2",
+        "5",
+        "13",
+        "50",
+        "11"
+      ],
+      "two": [
+        "24",
+        "28",
+        "54",
+        "58",
+        "32",
+        "35",
+        "92",
+        "95"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "ส่องเลขเด็ดงวดนี้ 16 ต.ค. 69 หวยแม่นมากขั้นเทพ ปล่",
       "url": "https://lottery.kapook.com/view304285.html",
       "lead": [
+        "1",
         "2",
         "3",
         "10",
         "30",
         "13",
-        "38",
-        "41"
+        "12"
       ],
       "two": [
         "02",
@@ -139,11 +177,27 @@
   ],
   "topTwo": [
     {
+      "digits": "58",
+      "mentions": 3
+    },
+    {
       "digits": "16",
       "mentions": 2
     },
     {
-      "digits": "58",
+      "digits": "28",
+      "mentions": 2
+    },
+    {
+      "digits": "54",
+      "mentions": 2
+    },
+    {
+      "digits": "56",
+      "mentions": 2
+    },
+    {
+      "digits": "92",
       "mentions": 2
     },
     {
@@ -160,22 +214,6 @@
     },
     {
       "digits": "12",
-      "mentions": 1
-    },
-    {
-      "digits": "13",
-      "mentions": 1
-    },
-    {
-      "digits": "14",
-      "mentions": 1
-    },
-    {
-      "digits": "15",
-      "mentions": 1
-    },
-    {
-      "digits": "17",
       "mentions": 1
     }
   ],
