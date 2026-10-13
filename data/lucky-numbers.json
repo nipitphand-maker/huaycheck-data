@@ -2,9 +2,19 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-13T00:19:24.319Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-10-13T13:49:23.813Z",
+  "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยแม่ทำเนียน เลขเด็ดงวดนี้ 16 ต.ค. 69 เผย 10 เลขเ",
+      "url": "https://lottery.kapook.com/view304319.html",
+      "lead": [
+        "2"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "เลขธูป",
@@ -48,7 +58,6 @@
       "name": "ส่องเลขเด็ดงวดนี้ 16 ต.ค. 69 หวยแม่นมากขั้นเทพ ปล่",
       "url": "https://lottery.kapook.com/view304285.html",
       "lead": [
-        "1",
         "2",
         "3",
         "10",
@@ -136,6 +145,25 @@
         "1",
         "3",
         "21"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยแม่จำเนียร",
+      "url": "https://news.sanook.com/9908979/",
+      "lead": [
+        "16",
+        "05",
+        "10",
+        "15",
+        "39",
+        "03",
+        "42",
+        "2",
+        "78",
+        "3"
       ],
       "two": [],
       "three": []
