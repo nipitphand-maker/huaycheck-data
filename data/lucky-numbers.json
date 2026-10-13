@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-12T14:49:15.313Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-10-13T00:19:24.319Z",
+  "sourceCount": 6,
   "sources": [
     {
       "site": "kapook",
@@ -139,55 +139,9 @@
       ],
       "two": [],
       "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวย AI ส่องเลขเด็ด หวยงวดนี้ 16/10/69 วิเคราะห์สถิ",
-      "url": "https://news.sanook.com/9908851/",
-      "lead": [
-        "8",
-        "3",
-        "6",
-        "9",
-        "2",
-        "38",
-        "28",
-        "58",
-        "61",
-        "83"
-      ],
-      "two": [
-        "20",
-        "34",
-        "00",
-        "15",
-        "38",
-        "98",
-        "16",
-        "65",
-        "79",
-        "91",
-        "28",
-        "58",
-        "61",
-        "83"
-      ],
-      "three": []
     }
   ],
   "topTwo": [
-    {
-      "digits": "58",
-      "mentions": 3
-    },
-    {
-      "digits": "16",
-      "mentions": 2
-    },
-    {
-      "digits": "28",
-      "mentions": 2
-    },
     {
       "digits": "54",
       "mentions": 2
@@ -197,12 +151,12 @@
       "mentions": 2
     },
     {
-      "digits": "92",
+      "digits": "58",
       "mentions": 2
     },
     {
-      "digits": "00",
-      "mentions": 1
+      "digits": "92",
+      "mentions": 2
     },
     {
       "digits": "02",
@@ -214,6 +168,18 @@
     },
     {
       "digits": "12",
+      "mentions": 1
+    },
+    {
+      "digits": "13",
+      "mentions": 1
+    },
+    {
+      "digits": "14",
+      "mentions": 1
+    },
+    {
+      "digits": "16",
       "mentions": 1
     }
   ],
