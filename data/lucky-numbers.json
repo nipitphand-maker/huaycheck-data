@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-15T16:33:57.844Z",
-  "sourceCount": 12,
+  "generatedAt": "2026-10-15T21:04:53.144Z",
+  "sourceCount": 11,
   "sources": [
     {
       "site": "kapook",
@@ -244,25 +244,6 @@
         "246",
         "624"
       ]
-    },
-    {
-      "site": "sanook",
-      "name": "หวยแม่จำเนียร",
-      "url": "https://news.sanook.com/9908979/",
-      "lead": [
-        "16",
-        "22",
-        "10",
-        "15",
-        "39",
-        "03",
-        "42",
-        "2",
-        "78",
-        "3"
-      ],
-      "two": [],
-      "three": []
     }
   ],
   "topTwo": [
