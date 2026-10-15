@@ -2,9 +2,39 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-14T04:07:55.597Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-10-15T03:50:11.569Z",
+  "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยคำชะโนด",
+      "url": "https://lottery.kapook.com/view304354.html",
+      "lead": [
+        "2"
+      ],
+      "two": [
+        "56",
+        "08",
+        "69",
+        "02",
+        "28",
+        "27",
+        "78",
+        "05",
+        "67",
+        "35",
+        "68",
+        "60",
+        "62",
+        "29",
+        "49",
+        "09"
+      ],
+      "three": [
+        "905",
+        "935"
+      ]
+    },
     {
       "site": "kapook",
       "name": "ส่องหวยแม่ตุ๊กตาพารวย เลขเด็ดงวดนี้ 16 ต.ค. 69 เปิ",
@@ -137,7 +167,6 @@
       "lead": [
         "2",
         "3",
-        "1",
         "09",
         "49",
         "08"
@@ -172,11 +201,23 @@
   ],
   "topTwo": [
     {
-      "digits": "54",
+      "digits": "56",
+      "mentions": 3
+    },
+    {
+      "digits": "02",
       "mentions": 2
     },
     {
-      "digits": "56",
+      "digits": "28",
+      "mentions": 2
+    },
+    {
+      "digits": "35",
+      "mentions": 2
+    },
+    {
+      "digits": "54",
       "mentions": 2
     },
     {
@@ -188,27 +229,15 @@
       "mentions": 2
     },
     {
-      "digits": "02",
+      "digits": "05",
       "mentions": 1
     },
     {
-      "digits": "10",
+      "digits": "08",
       "mentions": 1
     },
     {
-      "digits": "12",
-      "mentions": 1
-    },
-    {
-      "digits": "13",
-      "mentions": 1
-    },
-    {
-      "digits": "14",
-      "mentions": 1
-    },
-    {
-      "digits": "16",
+      "digits": "09",
       "mentions": 1
     }
   ],
@@ -242,7 +271,15 @@
       "mentions": 1
     },
     {
+      "digits": "905",
+      "mentions": 1
+    },
+    {
       "digits": "915",
+      "mentions": 1
+    },
+    {
+      "digits": "935",
       "mentions": 1
     }
   ]
