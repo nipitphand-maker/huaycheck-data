@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-16T03:45:53.059Z",
-  "sourceCount": 11,
+  "generatedAt": "2026-10-16T10:59:12.179Z",
+  "sourceCount": 10,
   "sources": [
     {
       "site": "kapook",
@@ -54,7 +54,7 @@
         "61"
       ],
       "three": [
-        "082",
+        "900",
         "189",
         "922",
         "160"
@@ -234,31 +234,6 @@
         "80"
       ],
       "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยแปลปกสลาก",
-      "url": "https://news.sanook.com/9908975/",
-      "lead": [
-        "4",
-        "2",
-        "6",
-        "3"
-      ],
-      "two": [
-        "42",
-        "46",
-        "26",
-        "24",
-        "64",
-        "62"
-      ],
-      "three": [
-        "426",
-        "462",
-        "246",
-        "624"
-      ]
     }
   ],
   "topTwo": [
@@ -272,10 +247,6 @@
     },
     {
       "digits": "22",
-      "mentions": 2
-    },
-    {
-      "digits": "24",
       "mentions": 2
     },
     {
@@ -301,13 +272,13 @@
     {
       "digits": "60",
       "mentions": 2
+    },
+    {
+      "digits": "61",
+      "mentions": 2
     }
   ],
   "topThree": [
-    {
-      "digits": "082",
-      "mentions": 1
-    },
     {
       "digits": "160",
       "mentions": 1
@@ -321,19 +292,7 @@
       "mentions": 1
     },
     {
-      "digits": "246",
-      "mentions": 1
-    },
-    {
       "digits": "415",
-      "mentions": 1
-    },
-    {
-      "digits": "426",
-      "mentions": 1
-    },
-    {
-      "digits": "462",
       "mentions": 1
     },
     {
@@ -342,6 +301,22 @@
     },
     {
       "digits": "513",
+      "mentions": 1
+    },
+    {
+      "digits": "516",
+      "mentions": 1
+    },
+    {
+      "digits": "517",
+      "mentions": 1
+    },
+    {
+      "digits": "815",
+      "mentions": 1
+    },
+    {
+      "digits": "900",
       "mentions": 1
     }
   ]
