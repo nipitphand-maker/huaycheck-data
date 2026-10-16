@@ -2,9 +2,41 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-15T21:04:53.144Z",
+  "generatedAt": "2026-10-16T03:45:53.059Z",
   "sourceCount": 11,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เลขเด็ดงวดนี้ 16 ต.ค. 69 หวยพญาคันคาก มีเลขเบิ้ลมา",
+      "url": "https://lottery.kapook.com/view304383.html",
+      "lead": [
+        "3",
+        "2",
+        "7",
+        "6",
+        "5",
+        "10",
+        "56"
+      ],
+      "two": [
+        "77",
+        "79",
+        "70",
+        "71",
+        "72",
+        "55",
+        "59",
+        "50",
+        "51",
+        "52",
+        "61",
+        "00",
+        "44",
+        "15",
+        "38"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "จับตา หวยดุ่ย ภรัญฯ เลขเด็ดงวดนี้ 16 ต.ค. 69 เปิดเ",
@@ -22,6 +54,7 @@
         "61"
       ],
       "three": [
+        "082",
         "189",
         "922",
         "160"
@@ -107,6 +140,7 @@
       "url": "https://lottery.kapook.com/view304298.html",
       "lead": [
         "2",
+        "3",
         "5",
         "13",
         "50",
@@ -202,25 +236,6 @@
       "three": []
     },
     {
-      "site": "kapook",
-      "name": "อย่าพลาด 15 ทำนายฝันเห็นสัตว์ต่าง ๆ พร้อมตีเลขเด็ด",
-      "url": "https://lottery.kapook.com/view275046.html",
-      "lead": [
-        "76",
-        "88",
-        "9",
-        "31",
-        "13",
-        "2",
-        "5",
-        "1",
-        "3",
-        "21"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
       "site": "sanook",
       "name": "หวยแปลปกสลาก",
       "url": "https://news.sanook.com/9908975/",
@@ -272,6 +287,10 @@
       "mentions": 2
     },
     {
+      "digits": "50",
+      "mentions": 2
+    },
+    {
       "digits": "54",
       "mentions": 2
     },
@@ -282,13 +301,13 @@
     {
       "digits": "60",
       "mentions": 2
-    },
-    {
-      "digits": "62",
-      "mentions": 2
     }
   ],
   "topThree": [
+    {
+      "digits": "082",
+      "mentions": 1
+    },
     {
       "digits": "160",
       "mentions": 1
@@ -323,10 +342,6 @@
     },
     {
       "digits": "513",
-      "mentions": 1
-    },
-    {
-      "digits": "516",
       "mentions": 1
     }
   ]
