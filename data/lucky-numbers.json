@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "drawDate": "2026-10-16",
   "drawDateThai": "16 ตุลาคม 2569",
-  "generatedAt": "2026-10-16T10:59:12.179Z",
+  "generatedAt": "2026-10-16T16:18:56.950Z",
   "sourceCount": 10,
   "sources": [
     {
@@ -54,7 +54,7 @@
         "61"
       ],
       "three": [
-        "900",
+        "000",
         "189",
         "922",
         "160"
@@ -280,6 +280,10 @@
   ],
   "topThree": [
     {
+      "digits": "000",
+      "mentions": 1
+    },
+    {
       "digits": "160",
       "mentions": 1
     },
@@ -313,10 +317,6 @@
     },
     {
       "digits": "815",
-      "mentions": 1
-    },
-    {
-      "digits": "900",
       "mentions": 1
     }
   ]
