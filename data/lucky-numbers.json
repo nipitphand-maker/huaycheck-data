@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-23T11:14:08.926Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-10-23T16:42:53.056Z",
+  "sourceCount": 8,
   "sources": [
     {
       "site": "kapook",
@@ -126,6 +126,58 @@
     },
     {
       "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9909914/",
+      "lead": [
+        "62",
+        "35",
+        "50",
+        "3"
+      ],
+      "two": [
+        "62",
+        "35",
+        "50",
+        "69",
+        "27",
+        "28",
+        "34",
+        "51",
+        "37",
+        "54",
+        "52",
+        "56",
+        "59",
+        "02",
+        "06",
+        "09"
+      ],
+      "three": [
+        "369",
+        "362"
+      ]
+    },
+    {
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9909910/",
+      "lead": [
+        "3",
+        "1",
+        "2",
+        "6",
+        "13",
+        "31",
+        "12",
+        "21",
+        "16",
+        "61"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "sanook",
       "name": "หวยแปลปกสลาก",
       "url": "https://news.sanook.com/9909906/",
       "lead": [
@@ -144,11 +196,23 @@
   ],
   "topTwo": [
     {
+      "digits": "27",
+      "mentions": 3
+    },
+    {
       "digits": "17",
       "mentions": 2
     },
     {
-      "digits": "27",
+      "digits": "35",
+      "mentions": 2
+    },
+    {
+      "digits": "52",
+      "mentions": 2
+    },
+    {
+      "digits": "59",
       "mentions": 2
     },
     {
@@ -156,31 +220,19 @@
       "mentions": 1
     },
     {
+      "digits": "02",
+      "mentions": 1
+    },
+    {
       "digits": "05",
       "mentions": 1
     },
     {
-      "digits": "12",
+      "digits": "06",
       "mentions": 1
     },
     {
-      "digits": "14",
-      "mentions": 1
-    },
-    {
-      "digits": "25",
-      "mentions": 1
-    },
-    {
-      "digits": "29",
-      "mentions": 1
-    },
-    {
-      "digits": "31",
-      "mentions": 1
-    },
-    {
-      "digits": "35",
+      "digits": "09",
       "mentions": 1
     }
   ],
@@ -214,15 +266,15 @@
       "mentions": 1
     },
     {
+      "digits": "362",
+      "mentions": 1
+    },
+    {
+      "digits": "369",
+      "mentions": 1
+    },
+    {
       "digits": "579",
-      "mentions": 1
-    },
-    {
-      "digits": "592",
-      "mentions": 1
-    },
-    {
-      "digits": "729",
       "mentions": 1
     }
   ]
