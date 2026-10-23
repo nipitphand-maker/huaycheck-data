@@ -2,9 +2,41 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-22T16:51:12.932Z",
-  "sourceCount": 4,
+  "generatedAt": "2026-10-23T03:57:06.957Z",
+  "sourceCount": 5,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยทะเบียนรถนำขบวน พิธีนวราตรี เลขเด็ดงวดนี้ 1 พ.ย",
+      "url": "https://lottery.kapook.com/view304548.html",
+      "lead": [
+        "3",
+        "2",
+        "10"
+      ],
+      "two": [
+        "29",
+        "92",
+        "25",
+        "52",
+        "27",
+        "72",
+        "95",
+        "59",
+        "97",
+        "57"
+      ],
+      "three": [
+        "295",
+        "297",
+        "257",
+        "957",
+        "579",
+        "925",
+        "729",
+        "592"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยม้าสีหมอก",
@@ -99,6 +131,10 @@
       "mentions": 2
     },
     {
+      "digits": "27",
+      "mentions": 2
+    },
+    {
       "digits": "01",
       "mentions": 1
     },
@@ -115,7 +151,11 @@
       "mentions": 1
     },
     {
-      "digits": "27",
+      "digits": "25",
+      "mentions": 1
+    },
+    {
+      "digits": "29",
       "mentions": 1
     },
     {
@@ -124,14 +164,6 @@
     },
     {
       "digits": "35",
-      "mentions": 1
-    },
-    {
-      "digits": "70",
-      "mentions": 1
-    },
-    {
-      "digits": "84",
       "mentions": 1
     }
   ],
@@ -149,7 +181,31 @@
       "mentions": 1
     },
     {
+      "digits": "257",
+      "mentions": 1
+    },
+    {
       "digits": "270",
+      "mentions": 1
+    },
+    {
+      "digits": "295",
+      "mentions": 1
+    },
+    {
+      "digits": "297",
+      "mentions": 1
+    },
+    {
+      "digits": "579",
+      "mentions": 1
+    },
+    {
+      "digits": "592",
+      "mentions": 1
+    },
+    {
+      "digits": "729",
       "mentions": 1
     }
   ]
