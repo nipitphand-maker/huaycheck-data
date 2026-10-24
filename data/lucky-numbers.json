@@ -2,9 +2,44 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-24T03:51:24.022Z",
+  "generatedAt": "2026-10-24T10:32:51.773Z",
   "sourceCount": 8,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เปิดหวยปฏิทินหลวงปู่โต๊ะ เลขเด็ดงวดนี้ 1 พ.ย. 69 ม",
+      "url": "https://lottery.kapook.com/view304560.html",
+      "lead": [
+        "6",
+        "0",
+        "9",
+        "2",
+        "7",
+        "8",
+        "11",
+        "24",
+        "06"
+      ],
+      "two": [
+        "86",
+        "26",
+        "28",
+        "09",
+        "72",
+        "89",
+        "66",
+        "92",
+        "79",
+        "02"
+      ],
+      "three": [
+        "866",
+        "089",
+        "726",
+        "286",
+        "628"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยทะเบียนรถนำขบวน พิธีนวราตรี เลขเด็ดงวดนี้ 1 พ.ย",
@@ -126,56 +161,6 @@
     },
     {
       "site": "sanook",
-      "name": "หวยแปลปกสลาก",
-      "url": "https://news.sanook.com/9909906/",
-      "lead": [
-        "1",
-        "2",
-        "6",
-        "8",
-        "89",
-        "76",
-        "79",
-        "36"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยคำชะโนด",
-      "url": "https://news.sanook.com/9909914/",
-      "lead": [
-        "62",
-        "35",
-        "50",
-        "3"
-      ],
-      "two": [
-        "62",
-        "35",
-        "50",
-        "69",
-        "27",
-        "28",
-        "34",
-        "51",
-        "37",
-        "54",
-        "52",
-        "56",
-        "59",
-        "02",
-        "06",
-        "09"
-      ],
-      "three": [
-        "369",
-        "362"
-      ]
-    },
-    {
-      "site": "sanook",
       "name": "หวยปฏิทินจีน",
       "url": "https://news.sanook.com/9909910/",
       "lead": [
@@ -192,27 +177,40 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยแปลปกสลาก",
+      "url": "https://news.sanook.com/9909906/",
+      "lead": [
+        "1",
+        "2",
+        "6",
+        "8",
+        "89",
+        "76",
+        "79",
+        "36"
+      ],
+      "two": [],
+      "three": []
     }
   ],
   "topTwo": [
-    {
-      "digits": "27",
-      "mentions": 3
-    },
     {
       "digits": "17",
       "mentions": 2
     },
     {
-      "digits": "35",
+      "digits": "27",
       "mentions": 2
     },
     {
-      "digits": "52",
+      "digits": "72",
       "mentions": 2
     },
     {
-      "digits": "59",
+      "digits": "92",
       "mentions": 2
     },
     {
@@ -228,15 +226,23 @@
       "mentions": 1
     },
     {
-      "digits": "06",
+      "digits": "09",
       "mentions": 1
     },
     {
-      "digits": "09",
+      "digits": "12",
+      "mentions": 1
+    },
+    {
+      "digits": "14",
       "mentions": 1
     }
   ],
   "topThree": [
+    {
+      "digits": "089",
+      "mentions": 1
+    },
     {
       "digits": "120",
       "mentions": 1
@@ -258,19 +264,15 @@
       "mentions": 1
     },
     {
+      "digits": "286",
+      "mentions": 1
+    },
+    {
       "digits": "295",
       "mentions": 1
     },
     {
       "digits": "297",
-      "mentions": 1
-    },
-    {
-      "digits": "362",
-      "mentions": 1
-    },
-    {
-      "digits": "369",
       "mentions": 1
     },
     {
