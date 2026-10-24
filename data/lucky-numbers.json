@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-24T15:36:26.023Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-10-24T20:26:56.356Z",
+  "sourceCount": 7,
   "sources": [
     {
       "site": "kapook",
@@ -175,23 +175,6 @@
         "21",
         "16",
         "61"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยแปลปกสลาก",
-      "url": "https://news.sanook.com/9909906/",
-      "lead": [
-        "1",
-        "2",
-        "6",
-        "8",
-        "89",
-        "76",
-        "79",
-        "36"
       ],
       "two": [],
       "three": []
