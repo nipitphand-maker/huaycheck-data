@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-25T15:46:40.224Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-10-25T20:34:11.610Z",
+  "sourceCount": 6,
   "sources": [
     {
       "site": "kapook",
@@ -158,72 +158,15 @@
       ],
       "two": [],
       "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยคำชะโนด",
-      "url": "https://news.sanook.com/9909914/",
-      "lead": [
-        "62",
-        "35",
-        "50",
-        "3"
-      ],
-      "two": [
-        "62",
-        "35",
-        "50",
-        "69",
-        "27",
-        "28",
-        "34",
-        "51",
-        "37",
-        "54",
-        "52",
-        "56",
-        "59",
-        "02",
-        "06",
-        "09"
-      ],
-      "three": [
-        "369",
-        "362"
-      ]
     }
   ],
   "topTwo": [
-    {
-      "digits": "27",
-      "mentions": 3
-    },
-    {
-      "digits": "02",
-      "mentions": 2
-    },
-    {
-      "digits": "09",
-      "mentions": 2
-    },
     {
       "digits": "17",
       "mentions": 2
     },
     {
-      "digits": "28",
-      "mentions": 2
-    },
-    {
-      "digits": "35",
-      "mentions": 2
-    },
-    {
-      "digits": "52",
-      "mentions": 2
-    },
-    {
-      "digits": "59",
+      "digits": "27",
       "mentions": 2
     },
     {
@@ -233,6 +176,30 @@
     {
       "digits": "92",
       "mentions": 2
+    },
+    {
+      "digits": "01",
+      "mentions": 1
+    },
+    {
+      "digits": "02",
+      "mentions": 1
+    },
+    {
+      "digits": "05",
+      "mentions": 1
+    },
+    {
+      "digits": "09",
+      "mentions": 1
+    },
+    {
+      "digits": "12",
+      "mentions": 1
+    },
+    {
+      "digits": "14",
+      "mentions": 1
     }
   ],
   "topThree": [
@@ -273,7 +240,7 @@
       "mentions": 1
     },
     {
-      "digits": "362",
+      "digits": "579",
       "mentions": 1
     }
   ]
