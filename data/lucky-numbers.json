@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-26T12:31:04.271Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-10-27T17:42:23.978Z",
+  "sourceCount": 8,
   "sources": [
     {
       "site": "kapook",
@@ -173,6 +173,31 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวย AI ส่องเลขเด็ด หวยงวดนี้ 1/11/69 วิเคราะห์สถิต",
+      "url": "https://news.sanook.com/9910295/",
+      "lead": [
+        "79",
+        "85",
+        "06",
+        "92",
+        "5",
+        "8",
+        "7"
+      ],
+      "two": [
+        "85",
+        "58",
+        "79",
+        "06",
+        "11",
+        "88",
+        "55",
+        "10"
+      ],
+      "three": []
     }
   ],
   "topTwo": [
@@ -186,6 +211,10 @@
     },
     {
       "digits": "72",
+      "mentions": 2
+    },
+    {
+      "digits": "79",
       "mentions": 2
     },
     {
@@ -205,15 +234,11 @@
       "mentions": 1
     },
     {
+      "digits": "06",
+      "mentions": 1
+    },
+    {
       "digits": "09",
-      "mentions": 1
-    },
-    {
-      "digits": "12",
-      "mentions": 1
-    },
-    {
-      "digits": "14",
       "mentions": 1
     }
   ],
