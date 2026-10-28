@@ -2,9 +2,43 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-27T17:42:23.978Z",
-  "sourceCount": 8,
+  "generatedAt": "2026-10-28T04:45:27.446Z",
+  "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เปิดหวยเจ้าพ่อปากแดง เลขเด็ดงวดนี้ 1 พ.ย. 69 เน้นเ",
+      "url": "https://lottery.kapook.com/view304649.html",
+      "lead": [
+        "0",
+        "8",
+        "6",
+        "3",
+        "2"
+      ],
+      "two": [
+        "82",
+        "28",
+        "87",
+        "78",
+        "89",
+        "98",
+        "02",
+        "20",
+        "06",
+        "60",
+        "07",
+        "70",
+        "11",
+        "16",
+        "48"
+      ],
+      "three": [
+        "782",
+        "598",
+        "970"
+      ]
+    },
     {
       "site": "kapook",
       "name": "รวมหวยขบวนพยุหยาตราทางชลมารค เลขเด็ดงวดนี้ 1 พ.ย. ",
@@ -202,11 +236,31 @@
   ],
   "topTwo": [
     {
+      "digits": "02",
+      "mentions": 2
+    },
+    {
+      "digits": "06",
+      "mentions": 2
+    },
+    {
+      "digits": "11",
+      "mentions": 2
+    },
+    {
       "digits": "17",
       "mentions": 2
     },
     {
       "digits": "27",
+      "mentions": 2
+    },
+    {
+      "digits": "28",
+      "mentions": 2
+    },
+    {
+      "digits": "70",
       "mentions": 2
     },
     {
@@ -218,28 +272,8 @@
       "mentions": 2
     },
     {
-      "digits": "92",
+      "digits": "87",
       "mentions": 2
-    },
-    {
-      "digits": "01",
-      "mentions": 1
-    },
-    {
-      "digits": "02",
-      "mentions": 1
-    },
-    {
-      "digits": "05",
-      "mentions": 1
-    },
-    {
-      "digits": "06",
-      "mentions": 1
-    },
-    {
-      "digits": "09",
-      "mentions": 1
     }
   ],
   "topThree": [
