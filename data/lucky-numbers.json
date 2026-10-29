@@ -2,9 +2,32 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-28T04:45:27.446Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-10-29T04:57:12.089Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "เปิดเลขเด็ดประเพณีรับบัว วัดบางพลีใหญ่ใน จับตาหวยง",
+      "url": "https://lottery.kapook.com/view304673.html",
+      "lead": [
+        "6"
+      ],
+      "two": [
+        "12",
+        "13",
+        "14",
+        "11",
+        "09",
+        "99",
+        "50"
+      ],
+      "three": [
+        "140",
+        "150",
+        "911",
+        "123"
+      ]
+    },
     {
       "site": "kapook",
       "name": "เปิดหวยเจ้าพ่อปากแดง เลขเด็ดงวดนี้ 1 พ.ย. 69 เน้นเ",
@@ -236,6 +259,10 @@
   ],
   "topTwo": [
     {
+      "digits": "11",
+      "mentions": 3
+    },
+    {
       "digits": "02",
       "mentions": 2
     },
@@ -244,7 +271,15 @@
       "mentions": 2
     },
     {
-      "digits": "11",
+      "digits": "09",
+      "mentions": 2
+    },
+    {
+      "digits": "12",
+      "mentions": 2
+    },
+    {
+      "digits": "14",
       "mentions": 2
     },
     {
@@ -262,18 +297,6 @@
     {
       "digits": "70",
       "mentions": 2
-    },
-    {
-      "digits": "72",
-      "mentions": 2
-    },
-    {
-      "digits": "79",
-      "mentions": 2
-    },
-    {
-      "digits": "87",
-      "mentions": 2
     }
   ],
   "topThree": [
@@ -286,7 +309,19 @@
       "mentions": 1
     },
     {
+      "digits": "123",
+      "mentions": 1
+    },
+    {
       "digits": "127",
+      "mentions": 1
+    },
+    {
+      "digits": "140",
+      "mentions": 1
+    },
+    {
+      "digits": "150",
       "mentions": 1
     },
     {
@@ -303,18 +338,6 @@
     },
     {
       "digits": "286",
-      "mentions": 1
-    },
-    {
-      "digits": "295",
-      "mentions": 1
-    },
-    {
-      "digits": "297",
-      "mentions": 1
-    },
-    {
-      "digits": "579",
       "mentions": 1
     }
   ]
