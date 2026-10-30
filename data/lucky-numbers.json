@@ -2,9 +2,23 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-29T22:33:54.693Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-10-30T04:56:53.866Z",
+  "sourceCount": 11,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยพญาบึ้ง ปราจีนบุรี ให้เลขเด็ดงวดนี้ 1 พ.ย. 69 ค",
+      "url": "https://lottery.kapook.com/view304701.html",
+      "lead": [
+        "6"
+      ],
+      "two": [
+        "80"
+      ],
+      "three": [
+        "202"
+      ]
+    },
     {
       "site": "kapook",
       "name": "เปิดเลขเด็ดประเพณีรับบัว วัดบางพลีใหญ่ใน จับตาหวยง",
@@ -335,15 +349,15 @@
       "mentions": 1
     },
     {
+      "digits": "202",
+      "mentions": 1
+    },
+    {
       "digits": "257",
       "mentions": 1
     },
     {
       "digits": "270",
-      "mentions": 1
-    },
-    {
-      "digits": "286",
       "mentions": 1
     }
   ]
