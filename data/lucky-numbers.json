@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-30T12:23:28.999Z",
-  "sourceCount": 10,
+  "generatedAt": "2026-10-30T22:02:56.316Z",
+  "sourceCount": 11,
   "sources": [
     {
       "site": "kapook",
@@ -261,9 +261,64 @@
       ],
       "two": [],
       "three": []
+    },
+    {
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9910442/",
+      "lead": [
+        "1",
+        "8",
+        "0",
+        "3",
+        "2",
+        "6",
+        "13",
+        "31",
+        "12",
+        "21"
+      ],
+      "two": [
+        "62",
+        "35",
+        "50",
+        "69",
+        "27",
+        "28",
+        "34",
+        "51",
+        "37",
+        "54",
+        "52",
+        "56",
+        "59",
+        "02",
+        "06",
+        "09",
+        "14",
+        "17",
+        "84",
+        "87"
+      ],
+      "three": [
+        "369",
+        "362"
+      ]
     }
   ],
   "topTwo": [
+    {
+      "digits": "17",
+      "mentions": 4
+    },
+    {
+      "digits": "02",
+      "mentions": 3
+    },
+    {
+      "digits": "09",
+      "mentions": 3
+    },
     {
       "digits": "11",
       "mentions": 3
@@ -273,36 +328,24 @@
       "mentions": 3
     },
     {
-      "digits": "17",
+      "digits": "14",
       "mentions": 3
     },
     {
-      "digits": "02",
-      "mentions": 2
-    },
-    {
-      "digits": "09",
-      "mentions": 2
-    },
-    {
-      "digits": "14",
-      "mentions": 2
-    },
-    {
-      "digits": "16",
-      "mentions": 2
-    },
-    {
       "digits": "27",
-      "mentions": 2
+      "mentions": 3
     },
     {
       "digits": "28",
-      "mentions": 2
+      "mentions": 3
     },
     {
       "digits": "35",
-      "mentions": 2
+      "mentions": 3
+    },
+    {
+      "digits": "87",
+      "mentions": 3
     }
   ],
   "topThree": [
