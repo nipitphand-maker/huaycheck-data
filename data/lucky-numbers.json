@@ -2,9 +2,45 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-30T04:56:53.866Z",
-  "sourceCount": 11,
+  "generatedAt": "2026-10-30T12:23:28.999Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยเสือตกถัง",
+      "url": "https://lottery.kapook.com/view304711.html",
+      "lead": [
+        "3",
+        "1"
+      ],
+      "two": [
+        "10",
+        "12",
+        "15",
+        "16",
+        "17",
+        "19",
+        "30",
+        "32",
+        "35",
+        "36",
+        "37",
+        "39",
+        "11",
+        "58",
+        "43"
+      ],
+      "three": [
+        "310",
+        "315",
+        "316",
+        "319",
+        "213",
+        "413",
+        "713",
+        "813"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยพญาบึ้ง ปราจีนบุรี ให้เลขเด็ดงวดนี้ 1 พ.ย. 69 ค",
@@ -225,73 +261,27 @@
       ],
       "two": [],
       "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "10 คำทำนายฝันแม่น ๆ ฟรี พร้อมดูเลขเด็ดให้โชคงวด 1/",
-      "url": "https://lottery.kapook.com/view263469.html",
-      "lead": [
-        "0",
-        "3",
-        "7",
-        "4",
-        "5",
-        "9",
-        "6",
-        "8",
-        "2",
-        "1"
-      ],
-      "two": [],
-      "three": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยแม่จำเนียร",
-      "url": "https://news.sanook.com/9910487/",
-      "lead": [
-        "20",
-        "25",
-        "10",
-        "23",
-        "05",
-        "42",
-        "16",
-        "24",
-        "12",
-        "93"
-      ],
-      "two": [
-        "97",
-        "95",
-        "65",
-        "69",
-        "16",
-        "25",
-        "02",
-        "11",
-        "93",
-        "10",
-        "23"
-      ],
-      "three": []
     }
   ],
   "topTwo": [
-    {
-      "digits": "02",
-      "mentions": 3
-    },
     {
       "digits": "11",
       "mentions": 3
     },
     {
-      "digits": "09",
+      "digits": "12",
+      "mentions": 3
+    },
+    {
+      "digits": "17",
+      "mentions": 3
+    },
+    {
+      "digits": "02",
       "mentions": 2
     },
     {
-      "digits": "12",
+      "digits": "09",
       "mentions": 2
     },
     {
@@ -303,19 +293,15 @@
       "mentions": 2
     },
     {
-      "digits": "17",
-      "mentions": 2
-    },
-    {
-      "digits": "25",
-      "mentions": 2
-    },
-    {
       "digits": "27",
       "mentions": 2
     },
     {
       "digits": "28",
+      "mentions": 2
+    },
+    {
+      "digits": "35",
       "mentions": 2
     }
   ],
@@ -353,11 +339,11 @@
       "mentions": 1
     },
     {
-      "digits": "257",
+      "digits": "213",
       "mentions": 1
     },
     {
-      "digits": "270",
+      "digits": "257",
       "mentions": 1
     }
   ]
