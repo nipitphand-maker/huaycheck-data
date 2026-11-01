@@ -2,9 +2,26 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-01",
   "drawDateThai": "1 พฤศจิกายน 2569",
-  "generatedAt": "2026-10-31T04:43:35.855Z",
+  "generatedAt": "2026-11-01T05:04:16.940Z",
   "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "งวดที่แล้วเข้าเป้าตรง ๆ หวยน้องเพชรกล้า เปิดเลขเด็",
+      "url": "https://lottery.kapook.com/view304745.html",
+      "lead": [],
+      "two": [
+        "48",
+        "58",
+        "26",
+        "29",
+        "05",
+        "02",
+        "68",
+        "98"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "เปิด 10 หวยแม่ทำเนียน เลขเด็ดงวดนี้ 1 พ.ย. 69 จะมี",
@@ -228,47 +245,19 @@
         "35"
       ],
       "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "ส่องหวยปฏิทินช่อง 3 เลขเด็ดงวดนี้ 1 พ.ย. 69 พร้อมเ",
-      "url": "https://lottery.kapook.com/view304515.html",
-      "lead": [
-        "4",
-        "1",
-        "2",
-        "7",
-        "0"
-      ],
-      "two": [
-        "12",
-        "27",
-        "70",
-        "17"
-      ],
-      "three": [
-        "127",
-        "270",
-        "120",
-        "170"
-      ]
     }
   ],
   "topTwo": [
+    {
+      "digits": "02",
+      "mentions": 3
+    },
     {
       "digits": "11",
       "mentions": 3
     },
     {
-      "digits": "12",
-      "mentions": 3
-    },
-    {
-      "digits": "17",
-      "mentions": 3
-    },
-    {
-      "digits": "02",
+      "digits": "05",
       "mentions": 2
     },
     {
@@ -280,6 +269,10 @@
       "mentions": 2
     },
     {
+      "digits": "12",
+      "mentions": 2
+    },
+    {
       "digits": "14",
       "mentions": 2
     },
@@ -288,11 +281,11 @@
       "mentions": 2
     },
     {
-      "digits": "27",
+      "digits": "17",
       "mentions": 2
     },
     {
-      "digits": "28",
+      "digits": "26",
       "mentions": 2
     }
   ],
@@ -302,15 +295,7 @@
       "mentions": 1
     },
     {
-      "digits": "120",
-      "mentions": 1
-    },
-    {
       "digits": "123",
-      "mentions": 1
-    },
-    {
-      "digits": "127",
       "mentions": 1
     },
     {
@@ -319,10 +304,6 @@
     },
     {
       "digits": "150",
-      "mentions": 1
-    },
-    {
-      "digits": "170",
       "mentions": 1
     },
     {
@@ -335,6 +316,18 @@
     },
     {
       "digits": "257",
+      "mentions": 1
+    },
+    {
+      "digits": "286",
+      "mentions": 1
+    },
+    {
+      "digits": "295",
+      "mentions": 1
+    },
+    {
+      "digits": "297",
       "mentions": 1
     }
   ]
