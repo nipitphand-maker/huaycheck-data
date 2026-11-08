@@ -2,9 +2,26 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-16",
   "drawDateThai": "16 พฤศจิกายน 2569",
-  "generatedAt": "2026-11-07T12:40:23.016Z",
-  "sourceCount": 2,
+  "generatedAt": "2026-11-08T05:10:19.702Z",
+  "sourceCount": 3,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยปฏิทินช่อง 3 เลขเด็ดงวดนี้ 16 พ.ย. 69 เผยเลขเด่",
+      "url": "https://lottery.kapook.com/view304937.html",
+      "lead": [
+        "4",
+        "3",
+        "2",
+        "5",
+        "6",
+        "10",
+        "15",
+        "04"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยอาจารย์หนู",
