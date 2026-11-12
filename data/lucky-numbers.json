@@ -2,9 +2,43 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-16",
   "drawDateThai": "16 พฤศจิกายน 2569",
-  "generatedAt": "2026-11-11T13:47:39.735Z",
-  "sourceCount": 7,
+  "generatedAt": "2026-11-12T14:50:46.594Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยทะเบียนรถนายก",
+      "url": "https://lottery.kapook.com/view305094.html",
+      "lead": [
+        "5",
+        "2",
+        "3",
+        "10",
+        "4"
+      ],
+      "two": [],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "หวยแม่นมาก ขั้นเทพ เลขเด็ดงวดนี้ 16 พ.ย. 69 ชูเลขเ",
+      "url": "https://lottery.kapook.com/view305087.html",
+      "lead": [
+        "5",
+        "4",
+        "16",
+        "55",
+        "29"
+      ],
+      "two": [
+        "04",
+        "14",
+        "24",
+        "44",
+        "94"
+      ],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยม้าสีหมอก",
@@ -167,41 +201,79 @@
     },
     {
       "site": "sanook",
-      "name": "หวย AI ส่องเลขเด็ด หวยงวดนี้ 16/11/69 วิเคราะห์สถิ",
-      "url": "https://news.sanook.com/9911770/",
-      "lead": [],
+      "name": "หวยแม่น้ำหนึ่ง",
+      "url": "https://news.sanook.com/9911863/",
+      "lead": [
+        "8"
+      ],
       "two": [
-        "37",
-        "38",
-        "14",
-        "64",
-        "06",
-        "09",
+        "89",
         "86",
-        "95",
-        "97",
-        "24",
-        "46",
-        "59",
-        "63",
-        "67",
-        "94",
-        "65",
-        "57",
-        "44",
-        "73",
-        "47"
+        "96"
       ],
       "three": [
-        "471",
-        "479",
-        "742",
-        "937",
-        "844"
+        "896"
+      ]
+    },
+    {
+      "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9911615/",
+      "lead": [
+        "2",
+        "06",
+        "52",
+        "22",
+        "43",
+        "69",
+        "15",
+        "35",
+        "90",
+        "16"
+      ],
+      "two": [
+        "62",
+        "35",
+        "50",
+        "69",
+        "27",
+        "28",
+        "34",
+        "51",
+        "37",
+        "54",
+        "52",
+        "56",
+        "59",
+        "02",
+        "06",
+        "09",
+        "74",
+        "87",
+        "16",
+        "11"
+      ],
+      "three": [
+        "652",
+        "522",
+        "220",
+        "543",
+        "390",
+        "128",
+        "369",
+        "362"
       ]
     }
   ],
   "topTwo": [
+    {
+      "digits": "28",
+      "mentions": 3
+    },
+    {
+      "digits": "04",
+      "mentions": 2
+    },
     {
       "digits": "06",
       "mentions": 2
@@ -211,15 +283,19 @@
       "mentions": 2
     },
     {
-      "digits": "28",
+      "digits": "52",
       "mentions": 2
     },
     {
-      "digits": "64",
+      "digits": "56",
       "mentions": 2
     },
     {
-      "digits": "65",
+      "digits": "62",
+      "mentions": 2
+    },
+    {
+      "digits": "69",
       "mentions": 2
     },
     {
@@ -227,20 +303,8 @@
       "mentions": 2
     },
     {
-      "digits": "86",
+      "digits": "74",
       "mentions": 2
-    },
-    {
-      "digits": "93",
-      "mentions": 2
-    },
-    {
-      "digits": "95",
-      "mentions": 2
-    },
-    {
-      "digits": "01",
-      "mentions": 1
     }
   ],
   "topThree": [
@@ -261,7 +325,15 @@
       "mentions": 1
     },
     {
+      "digits": "128",
+      "mentions": 1
+    },
+    {
       "digits": "129",
+      "mentions": 1
+    },
+    {
+      "digits": "220",
       "mentions": 1
     },
     {
@@ -273,15 +345,7 @@
       "mentions": 1
     },
     {
-      "digits": "425",
-      "mentions": 1
-    },
-    {
-      "digits": "471",
-      "mentions": 1
-    },
-    {
-      "digits": "479",
+      "digits": "362",
       "mentions": 1
     }
   ]
