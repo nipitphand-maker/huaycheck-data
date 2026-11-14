@@ -2,9 +2,37 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-16",
   "drawDateThai": "16 พฤศจิกายน 2569",
-  "generatedAt": "2026-11-13T23:22:35.412Z",
+  "generatedAt": "2026-11-14T05:35:02.553Z",
   "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยแม่น้ำหนึ่ง",
+      "url": "https://lottery.kapook.com/view305132.html",
+      "lead": [
+        "3",
+        "8",
+        "5",
+        "6",
+        "2"
+      ],
+      "two": [
+        "85",
+        "58",
+        "86",
+        "68",
+        "56",
+        "65"
+      ],
+      "three": [
+        "856",
+        "865",
+        "586",
+        "568",
+        "685",
+        "658"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยปฏิทินจีน",
@@ -12,6 +40,7 @@
       "lead": [
         "3",
         "2",
+        "1",
         "4",
         "6",
         "5",
@@ -212,25 +241,6 @@
         "495",
         "298"
       ]
-    },
-    {
-      "site": "kapook",
-      "name": "เปิดเลขเด็ด 10 คำทำนายฝันแม่น ๆ เตรียมลุ้นโชค 16 พ",
-      "url": "https://lottery.kapook.com/view261842.html",
-      "lead": [
-        "0",
-        "1",
-        "2",
-        "9",
-        "17",
-        "09",
-        "08",
-        "88",
-        "28",
-        "78"
-      ],
-      "two": [],
-      "three": []
     }
   ],
   "topTwo": [
@@ -255,6 +265,10 @@
       "mentions": 2
     },
     {
+      "digits": "56",
+      "mentions": 2
+    },
+    {
       "digits": "62",
       "mentions": 2
     },
@@ -263,16 +277,12 @@
       "mentions": 2
     },
     {
-      "digits": "72",
+      "digits": "65",
       "mentions": 2
     },
     {
-      "digits": "93",
+      "digits": "68",
       "mentions": 2
-    },
-    {
-      "digits": "01",
-      "mentions": 1
     }
   ],
   "topThree": [
