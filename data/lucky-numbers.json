@@ -2,9 +2,41 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-16",
   "drawDateThai": "16 พฤศจิกายน 2569",
-  "generatedAt": "2026-11-15T05:31:59.088Z",
+  "generatedAt": "2026-11-15T13:39:55.169Z",
   "sourceCount": 9,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยคำชะโนด",
+      "url": "https://lottery.kapook.com/view305142.html",
+      "lead": [
+        "3",
+        "2",
+        "5"
+      ],
+      "two": [
+        "62",
+        "35",
+        "50",
+        "69",
+        "27",
+        "28",
+        "34",
+        "51",
+        "37",
+        "54",
+        "52",
+        "56",
+        "59",
+        "02",
+        "06",
+        "09"
+      ],
+      "three": [
+        "369",
+        "362"
+      ]
+    },
     {
       "site": "kapook",
       "name": "หวยแม่น้ำหนึ่ง",
@@ -40,7 +72,6 @@
       "lead": [
         "3",
         "2",
-        "1",
         "4",
         "6",
         "5",
@@ -198,58 +229,19 @@
       ],
       "two": [],
       "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "หวยอาจารย์หนู",
-      "url": "https://lottery.kapook.com/view304902.html",
-      "lead": [
-        "2",
-        "3",
-        "9",
-        "6",
-        "7"
-      ],
-      "two": [
-        "20",
-        "23",
-        "25",
-        "28",
-        "29",
-        "90",
-        "93",
-        "95",
-        "98",
-        "62",
-        "64",
-        "65",
-        "68",
-        "69",
-        "72",
-        "74",
-        "75",
-        "78"
-      ],
-      "three": [
-        "520",
-        "723",
-        "425",
-        "628",
-        "129",
-        "790",
-        "693",
-        "495",
-        "298"
-      ]
     }
   ],
   "topTwo": [
+    {
+      "digits": "56",
+      "mentions": 3
+    },
     {
       "digits": "04",
       "mentions": 2
     },
     {
-      "digits": "23",
+      "digits": "06",
       "mentions": 2
     },
     {
@@ -265,7 +257,7 @@
       "mentions": 2
     },
     {
-      "digits": "56",
+      "digits": "52",
       "mentions": 2
     },
     {
@@ -273,15 +265,11 @@
       "mentions": 2
     },
     {
-      "digits": "64",
+      "digits": "85",
       "mentions": 2
     },
     {
-      "digits": "65",
-      "mentions": 2
-    },
-    {
-      "digits": "68",
+      "digits": "86",
       "mentions": 2
     }
   ],
@@ -303,10 +291,6 @@
       "mentions": 1
     },
     {
-      "digits": "129",
-      "mentions": 1
-    },
-    {
       "digits": "246",
       "mentions": 1
     },
@@ -319,11 +303,15 @@
       "mentions": 1
     },
     {
-      "digits": "298",
+      "digits": "362",
       "mentions": 1
     },
     {
-      "digits": "425",
+      "digits": "369",
+      "mentions": 1
+    },
+    {
+      "digits": "426",
       "mentions": 1
     }
   ]
