@@ -2,9 +2,45 @@
   "schemaVersion": 1,
   "drawDate": "2026-11-16",
   "drawDateThai": "16 พฤศจิกายน 2569",
-  "generatedAt": "2026-11-15T13:39:55.169Z",
-  "sourceCount": 9,
+  "generatedAt": "2026-11-16T05:31:56.286Z",
+  "sourceCount": 10,
   "sources": [
+    {
+      "site": "kapook",
+      "name": "หวยโปเตโต้ ปล่อยเลขเด็ดงวดนี้ 16 พ.ย. 69 แฟนหวยรอจ",
+      "url": "https://lottery.kapook.com/view305151.html",
+      "lead": [
+        "3",
+        "2"
+      ],
+      "two": [
+        "48",
+        "84",
+        "04",
+        "23",
+        "34",
+        "41",
+        "63",
+        "79",
+        "98",
+        "10",
+        "47",
+        "55"
+      ],
+      "three": []
+    },
+    {
+      "site": "kapook",
+      "name": "หวยหลวงพ่อปาน ครบรอบ 116 ปี เลขเด็ดงวดนี้ 16 พ.ย. ",
+      "url": "https://lottery.kapook.com/view305146.html",
+      "lead": [
+        "5",
+        "3",
+        "2"
+      ],
+      "two": [],
+      "three": []
+    },
     {
       "site": "kapook",
       "name": "หวยคำชะโนด",
@@ -38,31 +74,54 @@
       ]
     },
     {
-      "site": "kapook",
+      "site": "sanook",
       "name": "หวยแม่น้ำหนึ่ง",
-      "url": "https://lottery.kapook.com/view305132.html",
+      "url": "https://news.sanook.com/9911615/",
       "lead": [
-        "3",
         "8",
-        "5",
-        "6",
-        "2"
+        "2",
+        "06",
+        "52",
+        "22",
+        "43",
+        "69",
+        "15",
+        "35",
+        "90"
       ],
       "two": [
-        "85",
-        "58",
+        "89",
         "86",
-        "68",
+        "96",
+        "62",
+        "35",
+        "50",
+        "69",
+        "27",
+        "28",
+        "34",
+        "51",
+        "37",
+        "54",
+        "52",
         "56",
-        "65"
+        "59",
+        "02",
+        "06",
+        "09",
+        "74"
       ],
       "three": [
-        "856",
-        "865",
-        "586",
-        "568",
-        "685",
-        "658"
+        "896",
+        "520",
+        "652",
+        "522",
+        "220",
+        "543",
+        "390",
+        "128",
+        "369",
+        "362"
       ]
     },
     {
@@ -117,7 +176,7 @@
       "url": "https://lottery.kapook.com/view305087.html",
       "lead": [
         "5",
-        "2",
+        "3",
         "4",
         "16",
         "55",
@@ -212,68 +271,59 @@
         "15"
       ],
       "three": []
-    },
-    {
-      "site": "kapook",
-      "name": "หวยปฏิทินช่อง 3 เลขเด็ดงวดนี้ 16 พ.ย. 69 เผยเลขเด่",
-      "url": "https://lottery.kapook.com/view304937.html",
-      "lead": [
-        "4",
-        "6",
-        "3",
-        "2",
-        "5",
-        "10",
-        "15",
-        "04"
-      ],
-      "two": [],
-      "three": []
     }
   ],
   "topTwo": [
+    {
+      "digits": "04",
+      "mentions": 3
+    },
+    {
+      "digits": "06",
+      "mentions": 3
+    },
+    {
+      "digits": "28",
+      "mentions": 3
+    },
+    {
+      "digits": "34",
+      "mentions": 3
+    },
+    {
+      "digits": "52",
+      "mentions": 3
+    },
     {
       "digits": "56",
       "mentions": 3
     },
     {
-      "digits": "04",
-      "mentions": 2
-    },
-    {
-      "digits": "06",
-      "mentions": 2
-    },
-    {
-      "digits": "24",
-      "mentions": 2
-    },
-    {
-      "digits": "26",
-      "mentions": 2
-    },
-    {
-      "digits": "28",
-      "mentions": 2
-    },
-    {
-      "digits": "52",
-      "mentions": 2
-    },
-    {
       "digits": "62",
+      "mentions": 3
+    },
+    {
+      "digits": "02",
       "mentions": 2
     },
     {
-      "digits": "85",
+      "digits": "09",
       "mentions": 2
     },
     {
-      "digits": "86",
+      "digits": "10",
       "mentions": 2
     }
   ],
   "topThree": [
+    {
+      "digits": "362",
+      "mentions": 2
+    },
+    {
+      "digits": "369",
+      "mentions": 2
+    },
     {
       "digits": "081",
       "mentions": 1
@@ -291,27 +341,19 @@
       "mentions": 1
     },
     {
+      "digits": "128",
+      "mentions": 1
+    },
+    {
+      "digits": "220",
+      "mentions": 1
+    },
+    {
       "digits": "246",
       "mentions": 1
     },
     {
       "digits": "264",
-      "mentions": 1
-    },
-    {
-      "digits": "280",
-      "mentions": 1
-    },
-    {
-      "digits": "362",
-      "mentions": 1
-    },
-    {
-      "digits": "369",
-      "mentions": 1
-    },
-    {
-      "digits": "426",
       "mentions": 1
     }
   ]
