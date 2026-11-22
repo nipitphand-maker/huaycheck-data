@@ -2,9 +2,52 @@
   "schemaVersion": 1,
   "drawDate": "2026-12-01",
   "drawDateThai": "1 ธันวาคม 2569",
-  "generatedAt": "2026-11-22T05:46:35.525Z",
+  "generatedAt": "2026-11-22T14:17:34.600Z",
   "sourceCount": 2,
   "sources": [
+    {
+      "site": "sanook",
+      "name": "หวยคำชะโนด",
+      "url": "https://news.sanook.com/9912782/",
+      "lead": [
+        "19",
+        "20",
+        "13",
+        "2",
+        "3",
+        "47",
+        "30",
+        "1",
+        "7",
+        "12"
+      ],
+      "two": [
+        "17",
+        "47",
+        "30",
+        "19",
+        "13",
+        "05",
+        "73",
+        "09",
+        "64",
+        "57",
+        "94",
+        "67",
+        "15",
+        "96",
+        "16",
+        "97",
+        "98",
+        "34",
+        "54",
+        "36"
+      ],
+      "three": [
+        "164",
+        "194"
+      ]
+    },
     {
       "site": "sanook",
       "name": "หวยปฏิทินจีน",
@@ -35,23 +78,23 @@
         "952",
         "256"
       ]
-    },
-    {
-      "site": "sanook",
-      "name": "หวยแปลปกสลาก",
-      "url": "https://news.sanook.com/9912634/",
-      "lead": [
-        "4",
-        "8",
-        "1"
-      ],
-      "two": [],
-      "three": []
     }
   ],
   "topTwo": [
     {
+      "digits": "96",
+      "mentions": 2
+    },
+    {
       "digits": "01",
+      "mentions": 1
+    },
+    {
+      "digits": "05",
+      "mentions": 1
+    },
+    {
+      "digits": "09",
       "mentions": 1
     },
     {
@@ -59,39 +102,35 @@
       "mentions": 1
     },
     {
-      "digits": "25",
+      "digits": "13",
       "mentions": 1
     },
     {
-      "digits": "26",
+      "digits": "15",
       "mentions": 1
     },
     {
-      "digits": "52",
+      "digits": "16",
       "mentions": 1
     },
     {
-      "digits": "56",
+      "digits": "17",
       "mentions": 1
     },
     {
-      "digits": "62",
-      "mentions": 1
-    },
-    {
-      "digits": "71",
-      "mentions": 1
-    },
-    {
-      "digits": "92",
-      "mentions": 1
-    },
-    {
-      "digits": "95",
+      "digits": "19",
       "mentions": 1
     }
   ],
   "topThree": [
+    {
+      "digits": "164",
+      "mentions": 1
+    },
+    {
+      "digits": "194",
+      "mentions": 1
+    },
     {
       "digits": "256",
       "mentions": 1
