@@ -2,29 +2,9 @@
   "schemaVersion": 1,
   "drawDate": "2026-12-01",
   "drawDateThai": "1 ธันวาคม 2569",
-  "generatedAt": "2026-11-23T23:35:05.060Z",
-  "sourceCount": 1,
-  "sources": [
-    {
-      "site": "sanook",
-      "name": "หวยม้าสีหมอก",
-      "url": "https://news.sanook.com/9912938/",
-      "lead": [
-        "06",
-        "00",
-        "2",
-        "8",
-        "3",
-        "0",
-        "31",
-        "34",
-        "01",
-        "04"
-      ],
-      "two": [],
-      "three": []
-    }
-  ],
+  "generatedAt": "2026-11-24T09:01:25.419Z",
+  "sourceCount": 0,
+  "sources": [],
   "topTwo": [],
   "topThree": []
 }
