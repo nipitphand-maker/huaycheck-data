@@ -208,6 +208,31 @@ export function sanookImages(html, url) {
   return [...new Set(html.match(re) ?? [])].filter((u) => !/thumbnail/i.test(u)).slice(0, 4);
 }
 
+/** "สำนัก : เลข" lines exactly as the article lists them. Stops at the
+ *  related-news block ("ข่าวหวย : …" teasers of other articles). Exported for tests. */
+export function articleLines(html) {
+  const text = html
+    .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<\/?(p|li|h[1-6]|br|div|tr)\b[^>]*>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#0?39;/g, "'").replace(/&nbsp;/g, ' ');
+  const out = [];
+  for (const raw of text.split('\n')) {
+    const l = raw.replace(/\s+/g, ' ').trim();
+    const m = l.match(/^([^:]{2,70}?)\s*:\s*(.+)$/);
+    if (!m || l.length > 220) continue;
+    const [, label, body] = m;
+    if (/ข่าวหวย/.test(label)) break;
+    if (/พิมพ์$|น\.\)/.test(body)) continue; // byline timestamp "06 : 47 น.) พิมพ์"
+    const nums = body.match(/\d{2,4}/g) ?? [];
+    // Prose with a stray number (e.g. explanations) isn't a tip line.
+    if (nums.length === 0 || (body.length > 60 && nums.length * 15 < body.length)) continue;
+    out.push({ label, text: body });
+    if (out.length >= 40) break;
+  }
+  return out;
+}
+
 async function scrapeSanook(forms) {
   const hub = await fetchHtml('https://news.sanook.com/lotto/');
   const anchors = [...hub.matchAll(
@@ -232,8 +257,9 @@ async function scrapeSanook(forms) {
       const html = await fetchHtml(pick.url);
       const numbers = extractNumbers(htmlToText(html));
       const images = sanookImages(html, pick.url);
-      if (numbers.two.length + numbers.three.length + numbers.lead.length === 0 && !images.length) continue;
-      out.push({ site: 'sanook', name: sourceName(pick.title), url: pick.url, ...numbers, images });
+      const lines = articleLines(html);
+      if (numbers.two.length + numbers.three.length + numbers.lead.length === 0 && !lines.length) continue;
+      out.push({ site: 'sanook', name: sourceName(pick.title), url: pick.url, ...numbers, lines, images });
     } catch (e) {
       console.warn(`sanook article failed: ${pick.url}: ${e.message}`);
     }
