@@ -162,7 +162,7 @@ function sourceName(title) {
     if (title.includes(n)) return n.startsWith('หวย') || n.startsWith('เลข') ? n : `หวย${n}`;
   }
   // Fallback: trimmed title without clickbait punctuation.
-  return title.replace(/[!"“”]+/g, '').replace(/\s+/g, ' ').trim().slice(0, 50);
+  return title.replace(/[!"“”]+/g, '').replace(/\s+/g, ' ').trim().slice(0, 140); // full headline — app wraps it
 }
 
 // ── Site scrapers ───────────────────────────────────────────────────────────
