@@ -2,42 +2,77 @@
   "schemaVersion": 1,
   "drawDate": "2026-12-01",
   "drawDateThai": "1 ธันวาคม 2569",
-  "generatedAt": "2026-11-24T22:04:35.540Z",
+  "generatedAt": "2026-11-25T07:39:51.244Z",
   "sourceCount": 1,
   "sources": [
     {
       "site": "sanook",
-      "name": "เลขเด็ดสลากสัญจร ตาก 1 ธ.ค. 69 เปิดเลขผู้ว่าฯ เลขจ",
-      "url": "https://news.sanook.com/9913098/",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9913162/",
       "lead": [
-        "9",
-        "63",
-        "05",
-        "38",
-        "76",
-        "53",
-        "59",
-        "09",
-        "11"
+        "4",
+        "8",
+        "1",
+        "19",
+        "47",
+        "30",
+        "3",
+        "0",
+        "2",
+        "31"
       ],
       "two": [
-        "44",
+        "47",
         "30",
-        "27",
-        "74",
-        "40",
-        "03"
+        "19",
+        "13",
+        "05",
+        "73",
+        "09",
+        "64",
+        "57",
+        "94",
+        "67",
+        "15",
+        "96",
+        "16",
+        "17",
+        "97",
+        "98"
       ],
-      "three": []
+      "three": [
+        "164",
+        "194"
+      ]
     }
   ],
   "topTwo": [
     {
-      "digits": "03",
+      "digits": "05",
       "mentions": 1
     },
     {
-      "digits": "27",
+      "digits": "09",
+      "mentions": 1
+    },
+    {
+      "digits": "13",
+      "mentions": 1
+    },
+    {
+      "digits": "15",
+      "mentions": 1
+    },
+    {
+      "digits": "16",
+      "mentions": 1
+    },
+    {
+      "digits": "17",
+      "mentions": 1
+    },
+    {
+      "digits": "19",
       "mentions": 1
     },
     {
@@ -45,17 +80,22 @@
       "mentions": 1
     },
     {
-      "digits": "40",
+      "digits": "47",
       "mentions": 1
     },
     {
-      "digits": "44",
-      "mentions": 1
-    },
-    {
-      "digits": "74",
+      "digits": "57",
       "mentions": 1
     }
   ],
-  "topThree": []
+  "topThree": [
+    {
+      "digits": "164",
+      "mentions": 1
+    },
+    {
+      "digits": "194",
+      "mentions": 1
+    }
+  ]
 }
