@@ -15,7 +15,7 @@
  * No dependencies — plain Node 20+ (global fetch).
  */
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { appendFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
@@ -303,7 +303,8 @@ async function main() {
   const daysLeft = (Date.UTC(draw.y, draw.m, draw.day) - Date.now()) / 86_400_000;
   if (sanookCount === 0 && daysLeft <= 4) {
     console.error(`ALERT: Sanook returned 0 sources ${daysLeft.toFixed(1)} days before the draw — scraper likely broken.`);
-    process.exitCode = 1;
+    // Signal via step output; the workflow fails AFTER committing good data.
+    if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, 'alarm=sanook_zero\n');
   }
   if (deduped.length === 0) {
     // Don't hard-fail: an empty window (right after a draw, before new

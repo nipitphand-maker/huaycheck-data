@@ -23,19 +23,25 @@ jobs:
           node-version: 20
 
       - name: Scrape sources
+        id: scrape
         run: node scrape.mjs
 
       - name: Commit if content changed
-        if: ${{ !cancelled() }}  # still commit Kapook data when the Sanook alarm fails the run
         run: |
           # lucky-numbers.json carries generatedAt (changes every run);
           # .content-hash excludes it, so we only commit on real changes.
           if ! git diff --quiet data/.content-hash; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/
+            git add data/lucky-numbers.json data/.content-hash
             git commit -m "Update lucky numbers ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push
           else
             echo "No content change — skipping commit."
           fi
+
+      - name: Sanook breakage alarm
+        if: ${{ steps.scrape.outputs.alarm == 'sanook_zero' }}
+        run: |
+          echo "Sanook returned 0 sources close to the draw — scraper likely broken."
+          exit 1
