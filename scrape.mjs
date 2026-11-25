@@ -199,10 +199,19 @@ async function scrapeKapook(forms) {
   return out;
 }
 
+/** Tip-sheet images uploaded for this article (s.isanook.com/ns/0/ud/<n>/<id>/x.jpg),
+ *  minus the generated thumbnail. Exported for tests. */
+export function sanookImages(html, url) {
+  const id = url.match(/(\d+)\/?$/)?.[1];
+  if (!id) return [];
+  const re = new RegExp(`https://s\\.isanook\\.com/ns/0/ud/\\d+/${id}/[\\w-]+\\.(?:jpg|jpeg|png|webp)`, 'g');
+  return [...new Set(html.match(re) ?? [])].filter((u) => !/thumbnail/i.test(u)).slice(0, 4);
+}
+
 async function scrapeSanook(forms) {
   const hub = await fetchHtml('https://news.sanook.com/lotto/');
   const anchors = [...hub.matchAll(
-    /href="(https:\/\/news\.sanook\.com\/\d+\/?)"[^>]*title="([^"]*)"/g,
+    /href="(https:\/\/(?:news\.sanook\.com|www\.sanook\.com\/news)\/\d+\/?)"[^>]*title="([^"]*)"/g,
   )];
   const seen = new Set();
   const picks = [];
@@ -210,7 +219,7 @@ async function scrapeSanook(forms) {
     if (seen.has(url)) continue;
     seen.add(url);
     const title = rawTitle.replace(/&quot;/g, '"');
-    if (!/เลขเด็ด|เลขมงคล|แนวทางหวย|เลขธูป/.test(title)) continue;
+    if (!/เลขเด็ด|เลขมงคล|แนวทางหวย|เลขธูป|เลขขายดี|ใบหวย/.test(title)) continue;
     if (!forms.some((f) => title.includes(f))) continue;
     picks.push({ url, title });
     if (picks.length >= MAX_ARTICLES_PER_SITE) break;
@@ -220,10 +229,11 @@ async function scrapeSanook(forms) {
   for (const pick of picks) {
     try {
       await sleep(FETCH_DELAY_MS);
-      const text = htmlToText(await fetchHtml(pick.url));
-      const numbers = extractNumbers(text);
-      if (numbers.two.length + numbers.three.length + numbers.lead.length === 0) continue;
-      out.push({ site: 'sanook', name: sourceName(pick.title), url: pick.url, ...numbers });
+      const html = await fetchHtml(pick.url);
+      const numbers = extractNumbers(htmlToText(html));
+      const images = sanookImages(html, pick.url);
+      if (numbers.two.length + numbers.three.length + numbers.lead.length === 0 && !images.length) continue;
+      out.push({ site: 'sanook', name: sourceName(pick.title), url: pick.url, ...numbers, images });
     } catch (e) {
       console.warn(`sanook article failed: ${pick.url}: ${e.message}`);
     }
@@ -293,7 +303,10 @@ async function main() {
   }
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+// Guarded so tests can import helpers (import.meta.main needs Node 22.16+).
+if (process.argv[1] && import.meta.url.endsWith(process.argv[1].split('/').pop())) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
