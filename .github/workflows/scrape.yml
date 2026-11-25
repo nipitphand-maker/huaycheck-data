@@ -26,6 +26,7 @@ jobs:
         run: node scrape.mjs
 
       - name: Commit if content changed
+        if: ${{ !cancelled() }}  # still commit Kapook data when the Sanook alarm fails the run
         run: |
           # lucky-numbers.json carries generatedAt (changes every run);
           # .content-hash excludes it, so we only commit on real changes.

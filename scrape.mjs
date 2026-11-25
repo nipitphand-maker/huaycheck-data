@@ -296,6 +296,15 @@ async function main() {
   console.log(
     `Wrote ${deduped.length} sources, topTwo=[${payload.topTwo.slice(0, 5).map((t) => t.digits)}]`,
   );
+  // Breakage alarm: Sanook always has tip articles in the last days before a
+  // draw. Zero from Sanook then = markup/link change → fail the run so GitHub
+  // emails the owner (data above is still written and committed).
+  const sanookCount = sources.filter((x) => x.site === 'sanook').length;
+  const daysLeft = (Date.UTC(draw.y, draw.m, draw.day) - Date.now()) / 86_400_000;
+  if (sanookCount === 0 && daysLeft <= 4) {
+    console.error(`ALERT: Sanook returned 0 sources ${daysLeft.toFixed(1)} days before the draw — scraper likely broken.`);
+    process.exitCode = 1;
+  }
   if (deduped.length === 0) {
     // Don't hard-fail: an empty window (right after a draw, before new
     // articles) is normal. The app shows its own "ยังไม่มีข้อมูล" state.
