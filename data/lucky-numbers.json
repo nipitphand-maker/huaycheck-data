@@ -2,9 +2,60 @@
   "schemaVersion": 1,
   "drawDate": "2026-12-01",
   "drawDateThai": "1 ธันวาคม 2569",
-  "generatedAt": "2026-11-27T07:26:37.021Z",
+  "generatedAt": "2026-11-27T20:51:30.140Z",
   "sourceCount": 5,
   "sources": [
+    {
+      "site": "sanook",
+      "name": "หวยปฏิทินจีน",
+      "url": "https://news.sanook.com/9913162/",
+      "lead": [
+        "5",
+        "8",
+        "0",
+        "3",
+        "4",
+        "1",
+        "19",
+        "47",
+        "30",
+        "2"
+      ],
+      "two": [
+        "58",
+        "85",
+        "05",
+        "50",
+        "08",
+        "80",
+        "35",
+        "38",
+        "47",
+        "30",
+        "19",
+        "13",
+        "73",
+        "09",
+        "64",
+        "57",
+        "94",
+        "67",
+        "15",
+        "96"
+      ],
+      "three": [
+        "580",
+        "358",
+        "085",
+        "305",
+        "164",
+        "194"
+      ],
+      "lines": [],
+      "images": [
+        "https://s.isanook.com/ns/0/ud/1982/9913162/lotto.jpg"
+      ]
+    },
     {
       "site": "sanook",
       "name": "หวย AI ส่องเลขเด็ด หวยงวดนี้ 1/12/69 วิเคราะห์สถิติหวยออกวันอังคาร ย้อนหลัง 10 ปี",
@@ -56,50 +107,6 @@
         }
       ],
       "images": []
-    },
-    {
-      "site": "sanook",
-      "name": "หวยปฏิทินจีน",
-      "url": "https://www.sanook.com/news/9913162/",
-      "lead": [
-        "4",
-        "8",
-        "1",
-        "19",
-        "47",
-        "30",
-        "3",
-        "0",
-        "2",
-        "31"
-      ],
-      "two": [
-        "47",
-        "30",
-        "19",
-        "13",
-        "05",
-        "73",
-        "09",
-        "64",
-        "57",
-        "94",
-        "67",
-        "15",
-        "96",
-        "16",
-        "17",
-        "97",
-        "98"
-      ],
-      "three": [
-        "164",
-        "194"
-      ],
-      "lines": [],
-      "images": [
-        "https://s.isanook.com/ns/0/ud/1982/9913162/lotto.jpg"
-      ]
     },
     {
       "site": "sanook",
@@ -263,6 +270,10 @@
       "mentions": 3
     },
     {
+      "digits": "08",
+      "mentions": 2
+    },
+    {
       "digits": "13",
       "mentions": 2
     },
@@ -271,27 +282,27 @@
       "mentions": 2
     },
     {
-      "digits": "16",
-      "mentions": 2
-    },
-    {
-      "digits": "17",
-      "mentions": 2
-    },
-    {
       "digits": "19",
+      "mentions": 2
+    },
+    {
+      "digits": "35",
+      "mentions": 2
+    },
+    {
+      "digits": "38",
       "mentions": 2
     },
     {
       "digits": "47",
       "mentions": 2
-    },
-    {
-      "digits": "57",
-      "mentions": 2
     }
   ],
   "topThree": [
+    {
+      "digits": "085",
+      "mentions": 2
+    },
     {
       "digits": "164",
       "mentions": 2
@@ -301,20 +312,16 @@
       "mentions": 2
     },
     {
-      "digits": "085",
-      "mentions": 1
-    },
-    {
       "digits": "305",
-      "mentions": 1
+      "mentions": 2
     },
     {
       "digits": "358",
-      "mentions": 1
+      "mentions": 2
     },
     {
       "digits": "580",
-      "mentions": 1
+      "mentions": 2
     }
   ]
 }
